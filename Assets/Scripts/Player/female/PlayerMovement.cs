@@ -10,16 +10,16 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     [SerializeField] private Vector2 movement;
-    [SerializeField] private float moveSpeed;
+    [SerializeField] private float moveSpeed = 6f;
 
     [Header("Jump")]
-    [SerializeField] private bool isGrounded;
     [SerializeField] private Transform pointGroundCheck;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private float jumpForce;
+    [SerializeField] private float jumpForce = 25f;
     [SerializeField] private bool doubleJump;
 
     [SerializeField] private Vector2 velocity;
+    [SerializeField] private bool point;
 
     void Awake()
     {
@@ -30,9 +30,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {      
-        moveSpeed = 6f;
-        jumpForce = 25f;
-        //isGrounded = true;
+
     }
 
     // Update is called once per frame
@@ -40,7 +38,6 @@ public class PlayerMovement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         anim.SetFloat("moveSpeed", Mathf.Abs(movement.x));
-        //movement.y = Input.GetAxisRaw("Vertical");
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (GroundCheck())
@@ -61,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
     {
         UpdateMovement();
         UpdateAnimation();
-        velocity = this.rb2d.velocity;
+        point = GroundCheck();
     }
 
     protected virtual void UpdateMovement()
