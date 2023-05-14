@@ -1,9 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement instance { get; private set; }
+
     [Header("Components")]
     [SerializeField] private Rigidbody2D rb2d;
     [SerializeField] private Animator anim;
@@ -11,20 +14,27 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private Vector2 movement;
     [SerializeField] private float moveSpeed = 6f;
+    [SerializeField] private float dazedTime;
 
     [Header("Jump")]
-    [SerializeField] private Transform pointGroundCheck;
+    [SerializeField] private Transform groundCheckPoint;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float jumpForce = 25f;
     [SerializeField] private bool doubleJump;
 
-    [SerializeField] private Vector2 velocity;
-    [SerializeField] private bool point;
-
     void Awake()
     {
+        if(instance != null && instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+        }
         this.rb2d = GetComponent<Rigidbody2D>();
         this.anim = GetComponent<Animator>();
+        this.groundCheckPoint = this.transform.GetChild(0);
     }
 
     // Start is called before the first frame update
@@ -58,13 +68,26 @@ public class PlayerMovement : MonoBehaviour
     {
         UpdateMovement();
         UpdateAnimation();
-        point = GroundCheck();
     }
 
     protected virtual void UpdateMovement()
     {
+        if (dazedTime > 0)
+        {
+            moveSpeed = 0f;
+            dazedTime -= Time.fixedDeltaTime;
+        }
+        else
+        {
+            moveSpeed = 6f;
+        }
         this.rb2d.velocity = new Vector2(movement.x * moveSpeed, rb2d.velocity.y);
         //this.rb2d.MovePosition(this.rb2d.position + this.movement * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    public void DazedTime()
+    {
+        dazedTime = 0.2f;
     }
 
     protected void UpdateJump()
@@ -75,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
 
     protected bool GroundCheck()
     {
-        return Physics2D.OverlapCapsule(pointGroundCheck.position, new Vector2(0.15f, 0.03f), CapsuleDirection2D.Horizontal, 0, groundLayer);
+        return Physics2D.OverlapCapsule(groundCheckPoint.position, new Vector2(0.15f, 0.03f), CapsuleDirection2D.Horizontal, 0, groundLayer);
     }
 
     protected void Flip(int scaleX)
