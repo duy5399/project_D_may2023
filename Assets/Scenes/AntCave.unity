@@ -270,60 +270,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1002591199 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 949769159137027814, guid: 78585496e2bf89a48ac4e606c34b1c38,
-    type: 3}
-  m_PrefabInstance: {fileID: 1337137906}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1002591200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002591199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa218cef7e2c9bf44b83519f431f5cf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  target: {fileID: 0}
-  moveSpeed: 1
-  facingLeft: 1
-  isAttack: 0
-  attackRange: 0.22
-  attackTime: 0.3
-  attackPoint: {fileID: 0}
-  attackDamage: 40
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  maxHealth: 100
-  currentHealth: 0
-  dazedTime: 0
-  phase: 1
-  check: 0
---- !u!114 &1002591205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002591199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b497e8d31b9a9d74386bcbe356cfffea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabMob: []
-  poolMob: []
-  mobSpawnPoint: {fileID: 0}
-  spawnInterval: 0
-  poolManager: {fileID: 0}
-  maxMob: 0
-  mobs: {fileID: 0}
 --- !u!1 &1173822463
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,6 +590,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1002591200, guid: 78585496e2bf89a48ac4e606c34b1c38, type: 3}
+      propertyPath: intervalNextAction
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 949769159137027812, guid: 78585496e2bf89a48ac4e606c34b1c38,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -699,20 +649,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 949769159137027813, guid: 78585496e2bf89a48ac4e606c34b1c38,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 949769159137027814, guid: 78585496e2bf89a48ac4e606c34b1c38,
         type: 3}
       propertyPath: m_Name
       value: Pandora
-      objectReference: {fileID: 0}
-    - target: {fileID: 949769159137027815, guid: 78585496e2bf89a48ac4e606c34b1c38,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78585496e2bf89a48ac4e606c34b1c38, type: 3}

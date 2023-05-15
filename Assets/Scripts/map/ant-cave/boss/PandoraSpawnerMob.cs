@@ -34,7 +34,7 @@ public class PandoraSpawnerMob : MobSpawnerPool
         LoadMobToPool(maxMob);
     }
 
-    public void SummonMobs(int phase)
+    public void SummonMobs()
     {
         SpawnMob(maxMob);
     }

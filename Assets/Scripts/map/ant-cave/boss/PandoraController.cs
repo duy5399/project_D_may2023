@@ -28,9 +28,9 @@ public class PandoraController : MonoBehaviour
     public int currentHealth;
     public float dazedTime;
 
-    [Header("Health")]
+    [Header("Mechanic")]
+    public float intervalNextAction = 5f;
     public int phase = 1;
-    public int check = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -41,17 +41,56 @@ public class PandoraController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(currentHealth == 100 && phase == 1)
+        if(phase == 1)
         {
-            PandoraSpawnerMob.instance.SummonMobs(phase);
-            phase++;
-        }
-        else if(currentHealth < 50 && phase == 2)
-        {
-            PandoraSpawnerMob.instance.SummonMobs(phase);
+            StartCoroutine(PandoraMechanics(intervalNextAction));
             phase++;
         }
     }
 
-    
+    public IEnumerator PandoraMechanics(float interval)
+    {
+        SummonMobs();
+        yield return new WaitForSeconds(interval);
+        Attack00();
+        yield return new WaitForSeconds(interval);
+        Attack01();
+        yield return new WaitForSeconds(interval);
+        Attack02();
+        yield return new WaitForSeconds(interval);
+        Buff_Atk();
+    }
+
+    public void SummonMobs()
+    {
+        PandoraSpawnerMob.instance.SummonMobs();
+        anim.SetTrigger("summonMobs");
+    }
+
+    public void Attack00()
+    {
+        anim.SetTrigger("attack_00");
+    }
+
+    public void Attack01()
+    {
+        anim.SetTrigger("attack_01");
+    }
+
+    public void Attack02()
+    {
+        anim.SetTrigger("attack_02");
+    }
+
+    public void Buff_Atk()
+    {
+        anim.SetTrigger("buff");
+        attackDamage = attackDamage + (attackDamage / 10);
+    }
+
+    public void Buff_Def()
+    {
+        anim.SetTrigger("buff");
+    }
+
 }

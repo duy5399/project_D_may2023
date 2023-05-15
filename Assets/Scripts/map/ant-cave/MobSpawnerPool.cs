@@ -48,7 +48,7 @@ public class MobSpawnerPool : MonoBehaviour
         StartCoroutine(SpawnInterval(spawnInterval, maxMob));
     }
 
-    public IEnumerator SpawnInterval(float interval, int maxMob)
+    public IEnumerator SpawnInterval(float spawnInterval, int maxMob)
     {
         for (int i = 0; i < maxMob; i++)
         {
@@ -59,7 +59,7 @@ public class MobSpawnerPool : MonoBehaviour
                 mob.transform.position = mobSpawnPoint.position;
                 mob.SetActive(true);
             }
-            yield return new WaitForSeconds(interval);
+            yield return new WaitForSeconds(spawnInterval);
         }
     }
 }
