@@ -7,7 +7,7 @@ public class PandoraSpawnerMob : MobSpawnerPool
     public static PandoraSpawnerMob instance;
 
     [Header("SummonMob")]
-    public int maxMob;
+    public int amountMob;
     public GameObject mobs;
 
     void Awake()
@@ -28,14 +28,14 @@ public class PandoraSpawnerMob : MobSpawnerPool
         mobs = GameObject.Find("Mobs");
         mobSpawnPoint = GameObject.Find("MobSpawnPoint").transform;
         poolManager = GameObject.Find("PoolManager").transform;
-        maxMob = 3;
+        amountMob = 3;
         spawnInterval = 0.5f;
         LoadPrefabMob(mobs);
-        LoadMobToPool(maxMob);
+        LoadMobToPool(amountMob);
     }
 
     public void SummonMobs()
     {
-        SpawnMob(maxMob);
+        SpawnMob(amountMob);
     }
 }

@@ -36,6 +36,7 @@ public class PandoraController : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        attackPoint = transform.GetChild(1).transform;
         currentHealth = maxHealth;
     }
 
@@ -69,6 +70,7 @@ public class PandoraController : MonoBehaviour
 
     public void Attack00()
     {
+        PandoraAttack.instance.NormalArrow(attackPoint);
         anim.SetTrigger("attack_00");
     }
 
