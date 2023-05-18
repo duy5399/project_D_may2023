@@ -24,6 +24,7 @@ public class MobController : MonoBehaviour
     public LayerMask playerLayer;
 
     [Header("Health")]
+    public HealthBarController healthBar;
     public int maxHealth = 100;
     public int currentHealth;
 
@@ -34,6 +35,7 @@ public class MobController : MonoBehaviour
         //rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         currentHealth = maxHealth;
+        healthBar.SetHealth(currentHealth, maxHealth);
     }
 
     private void FixedUpdate()
@@ -89,6 +91,7 @@ public class MobController : MonoBehaviour
     public void MobTakeDamage(int damage)
     {
         currentHealth -= damage;
+        healthBar.SetHealth(currentHealth, maxHealth);
         anim.SetTrigger("hurt");
         if (currentHealth <= 0)
         {
