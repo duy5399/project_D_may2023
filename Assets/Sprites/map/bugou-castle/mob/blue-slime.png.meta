@@ -1,0 +1,1978 @@
+fileFormatVersion: 2
+guid: 836a0d6504b885b4a94a3d9be36939ad
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: blue-slime_0
+    21300002: blue-slime_1
+    21300004: blue-slime_2
+    21300006: blue-slime_3
+    21300008: blue-slime_4
+    21300010: blue-slime_5
+    21300012: blue-slime_6
+    21300014: blue-slime_7
+    21300016: blue-slime_8
+    21300018: blue-slime_9
+    21300020: blue-slime_10
+    21300022: blue-slime_11
+    21300024: blue-slime_12
+    21300026: blue-slime_13
+    21300028: blue-slime_14
+    21300030: blue-slime_15
+    21300032: blue-slime_16
+    21300034: blue-slime_17
+    21300036: blue-slime_18
+    21300038: blue-slime_19
+    21300040: blue-slime_20
+    21300042: blue-slime_21
+    21300044: blue-slime_22
+    21300046: blue-slime_23
+    21300048: blue-slime_24
+    21300050: blue-slime_25
+    21300052: blue-slime_26
+    21300054: blue-slime_27
+    21300056: blue-slime_28
+    21300058: blue-slime_29
+    21300060: blue-slime_30
+    21300062: blue-slime_31
+    21300064: blue-slime_32
+    21300066: blue-slime_33
+    21300068: blue-slime_34
+    21300070: blue-slime_35
+    21300072: blue-slime_36
+    21300074: blue-slime_37
+    21300076: blue-slime_38
+    21300078: blue-slime_39
+    21300080: blue-slime_40
+    21300082: blue-slime_41
+    21300084: blue-slime_42
+    21300086: blue-slime_43
+    21300088: blue-slime_44
+    21300090: blue-slime_45
+    21300092: blue-slime_46
+    21300094: blue-slime_47
+    21300096: blue-slime_48
+    21300098: blue-slime_49
+    21300100: blue-slime_50
+    21300102: blue-slime_51
+    21300104: blue-slime_52
+    21300106: blue-slime_53
+    21300108: blue-slime_54
+    21300110: blue-slime_55
+    21300112: blue-slime_56
+    21300114: blue-slime_57
+    21300116: blue-slime_58
+    21300118: blue-slime_59
+    21300120: blue-slime_60
+    21300122: blue-slime_61
+    21300124: blue-slime_62
+    21300126: blue-slime_63
+    21300128: blue-slime_64
+    21300130: blue-slime_65
+    21300132: blue-slime_66
+    21300134: blue-slime_67
+    21300136: blue-slime_68
+    21300138: blue-slime_69
+    21300140: blue-slime_70
+    21300142: blue-slime_71
+    21300144: blue-slime_72
+    21300146: blue-slime_73
+    21300148: blue-slime_74
+    21300150: blue-slime_75
+    21300152: blue-slime_76
+    21300154: blue-slime_77
+    21300156: blue-slime_78
+    21300158: blue-slime_79
+    21300160: blue-slime_80
+    21300162: blue-slime_81
+    21300164: blue-slime_82
+    21300166: blue-slime_83
+    21300168: blue-slime_84
+    21300170: blue-slime_85
+    21300172: blue-slime_86
+    21300174: blue-slime_87
+    21300176: blue-slime_88
+    21300178: blue-slime_89
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blue-slime_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1503
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43d6d411891bfa4bb357533bb1b952b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1503
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8765dd85228fdba4aa1f32d6841c1496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_2
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1503
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1fae501437136478a5109f3f827b38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_3
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 1503
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6dbda1b2e0da414b9460c7f348ce155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_4
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1503
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c6aa632eb6dc24ebcc0e2b03b4fba4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_5
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1503
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b116690e449b354189097cd8c3a8f80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_6
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1503
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2c87dacf01edd448139e3ed660d78d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_7
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1503
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546dcadde64f7e34fa54a8eb8534e1d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_8
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 1503
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28386291f03835a408e30902c7cbae18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_9
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 1503
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a1958d135d34b4596f9db8562f013f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1336
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31109bdbb3838b40b4e57affe10ddee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_11
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1336
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630562c8edd85914eab35a42d9c3baf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_12
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1336
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b1ebda85657b548ba850370fef2960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_13
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 1336
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ba55d66e09b8b458923b3be5dbfbea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_14
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1336
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43059cebfb694e4cb7efd1f14f7da5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_15
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1336
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d8ba696b868b240a93e79d50731ca2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_16
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1336
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79b32eb3d59d9e42841afcc3df23d4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_17
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1336
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9034931e8290e49827575236e7e7d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_18
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 1336
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3727938dc50ce48b7a2d4b53968c3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_19
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 1336
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2953fca24accfa940a005f884574ea5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1169
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed54a454a2b3b14285e5ca10ad43cd6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_21
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1169
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40c697e8c07a8245aad315813b732f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_22
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1169
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd00979f8374c3f44bb2884f730555bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_23
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 1169
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d411860ff1bcdc34c9297cbe0bf235d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_24
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1169
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562e39a547e51ed4aab6f8cbced96d05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_25
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1169
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f13e0c8de4d4d4dab3cdd33838de68
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_26
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1169
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7550cb304d6065b4385748376ace2a04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_27
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1169
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de40b975ae519541b8eef3b451a5ae7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_28
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 1169
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6076b0a8ec1d72345aff54861d0c5730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_29
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 1169
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901921c3342b648418b92ce221094dfb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1002
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f01d79678da09e479f9593117ebe9ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_31
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1002
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a5b71948cfbef4a8807004481dd3d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_32
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1002
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6316d8b50b2fbc64a83fdf01c2b6fb74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_33
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 1002
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cca1a381b1452f46902b7b02eb8aa40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_34
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1002
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3255fbcb1fff5324a9a95f1e63358634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_35
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1002
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161283232eaaa9b4195b0b446d500b2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_36
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1002
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe16a314a97615469b1f6dada988a25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_37
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1002
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7773c4e55225ab4b95372af88db57b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_38
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 1002
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e8d1bce8414de48babc882a2a3974e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_39
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 1002
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c44aff17302b348956c40eebc5e864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 835
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071db6633fec0a946bf7737e3a5e84cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_41
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 835
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d192fa866e442ca488e5667801e760ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_42
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 835
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289feeb73e3bb8940b0c08bb81ef7c62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_43
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 835
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545d704d15f75a9469e0ddab4f9c49a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_44
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 835
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd40d5bc61ef024f9b6e581851f8263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_45
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 835
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b14b8cadf7ed04a9d320718e360d1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_46
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 835
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788282d491c326d4b8be9d68756670e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_47
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 835
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e46fc044e898a4f9283f99e7810318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_48
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 835
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9537c740e397a444913851832637c40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_49
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 835
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29087ad2e8d88844b9d8112e8f38975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 668
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98543187f7938264591bff4eebd60a4b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_51
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 668
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780bf7b2cce76b94fa9cd72a7e1d3158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_52
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 668
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5122665f020c2f45b4fecc5570936ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_53
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 668
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d3ecfbd7a32e647a60637ce4340b40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_54
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 668
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c208f1f30f7c7b409faac18ff9daf46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_55
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 668
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5005bd1f3b4caf44f977a0a8ff2b885a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_56
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 668
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2efc0bf98fa41b34cac08c318f4d7eb5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_57
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 668
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73b05890707e624c862bcf62de4d3ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_58
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 668
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a85236e68f1bb0499adbfefc6e4c443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_59
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 668
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1229c1064c495c4bb705ede0a0c5c31
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 501
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e221260af30a5464781fc2a5537cf645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_61
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 501
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4313da851a392ea4b85bb47d5a9a7a3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_62
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 501
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f97e5fa17c6a1408e84344de2a41b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_63
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 501
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4752bfe850a16944bfd07149d21a4a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_64
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 501
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0ad6114d14b5946951429d3e98d22b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_65
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 501
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b7c43f7f047ba489d5dcfe6d28990a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_66
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 504
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b91bf295c6d474db569b16d5b0d7dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_67
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 501
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a4664e29e7c584db1f064887bf6689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_68
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 501
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ef7c11dbeec3945a750a5f805415df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_69
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 501
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e54f25a2eea4884d94de5726128035c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 334
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635bd11289e831949aed28cdd32101d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_71
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 334
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0d78aabad51614e9b9e7b3c203ba8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_72
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 334
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90188aabe94ee41458df259ed0971439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_73
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 334
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c893fc74de58acf48bce3dbffce27eeb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_74
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 334
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb8b5e996016d6439438c36582ce773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_75
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 334
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2297b0f88e6c74da44c1231272b6b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_76
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 334
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1055bf2e095f76a4290ba2b0e6af3b5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_77
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 334
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f49767b1e0f554d8ac1062aa99502c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_78
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 334
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170f257e78911c6488e0e8bd0465a069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_79
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 167
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767e047adc1206b4ead25182e3777778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_80
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 167
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be86a075b71a1dc43afd4be3827c48d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_81
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 167
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df019c8e7e5e814d974b832a5e38192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_82
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 167
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2202e7730f23d764895cbb1aef7ba0e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_83
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 167
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48c70e3035cc3a4699b36d68f2fc4d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_84
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 167
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297b726b51438264195342c9bef2b374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619848d036125d247b7a33285e342145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_86
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe46def5baa8cf4caa7d269e199b8ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_87
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 0
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa4194b4bfd52f458d2496fb68be3ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_88
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 0
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aca99201215f9148bdb7b06578359bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue-slime_89
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 0
+        width: 159
+        height: 167
+      alignment: 9
+      pivot: {x: 0.65, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50eef7d44e76b3546ac0060145546315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 25edf201f6ab5c549910831c71378665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
