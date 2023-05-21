@@ -49,7 +49,7 @@ public class PandoraAttack : MonoBehaviour
         }
     }
 
-    public void NormalArrow(Transform attackPoint)
+    public void IceArrow(Transform attackPoint)
     {
         if (poolArrow[0] != null && !poolArrow[0].activeInHierarchy)
         {
@@ -58,7 +58,7 @@ public class PandoraAttack : MonoBehaviour
         }
     }
 
-    public void LightningArrow(Transform attackPoint)
+    public void NormalArrow(Transform attackPoint)
     {
         if (poolArrow[1] != null && !poolArrow[1].activeInHierarchy)
         {
@@ -67,11 +67,10 @@ public class PandoraAttack : MonoBehaviour
         }
     }
 
-    public void IceArrow(Transform attackPoint)
+    public void LightningArrow(Transform attackPoint)
     {
         if (poolArrow[2] != null && !poolArrow[2].activeInHierarchy)
         {
-            poolArrow[2].transform.position = attackPoint.position;
             poolArrow[2].SetActive(true);
         }
     }

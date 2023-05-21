@@ -122,4 +122,17 @@ public class PlayerMovement : MonoBehaviour
         }
         anim.SetFloat("velocity.y", this.rb2d.velocity.y);
     }
+
+    protected void Freeze(float freezeTime)
+    {
+        if (freezeTime > 0)
+        {
+            moveSpeed = 0f;
+            freezeTime -= Time.fixedDeltaTime;
+        }
+        else
+        {
+            moveSpeed = 6f;
+        }
+    }
 }

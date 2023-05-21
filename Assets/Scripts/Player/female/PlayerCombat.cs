@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
+    public static PlayerCombat instance;
+
     [Header("Components")]
     [SerializeField] private Animator anim;
 
@@ -19,9 +21,22 @@ public class PlayerCombat : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
 
+    void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+
         this.anim = GetComponent<Animator>();
         this.attackPoint = this.transform.GetChild(1);
         currentHealth = maxHealth;

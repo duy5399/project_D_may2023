@@ -24,11 +24,14 @@ public class PandoraController : MonoBehaviour
     public LayerMask playerLayer;
 
     [Header("Health")]
+    public HealthBarController healthBar01;
+    public HealthbarBossController healthBar02;
     public int maxHealth = 100;
     public int currentHealth;
     public float dazedTime;
 
     [Header("Mechanic")]
+
     public float intervalNextAction = 5f;
     public int phase = 1;
 
@@ -38,6 +41,8 @@ public class PandoraController : MonoBehaviour
         anim = GetComponent<Animator>();
         attackPoint = transform.GetChild(1).transform;
         currentHealth = maxHealth;
+        healthBar01.SetHealth(currentHealth, maxHealth);
+        healthBar02.SetHealth(currentHealth, maxHealth);
     }
 
     void FixedUpdate()
@@ -47,24 +52,26 @@ public class PandoraController : MonoBehaviour
             StartCoroutine(PandoraMechanics(intervalNextAction));
             phase++;
         }
+        healthBar01.SetHealth(currentHealth, maxHealth);
+        healthBar02.SetHealth(currentHealth, maxHealth);
     }
 
     public IEnumerator PandoraMechanics(float interval)
     {
         SummonMobs();
         yield return new WaitForSeconds(interval);
+        Attack02();
+        yield return new WaitForSeconds(interval);
         Attack00();
         yield return new WaitForSeconds(interval);
         Attack01();
-        yield return new WaitForSeconds(interval);
-        Attack02();
         yield return new WaitForSeconds(interval);
         Buff_Atk();
     }
 
     public void SummonMobs()
     {
-        PandoraSpawnerMob.instance.SummonMobs();
+        PandoraSummonMob.instance.SummonMobs();
         anim.SetTrigger("summonMobs");
     }
 
@@ -76,11 +83,13 @@ public class PandoraController : MonoBehaviour
 
     public void Attack01()
     {
+        PandoraAttack.instance.LightningArrow(attackPoint);
         anim.SetTrigger("attack_01");
     }
 
     public void Attack02()
     {
+        PandoraAttack.instance.IceArrow(attackPoint);
         anim.SetTrigger("attack_02");
     }
 

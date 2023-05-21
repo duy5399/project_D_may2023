@@ -1,0 +1,739 @@
+fileFormatVersion: 2
+guid: f4f080ec080bb25469ab8b98ab2793d5
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ice-arrow_effect_0
+    21300002: ice-arrow_effect_1
+    21300004: ice-arrow_effect_2
+    21300006: ice-arrow_effect_3
+    21300008: ice-arrow_effect_4
+    21300010: ice-arrow_effect_5
+    21300012: ice-arrow_effect_6
+    21300014: ice-arrow_effect_7
+    21300016: ice-arrow_effect_8
+    21300018: ice-arrow_effect_9
+    21300020: ice-arrow_effect_10
+    21300022: ice-arrow_effect_11
+    21300024: ice-arrow_effect_12
+    21300026: ice-arrow_effect_13
+    21300028: ice-arrow_effect_14
+    21300030: ice-arrow_effect_15
+    21300032: ice-arrow_effect_16
+    21300034: ice-arrow_effect_17
+    21300036: ice-arrow_effect_18
+    21300038: ice-arrow_effect_19
+    21300040: ice-arrow_effect_20
+    21300042: ice-arrow_effect_21
+    21300044: ice-arrow_effect_22
+    21300046: ice-arrow_effect_23
+    21300048: ice-arrow_effect_24
+    21300050: ice-arrow_effect_25
+    21300052: ice-arrow_effect_26
+    21300054: ice-arrow_effect_27
+    21300056: ice-arrow_effect_28
+    21300058: ice-arrow_effect_29
+    21300060: ice-arrow_effect_30
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ice-arrow_effect_0
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1464
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0995f8f77fbc2c147b5b776d4f55882b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_1
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1464
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f91bb1005b45f48b60d124ac58a02d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_2
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1464
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c7901600100d04aba302ffdf67e7d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_3
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1464
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef13920452cb064f856da98c793b9d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_4
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1464
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ed558e4ee2e8c488efaea1d327874f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_5
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 1464
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03441877c971fa458bc2f644d0d6991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_6
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 1464
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699857d8412eeaa40b26937b98b8c801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_7
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 1464
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004c49e7290ae0f42aa66cd2b30ec77d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_8
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 1464
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a414c9c57a0cb74fae538017f122e01
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1224
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a9b5bec06650d43be3e84c92f1ed5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_10
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1220
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d6d556ca3e06045abb9c417fad1807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_11
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1220
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb87c71afd52184bae417b73e06878d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_12
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1220
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ef8af659b949948b50a1e87d6d000c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_13
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1220
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570ee33024c299547b733911d8c9f070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_14
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1220
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea4d6e8e7412a84e8d3bddc1278f33a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_15
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 1220
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226e8cfd922c52046af79fd34d245bcb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_16
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 1220
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518d985ab5af3e8469ad7d9bcf0101ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_17
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 1220
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800381e35f047f94fb8178dbe26caf51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_18
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 1220
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890983e4b6bf9e14bb6e82b6260788b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 976
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88449cf3cfc5c144ad62f051fb54fa7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_20
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 976
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635bfa881bc47c142b078950f5f5e865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_21
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 976
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21ff5f4de4c5da45b5c9d5241d20193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_22
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 976
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1eeff53c6b0f1c4b91f4f9a792cce04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_23
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 976
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aff61a8ad96ea949a0136b1bb93aa9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_24
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 976
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394241f54cb16fa4d9e3f8cb2afa904c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_25
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 976
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7549dc7ab8c0ab4289526b352ec96c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_26
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 976
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2870274886106542bc1593f78582861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_27
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 976
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9adf77155170d4aaf3c3b260c41ca8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_28
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 976
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7aeb0008b102fb4da5fe73568caeec2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 732
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79ca62f2ec043d4cb2a7325191620c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arrow_effect_30
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 732
+        width: 328
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf1b71e3ccb40e42876d76927bca1f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 22a2ca0fbcdc759489b0dbef9d5af779
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
