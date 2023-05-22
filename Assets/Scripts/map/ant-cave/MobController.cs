@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class MobController : MonoBehaviour
 {
-    [SerializeField]
-    //public Rigidbody2D rb2d;
+    [Header("Components")]
     public Animator anim;
 
     [Header("Movement")]
@@ -28,13 +27,12 @@ public class MobController : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         target = GameObject.Find("Player");
-        //rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         currentHealth = maxHealth;
+        healthBar = this.transform.GetChild(1).GetComponent<HealthBarController>();
         healthBar.SetHealth(currentHealth, maxHealth);
     }
 

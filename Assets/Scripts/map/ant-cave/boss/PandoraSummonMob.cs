@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PandoraSummonMob : MobSpawnerPool
+public class PandoraSummonMob : MobPool
 {
     public static PandoraSummonMob instance;
 
     [Header("SummonMob")]
-    public int amountMob;
-    public GameObject mobs;
+    public GameObject[] prefabDB;
+    public int numberOfMob;
 
     void Awake()
     {
@@ -25,17 +25,17 @@ public class PandoraSummonMob : MobSpawnerPool
     // Start is called before the first frame update
     void Start()
     {
-        mobs = GameObject.Find("Mobs");
-        mobSpawnPoint = GameObject.Find("MobSpawnPoint").transform;
+        prefabDB = Resources.LoadAll<GameObject>("Prefabs/map/ant-cave/mob");
+        spawnPoint = GameObject.Find("MobSpawnPoint").transform;
         poolManager = GameObject.Find("PoolManager").transform;
-        amountMob = 3;
+        numberOfMob = 3;
         spawnInterval = 0.5f;
-        LoadPrefabMob(mobs);
-        LoadMobToPool(amountMob);
+        LoadPrefabMob(prefabDB);
+        LoadMobToPool(numberOfMob);
     }
 
     public void SummonMobs()
     {
-        SpawnMob(amountMob);
+        SpawnMob(numberOfMob);
     }
 }
