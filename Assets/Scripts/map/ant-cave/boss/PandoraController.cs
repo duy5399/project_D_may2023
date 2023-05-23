@@ -60,9 +60,9 @@ public class PandoraController : MonoBehaviour
     {
         SummonMobs();
         yield return new WaitForSeconds(interval);
-        Attack02();
+        Attack01();
         yield return new WaitForSeconds(interval);
-        Attack00();
+        Attack01();
         yield return new WaitForSeconds(interval);
         Attack01();
         yield return new WaitForSeconds(interval);
@@ -71,25 +71,25 @@ public class PandoraController : MonoBehaviour
 
     public void SummonMobs()
     {
-        PandoraSummonMob.instance.SummonMobs();
+        PandoraSummon.instance.Summon();
         anim.SetTrigger("summonMobs");
     }
 
     public void Attack00()
     {
-        PandoraAttack.instance.NormalArrow(attackPoint);
+        PandoraAttack.instance.NormalArrow();
         anim.SetTrigger("attack_00");
     }
 
     public void Attack01()
     {
-        PandoraAttack.instance.LightningArrow(attackPoint);
+        PandoraAttack.instance.LightningArrow();
         anim.SetTrigger("attack_01");
     }
 
     public void Attack02()
     {
-        PandoraAttack.instance.IceArrow(attackPoint);
+        PandoraAttack.instance.IceArrow();
         anim.SetTrigger("attack_02");
     }
 

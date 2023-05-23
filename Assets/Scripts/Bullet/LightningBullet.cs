@@ -2,8 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lightning : MonoBehaviour
+public class LightningBullet : Bullet
 {
+    // Start is called before the first frame update
+    void Start()
+    {
+        attackInterval = 2f;
+        numberOfAttack = 10;
+        StartCoroutine(MoveToTargetWithMark(attackInterval, numberOfAttack));
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+
+    }
 
     public void OnTriggerEnter2D(Collider2D collider)
     {

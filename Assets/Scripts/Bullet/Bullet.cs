@@ -8,10 +8,8 @@ public class Bullet : MonoBehaviour
     public Transform player;
     public Vector3 target;
 
-    public float alertInterval;
     public float attackInterval;
     public int numberOfAttack;
-    public GameObject prefabBullet;
     public GameObject blastOut;
 
     public float moveSpeed;
@@ -49,21 +47,15 @@ public class Bullet : MonoBehaviour
     }
 
     //spawn bullet on position of player
-    public IEnumerator MoveToTargetWithMark(float alertInterval, float attackInterval, int numberOfAttack, GameObject prefabBullet)
+    public IEnumerator MoveToTargetWithMark(float attackInterval, int numberOfAttack)
     {
-        GameObject bullet = Instantiate(prefabBullet, transform.position, Quaternion.identity);
-        bullet.SetActive(false);
         for (int i = 0; i < numberOfAttack; i++)
         {
-            Vector3 attackPoint = GameObject.Find("Player").transform.position;
-            transform.position = new Vector3(attackPoint.x, -2.246191f, 0);
-            yield return new WaitForSeconds(alertInterval);
-            bullet.transform.position = transform.position;
-            bullet.SetActive(true);
-            yield return new WaitForSeconds(attackInterval);           
-            bullet.SetActive(false);
+            yield return new WaitForSeconds(attackInterval);
+            Vector3 targetPoint = GameObject.Find("Player").transform.position;
+            transform.position = new Vector3(targetPoint.x, -2.246191f, 0);
+            gameObject.SetActive(true);                     
         }
-        Destroy(bullet);
         Destroy(gameObject);
     }
 

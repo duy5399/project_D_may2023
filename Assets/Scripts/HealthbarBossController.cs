@@ -14,12 +14,12 @@ public class HealthbarBossController : MonoBehaviour
 
     void Awake()
     {
-        if (this.transform.childCount > 0 && this.transform.GetChild(0) != null)
+        if (transform.childCount > 0 && transform.GetChild(0) != null)
         {
-            healthbar = this.gameObject.transform.GetChild(0).GetComponent<Slider>();
-            img_icon = this.gameObject.transform.GetChild(0).GetChild(3).GetComponent<Image>();
-            txt_name = this.gameObject.transform.GetChild(0).GetChild(4).GetComponent<Text>();
-            txt_hp = this.gameObject.transform.GetChild(0).GetChild(5).GetComponent<Text>();
+            healthbar = gameObject.transform.GetChild(0).GetComponent<Slider>();
+            img_icon = gameObject.transform.GetChild(0).GetChild(3).GetComponent<Image>();
+            txt_name = gameObject.transform.GetChild(0).GetChild(4).GetComponent<Text>();
+            txt_hp = gameObject.transform.GetChild(0).GetChild(5).GetComponent<Text>();
         }
         else
         {

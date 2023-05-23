@@ -30,6 +30,6 @@ public class NormalArrow : Bullet
             Debug.Log("Hit ground");           
         }
         GameObject blastout = Instantiate(blastOut, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }

@@ -31,8 +31,13 @@ public class MobController : MonoBehaviour
     {
         target = GameObject.Find("Player");
         anim = GetComponent<Animator>();
-        currentHealth = maxHealth;
         healthBar = this.transform.GetChild(1).GetComponent<HealthBarController>();
+        LoadMobController();
+    }
+
+    public void LoadMobController()
+    {      
+        currentHealth = maxHealth;     
         healthBar.SetHealth(currentHealth, maxHealth);
     }
 
@@ -71,10 +76,9 @@ public class MobController : MonoBehaviour
         }
         else
         {
-            isAttack = false;
-            
+            isAttack = false;          
         }
-        anim.SetBool("attack", isAttack);
+        anim.SetBool("beatA", isAttack);
     }
 
     public void MobDealDamage()
@@ -90,7 +94,7 @@ public class MobController : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth, maxHealth);
-        anim.SetTrigger("hurt");
+        anim.SetTrigger("cry");
         if (currentHealth <= 0)
         {
             anim.SetBool("isDead", true);

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5664140832618945409}
   - component: {fileID: 5664140832618945413}
   m_Layer: 0
-  m_Name: LightningArrow
+  m_Name: LightningBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

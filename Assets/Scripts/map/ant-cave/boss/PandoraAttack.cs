@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PandoraAttack : MonoBehaviour
+public class PandoraAttack : ObjectPool
 {
     public static PandoraAttack instance { get; private set; }
 
+    [Header("Attack")]
     [SerializeField]
-    public List<GameObject> prefabArrow;
-    public List<GameObject> poolArrow;
-    public Transform poolManager;
+    public GameObject[] prefabBullet;
 
     void Awake()
     {
@@ -21,57 +20,44 @@ public class PandoraAttack : MonoBehaviour
         {
             instance = this;
         }
+        prefabBullet = Resources.LoadAll<GameObject>("Prefabs/map/ant-cave/bullet");
+        spawnPoint = transform.Find("AttackPoint").transform;
+        poolManager = GameObject.Find("BulletPool").transform;
+        LoadPandoraAttack();
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void LoadPandoraAttack()
     {
-        LoadPrefabArrow(transform.GetChild(0).gameObject);
-        LoadArrowToPool(transform.GetChild(1).transform);
+        LoadPrefabDB(prefabBullet);
+        LoadBulletToPool(prefabBullet.Length, spawnPoint);
     }
 
-    public void LoadPrefabArrow(GameObject arrows)
+    public void IceArrow()
     {
-        foreach (Transform prefabObj in arrows.transform)
+        GameObject bullet = GetBulletFromPool("IceBullet(Clone)");
+        if (bullet != null)
         {
-            prefabArrow.Add(prefabObj.gameObject);
+            bullet.transform.position = spawnPoint.position;
+            bullet.SetActive(true);
         }
     }
 
-    public void LoadArrowToPool(Transform attackPoint)
+    public void NormalArrow()
     {
-        for (int i = 0; i < prefabArrow.Count; i++)
+        GameObject bullet = GetBulletFromPool("NormalArrow(Clone)");
+        if (bullet != null)
         {
-            GameObject arrow = Instantiate(prefabArrow[i], attackPoint.position, attackPoint.rotation);
-            arrow.transform.parent = poolManager;
-            arrow.SetActive(false);
-            poolArrow.Add(arrow);
+            bullet.transform.position = spawnPoint.position;
+            bullet.SetActive(true);
         }
     }
 
-    public void IceArrow(Transform attackPoint)
+    public void LightningArrow()
     {
-        if (poolArrow[0] != null && !poolArrow[0].activeInHierarchy)
+        GameObject bullet = GetBulletFromPool("LightningBullet(Clone)");
+        if (bullet != null)
         {
-            poolArrow[0].transform.position = attackPoint.position;
-            poolArrow[0].SetActive(true);
-        }
-    }
-
-    public void NormalArrow(Transform attackPoint)
-    {
-        if (poolArrow[1] != null && !poolArrow[1].activeInHierarchy)
-        {
-            poolArrow[1].transform.position = attackPoint.position;
-            poolArrow[1].SetActive(true);
-        }
-    }
-
-    public void LightningArrow(Transform attackPoint)
-    {
-        if (poolArrow[2] != null && !poolArrow[2].activeInHierarchy)
-        {
-            poolArrow[2].SetActive(true);
+            bullet.SetActive(true);
         }
     }
 }

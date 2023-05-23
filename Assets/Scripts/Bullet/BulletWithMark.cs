@@ -10,9 +10,8 @@ public class BulletWithMark : Bullet
     {
         attackPoint = GameObject.Find("Pandora").transform.GetChild(1).transform;
         target = GameObject.Find("Player").transform.position;
-        alertInterval = 0.5f;
-        attackInterval = 0.5f;
+        attackInterval = 2f;
         numberOfAttack = 5;
-        StartCoroutine(MoveToTargetWithMark(alertInterval, attackInterval, numberOfAttack, prefabBullet));
+        StartCoroutine(MoveToTargetWithMark(attackInterval, numberOfAttack));
     }
 }
