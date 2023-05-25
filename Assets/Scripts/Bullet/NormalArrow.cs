@@ -8,7 +8,7 @@ public class NormalArrow : Bullet
     void Start()
     {
         moveSpeed = 5f;
-        attackPoint = GameObject.Find("Pandora").transform.GetChild(1).transform;
+        attackPoint = GameObject.Find("Pandora").transform.GetChild(0).transform;
         target = GameObject.Find("Player").transform.position;
     }
 

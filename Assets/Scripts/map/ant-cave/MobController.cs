@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements;
 
 public class MobController : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class MobController : MonoBehaviour
 
     [Header("Movement")]
     public GameObject target;
-    public float moveSpeed = 1f;
+    public float moveSpeed;
 
     [Header("Flip")]
     public bool facingLeft = true;
@@ -19,19 +20,32 @@ public class MobController : MonoBehaviour
     public float attackRange = 0.22f;
     public float attackTime = 0.3f;
     public Transform attackPoint;
-    public int attackDamage = 40;
+    public int attackDamage;
     public LayerMask playerLayer;
 
     [Header("Health")]
     public HealthBarController healthBar;
-    public int maxHealth = 100;
+    public int maxHealth;
     public int currentHealth;
 
     void Awake()
     {
-        target = GameObject.Find("Player");
         anim = GetComponent<Animator>();
+        target = GameObject.Find("Player");
+        attackPoint = transform.GetChild(0);
         healthBar = this.transform.GetChild(1).GetComponent<HealthBarController>();
+        if (transform.tag == "MobA")
+        {
+            moveSpeed = 2f;
+            attackDamage = 50;
+            maxHealth = 50;
+        }
+        else
+        {
+            moveSpeed = 1f;
+            attackDamage = 20;
+            maxHealth = 100;
+        }
         LoadMobController();
     }
 

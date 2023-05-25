@@ -8,7 +8,7 @@ public class IceBullet : Bullet
     void Start()
     {
         moveSpeed = 5f;
-        attackPoint = GameObject.Find("Pandora").transform.GetChild(1).transform;
+        attackPoint = GameObject.FindGameObjectWithTag("Boss").transform.GetChild(0).transform;
         target = GameObject.Find("Player").transform.position;
     }
 

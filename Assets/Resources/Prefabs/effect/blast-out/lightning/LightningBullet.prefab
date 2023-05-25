@@ -139,3 +139,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4721f2add4fd9734f84a0328c1535bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackPoint: {fileID: 0}
+  target: {x: 0, y: 0, z: 0}
+  attackInterval: 0
+  numberOfAttack: 0
+  blastOut: {fileID: 0}
+  moveSpeed: 0
+  attackPointX: 0
+  targetX: 0
+  distance: 0
+  nextX: 0
+  baseY: 0
+  height: 0

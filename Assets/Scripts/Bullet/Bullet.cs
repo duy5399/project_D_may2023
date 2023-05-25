@@ -5,7 +5,6 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public Transform attackPoint;
-    public Transform player;
     public Vector3 target;
 
     public float attackInterval;
@@ -51,12 +50,11 @@ public class Bullet : MonoBehaviour
     {
         for (int i = 0; i < numberOfAttack; i++)
         {
-            yield return new WaitForSeconds(attackInterval);
             Vector3 targetPoint = GameObject.Find("Player").transform.position;
             transform.position = new Vector3(targetPoint.x, -2.246191f, 0);
-            gameObject.SetActive(true);                     
+            yield return new WaitForSeconds(attackInterval);
         }
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
 }

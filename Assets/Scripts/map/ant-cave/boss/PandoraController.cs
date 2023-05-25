@@ -32,8 +32,8 @@ public class PandoraController : MonoBehaviour
 
     [Header("Mechanic")]
 
-    public float intervalNextAction = 5f;
-    public int phase = 1;
+    public float intervalNextAction = 2f;
+    public int turn = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -41,32 +41,38 @@ public class PandoraController : MonoBehaviour
         anim = GetComponent<Animator>();
         attackPoint = transform.GetChild(1).transform;
         currentHealth = maxHealth;
-        healthBar01.SetHealth(currentHealth, maxHealth);
-        healthBar02.SetHealth(currentHealth, maxHealth);
+        UpdateHealth();
+        StartCoroutine(PandoraMechanics(intervalNextAction, turn));
     }
 
     void FixedUpdate()
     {
-        if(phase == 1)
-        {
-            StartCoroutine(PandoraMechanics(intervalNextAction));
-            phase++;
-        }
-        healthBar01.SetHealth(currentHealth, maxHealth);
-        healthBar02.SetHealth(currentHealth, maxHealth);
+        UpdateHealth();
     }
 
-    public IEnumerator PandoraMechanics(float interval)
+    public IEnumerator PandoraMechanics(float interval, int turn)
     {
-        SummonMobs();
+        //SummonMobs();
         yield return new WaitForSeconds(interval);
-        Attack01();
+        StartCoroutine(Attack02());
         yield return new WaitForSeconds(interval);
-        Attack01();
+        StartCoroutine(Attack00());
         yield return new WaitForSeconds(interval);
-        Attack01();
+        StartCoroutine(Attack01());
         yield return new WaitForSeconds(interval);
         Buff_Atk();
+        yield return new WaitForSeconds(interval);
+        turn++;
+        if(turn < 5)
+        {
+            StartCoroutine(PandoraMechanics(intervalNextAction, turn));
+        }
+    }
+
+    public void UpdateHealth()
+    {
+        healthBar01.SetHealth(currentHealth, maxHealth);
+        healthBar02.SetHealth(currentHealth, maxHealth);
     }
 
     public void SummonMobs()
@@ -75,22 +81,25 @@ public class PandoraController : MonoBehaviour
         anim.SetTrigger("summonMobs");
     }
 
-    public void Attack00()
+    public IEnumerator Attack00()
     {
-        PandoraAttack.instance.NormalArrow();
         anim.SetTrigger("attack_00");
+        yield return new WaitForSeconds(0.5f);
+        PandoraAttack.instance.NormalArrow();
     }
 
-    public void Attack01()
+    public IEnumerator Attack01()
     {
-        PandoraAttack.instance.LightningArrow();
         anim.SetTrigger("attack_01");
+        yield return new WaitForSeconds(0.5f);
+        PandoraAttack.instance.LightningArrow();
     }
 
-    public void Attack02()
+    public IEnumerator Attack02()
     {
-        PandoraAttack.instance.IceArrow();
         anim.SetTrigger("attack_02");
+        yield return new WaitForSeconds(0.5f);
+        PandoraAttack.instance.IceArrow();
     }
 
     public void Buff_Atk()
