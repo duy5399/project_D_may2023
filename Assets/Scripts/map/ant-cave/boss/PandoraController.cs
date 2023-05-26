@@ -7,6 +7,7 @@ public class PandoraController : MonoBehaviour
     [SerializeField]
     //public Rigidbody2D rb2d;
     public Animator anim;
+    public BoxCollider2D boxCollider;
 
     [Header("Movement")]
     public GameObject target;
@@ -39,6 +40,7 @@ public class PandoraController : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        boxCollider = GetComponent<BoxCollider2D>();
         attackPoint = transform.GetChild(1).transform;
         currentHealth = maxHealth;
         UpdateHealth();
