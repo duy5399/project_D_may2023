@@ -8,6 +8,8 @@ TagManager:
   - Boss
   - MobA
   - MobB
+  - Portal In
+  - Portal Out
   layers:
   - Default
   - TransparentFX

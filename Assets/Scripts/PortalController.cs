@@ -14,8 +14,15 @@ public class PortalController : MonoBehaviour
         destination = GameObject.FindGameObjectWithTag("Portal Out").transform;
     }
 
-    public void OnTriggerEnter2D(Collider other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        if(Vector2.Distance(transform.position, other.transform.position) > distance)
+        if (other.CompareTag("Player"))
+        {
+            other.transform.position = destination.position;
+        }
+        if (Vector2.Distance(transform.position, other.transform.position) > distance)
+        {
+
+        }
     }
 }

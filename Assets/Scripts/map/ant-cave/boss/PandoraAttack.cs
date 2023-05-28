@@ -34,7 +34,7 @@ public class PandoraAttack : ObjectPool
 
     public void IceArrow()
     {
-        GameObject bullet = GetBulletFromPool("IceBullet(Clone)");
+        GameObject bullet = GetBulletFromPool("IceArrow(Clone)");
         if (bullet != null)
         {
             bullet.transform.position = spawnPoint.position;
@@ -44,7 +44,7 @@ public class PandoraAttack : ObjectPool
 
     public void NormalArrow()
     {
-        GameObject bullet = GetBulletFromPool("NormalArrow(Clone)");
+        GameObject bullet = GetBulletFromPool("FireArrow(Clone)");
         if (bullet != null)
         {
             bullet.transform.position = spawnPoint.position;
