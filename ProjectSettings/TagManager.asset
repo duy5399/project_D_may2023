@@ -10,6 +10,9 @@ TagManager:
   - MobB
   - Portal In
   - Portal Out
+  - healthbar1
+  - healthbar2
+  - Warning
   layers:
   - Default
   - TransparentFX

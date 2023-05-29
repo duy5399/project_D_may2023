@@ -4,15 +4,6 @@ using UnityEngine;
 
 public class IceArrow : Bullet
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        moveSpeed = 5f;
-        attackPoint = GameObject.FindGameObjectWithTag("Boss").transform.GetChild(0).transform;
-        target = GameObject.Find("Player").transform.position;
-    }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         MoveToTarget();

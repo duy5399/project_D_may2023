@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 
 public class PandoraAttack : ObjectPool
@@ -32,24 +33,23 @@ public class PandoraAttack : ObjectPool
         LoadBulletToPool(prefabBullet.Length, spawnPoint);
     }
 
-    public void IceArrow()
+    public void IceArrow(float speed, Transform atkPoint, Vector3 tg)
     {
         GameObject bullet = GetBulletFromPool("IceArrow(Clone)");
         if (bullet != null)
         {
-            bullet.transform.GetComponent<IceArrow>().moveSpeed = 5f;
-            //attackPoint = GameObject.Find("Pandora").transform.GetChild(0).transform;
-            //target = GameObject.Find("Player").transform.position;
+            bullet.transform.GetComponent<IceArrow>().SetParameter(speed, atkPoint, tg);
             bullet.transform.position = spawnPoint.position;
             bullet.SetActive(true);
         }
     }
 
-    public void NormalArrow()
+    public void NormalArrow(float speed, Transform atkPoint, Vector3 tg)
     {
         GameObject bullet = GetBulletFromPool("FireArrow(Clone)");
         if (bullet != null)
         {
+            bullet.transform.GetComponent<FireArrow>().SetParameter(speed, atkPoint, tg);
             bullet.transform.position = spawnPoint.position;
             bullet.SetActive(true);
         }

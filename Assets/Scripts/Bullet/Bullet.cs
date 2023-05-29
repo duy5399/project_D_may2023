@@ -4,27 +4,38 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    [SerializeField]
     protected Transform attackPoint;
+    [SerializeField]
     protected Vector3 target;
-
+    [SerializeField]
     protected float attackInterval;
+    [SerializeField]
     protected int numberOfAttack;
 
     [SerializeField]
     protected GameObject blastOut;
-
+    [SerializeField]
     protected float moveSpeed;
-
+    [SerializeField]
     protected float attackPointX;
+    [SerializeField]
     protected float targetX;
-
+    [SerializeField]
     protected float distance;
-
+    [SerializeField]
     protected float nextX;
+    [SerializeField]
     protected float baseY;
+    [SerializeField]
     protected float height;
 
-
+    public void SetParameter(float speed, Transform atkPoint, Vector3 tg)
+    {
+        moveSpeed = speed;
+        attackPoint = atkPoint;
+        target = tg;
+    }
 
     public void MoveToTarget()
     {

@@ -6,42 +6,58 @@ public class PandoraController : MonoBehaviour
 {
     [SerializeField]
     //public Rigidbody2D rb2d;
-    public Animator anim;
-    public BoxCollider2D boxCollider;
+    private Animator anim;
+    [SerializeField]
+    private BoxCollider2D boxCollider;
 
     [Header("Movement")]
-    public GameObject target;
-    public float moveSpeed = 1f;
+    [SerializeField]
+    private Transform target;
+    [SerializeField]
+    private float moveSpeed = 1f;
 
     [Header("Flip")]
-    public bool facingLeft = true;
+    [SerializeField]
+    private bool facingLeft = true;
 
     [Header("Attack")]
-    public bool isAttack;
-    public float attackRange = 0.22f;
-    public float attackTime = 0.3f;
-    public Transform attackPoint;
-    public int attackDamage = 40;
-    public LayerMask playerLayer;
+    private bool isAttack;
+    private float attackRange = 0.22f;
+    private float attackTime = 0.3f;
+    [SerializeField]
+    private Transform attackPoint;
+    [SerializeField]
+    private Transform earthquakePoint;
+    [SerializeField]
+    private GameObject earthquakeEffect;
+    [SerializeField]
+    private int attackDamage = 40;
+    private LayerMask playerLayer;
 
     [Header("Health")]
-    public HealthBarController healthBar01;
-    public HealthbarBossController healthBar02;
-    public int maxHealth = 100;
-    public int currentHealth;
-    public float dazedTime;
+    [SerializeField]
+    private HealthBarController healthBar01;
+    [SerializeField]
+    private HealthbarBossController healthBar02;
+    [SerializeField]
+    private int maxHealth = 100;
+    [SerializeField]
+    private int currentHealth;
+    private float dazedTime;
 
     [Header("Mechanic")]
-
-    public float intervalNextAction = 2f;
-    public int turn = 1;
+    [SerializeField]
+    private float intervalNextAction = 2f;
+    [SerializeField]
+    private int turn = 1;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        target = GameObject.FindGameObjectWithTag("Player").transform;
         boxCollider = GetComponent<BoxCollider2D>();
-        attackPoint = transform.GetChild(1).transform;
+        attackPoint = transform.GetChild(0).transform;
         currentHealth = maxHealth;
         UpdateHealth();
         StartCoroutine(PandoraMechanics(intervalNextAction, turn));
@@ -50,19 +66,25 @@ public class PandoraController : MonoBehaviour
     void FixedUpdate()
     {
         UpdateHealth();
+        //Movement();
     }
 
     public IEnumerator PandoraMechanics(float interval, int turn)
     {
+        if (turn == 2)
+        {
+            Movement();
+            yield return new WaitForSeconds(interval);
+        }
         //SummonMobs();
         yield return new WaitForSeconds(interval);
-        StartCoroutine(Attack02());
+        StartCoroutine(Attack02(5, attackPoint, target));
         yield return new WaitForSeconds(interval);
-        StartCoroutine(Attack00());
+        StartCoroutine(Attack00(5, attackPoint, target));
         yield return new WaitForSeconds(interval);
-        StartCoroutine(Attack01());
+        StartCoroutine(Attack00(5, attackPoint, target));
         yield return new WaitForSeconds(interval);
-        Buff_Atk();
+        StartCoroutine(Attack02(5, attackPoint, target));
         yield return new WaitForSeconds(interval);
         turn++;
         if(turn < 5)
@@ -83,11 +105,11 @@ public class PandoraController : MonoBehaviour
         anim.SetTrigger("summonMobs");
     }
 
-    public IEnumerator Attack00()
+    public IEnumerator Attack00(float speed, Transform atkPoint, Transform tg)
     {
         anim.SetTrigger("attack_00");
         yield return new WaitForSeconds(0.5f);
-        PandoraAttack.instance.NormalArrow();
+        PandoraAttack.instance.NormalArrow(speed, atkPoint, tg.position);
     }
 
     public IEnumerator Attack01()
@@ -97,11 +119,11 @@ public class PandoraController : MonoBehaviour
         PandoraAttack.instance.LightningArrow();
     }
 
-    public IEnumerator Attack02()
+    public IEnumerator Attack02(float speed, Transform atkPoint, Transform tg)
     {
         anim.SetTrigger("attack_02");
         yield return new WaitForSeconds(0.5f);
-        PandoraAttack.instance.IceArrow();
+        PandoraAttack.instance.IceArrow(speed, atkPoint, tg.position);
     }
 
     public void Buff_Atk()
@@ -117,7 +139,8 @@ public class PandoraController : MonoBehaviour
 
     public void Movement()
     {
-        Vector2 tart
+        Vector2 newPosition = new Vector2(7f, -1.8f);
+        this.transform.position = newPosition;
     }
 
 }
