@@ -37,6 +37,9 @@ public class PandoraAttack : ObjectPool
         GameObject bullet = GetBulletFromPool("IceArrow(Clone)");
         if (bullet != null)
         {
+            bullet.transform.GetComponent<IceArrow>().moveSpeed = 5f;
+            //attackPoint = GameObject.Find("Pandora").transform.GetChild(0).transform;
+            //target = GameObject.Find("Player").transform.position;
             bullet.transform.position = spawnPoint.position;
             bullet.SetActive(true);
         }

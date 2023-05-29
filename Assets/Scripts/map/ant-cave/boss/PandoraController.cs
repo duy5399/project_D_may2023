@@ -115,4 +115,9 @@ public class PandoraController : MonoBehaviour
         anim.SetTrigger("buff");
     }
 
+    public void Movement()
+    {
+        Vector2 tart
+    }
+
 }

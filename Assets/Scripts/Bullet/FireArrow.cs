@@ -7,9 +7,9 @@ public class FireArrow : Bullet
     // Start is called before the first frame update
     void Start()
     {
-        moveSpeed = 5f;
-        attackPoint = GameObject.Find("Pandora").transform.GetChild(0).transform;
-        target = GameObject.Find("Player").transform.position;
+        //moveSpeed = 5f;
+        //attackPoint = GameObject.Find("Pandora").transform.GetChild(0).transform;
+        //target = GameObject.Find("Player").transform.position;
     }
 
     // Update is called once per frame
