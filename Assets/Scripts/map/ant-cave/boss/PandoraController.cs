@@ -43,6 +43,8 @@ public class PandoraController : MonoBehaviour
     private int maxHealth = 100;
     [SerializeField]
     private int currentHealth;
+    [SerializeField]
+    private int def = 10;
     private float dazedTime;
 
     [Header("Mechanic")]
@@ -65,7 +67,7 @@ public class PandoraController : MonoBehaviour
 
     void FixedUpdate()
     {
-        UpdateHealth();
+        //UpdateHealth();
         //Movement();
     }
 
@@ -143,4 +145,15 @@ public class PandoraController : MonoBehaviour
         this.transform.position = newPosition;
     }
 
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage/def;
+        UpdateHealth();
+        //healthBar.SetHealth(currentHealth, maxHealth);
+        anim.SetTrigger("hurt");
+        if (currentHealth <= 0)
+        {
+            anim.SetBool("isDead", true);
+        }
+    }
 }
