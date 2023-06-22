@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b257e895728aa4c8361cbe447ad312, type: 3}
+  m_Name: cloth_03
+  m_EditorClassIdentifier: 
+  itemID: cloth_03
+  itemType: 0
+  itemIcon: {fileID: 21300000, guid: b157fea9c04e70446b35e447168d51fd, type: 3}
+  itemName: "K\u1EF5 S\u0129 R\u1ED3ng"
+  itemTier: 0
+  itemDescription: "\u0110\xF4i c\xE1nh cu\u1ED3ng long m\xE0u \u0111en d\u0169ng
+    m\xE3nh, tr\xEAn tay l\xE0 quy\u1EC1n tr\u01B0\u1EE3ng t\u01B0\u1EE3ng tr\u01B0ng
+    cho s\u1EE9c m\u1EA1nh v\xF4 song."
+  maxStackSize: 1
+  itemSlot: 8
+  itemShow: {fileID: 21300000, guid: ff24bff97d4f7eb45a4f35d09a303874, type: 3}
+  itemStats: []
+  canUpgrade: 1
+  itemStrength: 0
+  itemStrengthImg: {fileID: 21300000, guid: 1f44c2cbb82680a4d9ecc7471ecef8d6, type: 3}

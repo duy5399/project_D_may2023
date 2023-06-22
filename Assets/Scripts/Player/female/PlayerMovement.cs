@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Animator anim;
 
     [Header("Movement")]
+    [SerializeField] private bool canMove;
     [SerializeField] private Vector2 movement;
     [SerializeField] private float moveSpeed = 6f;
     [SerializeField] private float dazedTime;
@@ -48,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         anim.SetFloat("moveSpeed", Mathf.Abs(movement.x));
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canMove)
         {
             if (GroundCheck())
             {
@@ -72,22 +73,8 @@ public class PlayerMovement : MonoBehaviour
 
     protected virtual void UpdateMovement()
     {
-        if (dazedTime > 0)
-        {
-            moveSpeed = 0f;
-            dazedTime -= Time.fixedDeltaTime;
-        }
-        else
-        {
-            moveSpeed = 6f;
-        }
         this.rb2d.velocity = new Vector2(movement.x * moveSpeed, rb2d.velocity.y);
         //this.rb2d.MovePosition(this.rb2d.position + this.movement * moveSpeed * Time.fixedDeltaTime);
-    }
-
-    public void DazedTime()
-    {
-        dazedTime = 0.2f;
     }
 
     protected void UpdateJump()
@@ -123,16 +110,19 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("velocity.y", this.rb2d.velocity.y);
     }
 
-    protected void Freeze(float freezeTime)
+    public IEnumerator DazedEffect(float interval)
     {
-        if (freezeTime > 0)
-        {
-            moveSpeed = 0f;
-            freezeTime -= Time.fixedDeltaTime;
-        }
-        else
-        {
-            moveSpeed = 6f;
-        }
+        canMove = false;
+        moveSpeed = 0f;
+        yield return new WaitForSeconds(interval);
+        canMove = true;
+        moveSpeed = 6f;
+    }
+
+    public IEnumerator SlowEffect(float interval)
+    {
+        moveSpeed = 2f;
+        yield return new WaitForSeconds(interval);
+        moveSpeed = 6f;
     }
 }

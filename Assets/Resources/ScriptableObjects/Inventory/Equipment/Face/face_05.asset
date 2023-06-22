@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b257e895728aa4c8361cbe447ad312, type: 3}
+  m_Name: face_05
+  m_EditorClassIdentifier: 
+  itemID: face_05
+  itemType: 0
+  itemIcon: {fileID: 21300000, guid: 2e450b384ed924440902c030de6b2b38, type: 3}
+  itemName: "Th\u1EE7 l\u0129nh b\u1ED9 t\u1ED9c"
+  itemTier: 0
+  itemDescription: "G\u01B0\u01A1ng m\u1EB7t n\xEAn c\xF3 c\u1EE7a ng\u01B0\u1EDDi
+    \u0111\u1EE9ng \u0111\u1EA7u b\u1ED9 t\u1ED9c"
+  maxStackSize: 1
+  itemSlot: 5
+  itemShow: {fileID: 21300000, guid: 523b978b6501b7b40859b17d622f1111, type: 3}
+  itemStats: []
+  canUpgrade: 1
+  itemStrength: 0
+  itemStrengthImg: {fileID: 21300000, guid: 1f44c2cbb82680a4d9ecc7471ecef8d6, type: 3}

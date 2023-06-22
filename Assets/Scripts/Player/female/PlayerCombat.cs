@@ -36,9 +36,8 @@ public class PlayerCombat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        this.anim = GetComponent<Animator>();
-        this.attackPoint = this.transform.GetChild(1);
+        anim = GetComponent<Animator>();
+        attackPoint = transform.GetChild(1);
         currentHealth = maxHealth;
     }
 
@@ -47,7 +46,6 @@ public class PlayerCombat : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && !attacking)
         {
-            PlayerMovement.instance.DazedTime();
             UpdateAttack();
         }
     }
@@ -59,7 +57,7 @@ public class PlayerCombat : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
         foreach(Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<MobController>().MobTakeDamage(attackDamage);
+            enemy.GetComponent<IDamageable>().TakeDamage(attackDamage);
         }
     }
 
@@ -85,10 +83,20 @@ public class PlayerCombat : MonoBehaviour
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, float interval)
     {
-        PlayerMovement.instance.DazedTime();
+        StartCoroutine(PlayerMovement.instance.DazedEffect(interval));
         currentHealth -= damage;
+        anim.SetTrigger("hurt");
+        if (currentHealth <= 0)
+        {           
+            Die();
+        }
+    }
+
+    public void SlowEffect(float interval)
+    {
+        StartCoroutine(PlayerMovement.instance.SlowEffect(interval));
         anim.SetTrigger("hurt");
         if (currentHealth <= 0)
         {

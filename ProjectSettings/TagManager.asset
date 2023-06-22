@@ -13,6 +13,11 @@ TagManager:
   - healthbar1
   - healthbar2
   - Warning
+  - Equipment
+  - Materials
+  - CharacterSystem
+  - UpgradeSystem
+  - InventorySystem
   layers:
   - Default
   - TransparentFX
@@ -25,7 +30,7 @@ TagManager:
   - Ground
   - Mobs
   - Players
-  - 
+  - Boss
   - 
   - 
   - 

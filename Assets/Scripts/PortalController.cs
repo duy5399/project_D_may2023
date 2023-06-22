@@ -11,7 +11,7 @@ public class PortalController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        destination = GameObject.FindGameObjectWithTag("Portal Out").transform;
+        //destination = GameObject.FindGameObjectWithTag("Portal Out").transform;
     }
 
     public void OnTriggerEnter2D(Collider2D other)

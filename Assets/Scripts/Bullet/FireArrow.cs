@@ -13,7 +13,7 @@ public class FireArrow : Bullet
     {
         if (collider.gameObject.CompareTag("Player"))
         {
-            collider.gameObject.GetComponent<PlayerCombat>().TakeDamage(10);
+            collider.gameObject.GetComponent<PlayerCombat>().TakeDamage(10, 0.5f);
             Debug.Log("Hit player");
         }
         if (collider.gameObject.CompareTag("Ground"))

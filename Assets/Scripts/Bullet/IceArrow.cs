@@ -13,7 +13,7 @@ public class IceArrow : Bullet
     {
         if (collider.gameObject.CompareTag("Player"))
         {
-            collider.gameObject.GetComponent<PlayerMovement>().DazedTime();
+            collider.gameObject.GetComponent<PlayerCombat>().SlowEffect(3f);
             Debug.Log("Hit player");
         }
         if (collider.gameObject.CompareTag("Ground"))

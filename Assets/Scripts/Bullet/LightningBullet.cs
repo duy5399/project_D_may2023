@@ -22,7 +22,6 @@ public class LightningBullet : Bullet
     {
         if (collider.gameObject.CompareTag("Player"))
         {
-            collider.gameObject.GetComponent<PlayerMovement>().DazedTime();
             Debug.Log("Hit player");
         }
         if (collider.gameObject.CompareTag("Ground"))

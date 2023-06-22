@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8895779de8bdae4e90a603252209263, type: 3}
+  m_Name: strengthStone_03
+  m_EditorClassIdentifier: 
+  itemID: strengthStone_03
+  itemType: 1
+  itemIcon: {fileID: 21300000, guid: 12d873400fed0994e927acea1540e133, type: 3}
+  itemName: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 3"
+  itemTier: 2
+  itemDescription: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+    c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m, t\u1EC9 l\u1EC7
+    th\xE0nh c\xF4ng cao h\u01A1n \u0110\xE1 c\u1EA5p 2!"
+  maxStackSize: 99
+  itemUses: 0
+  canCombine: 1
