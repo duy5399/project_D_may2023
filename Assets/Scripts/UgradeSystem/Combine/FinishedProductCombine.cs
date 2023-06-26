@@ -44,6 +44,7 @@ public class FinishedProductCombine : MonoBehaviour, IPointerClickHandler
             finishProductCombine = null;
             slotInUse = false;
             CombineItemManager.instance.SetPreviewFinishedProduct();
+            InventoryManager.instance.UpdateUIInventory();
         }
     }
 
@@ -75,6 +76,5 @@ public class FinishedProductCombine : MonoBehaviour, IPointerClickHandler
     public void OnRightClick()
     {
         AddFinishesProductToInventory();
-        InventoryManager.instance.UpdateUIInventory();
     }
 }

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b257e895728aa4c8361cbe447ad312, type: 3}
+  m_Name: cloth_05
+  m_EditorClassIdentifier: 
+  itemID: cloth_05
+  itemType: 0
+  itemIcon: {fileID: 21300000, guid: e863ca0c461662941b7839461bf3303e, type: 3}
+  itemName: "Chi\u1EBFn s\u0129 d\u0169ng c\u1EA3m"
+  itemTier: 0
+  itemDescription: "D\u0169ng s\u0129 d\xF9ng ki\u1EBFm"
+  maxStackSize: 1
+  itemSlot: 8
+  itemShow: {fileID: 21300000, guid: eb2bc18b746abcb46ab279ddb2ac3610, type: 3}
+  itemStats: []
+  canUpgrade: 1
+  itemStrength: 0
+  itemStrengthImg: {fileID: 21300000, guid: 1f44c2cbb82680a4d9ecc7471ecef8d6, type: 3}

@@ -105,16 +105,16 @@ public class InventorySlotMaterialController : InventorySlotController, IPointer
 
     public override void OnRightClick()
     {
-        if (transform.root.GetChild(5).gameObject.activeInHierarchy && !transform.root.GetChild(4).gameObject.activeInHierarchy)
+        if (transform.root.GetChild(6).gameObject.activeInHierarchy && !transform.root.GetChild(5).gameObject.activeInHierarchy)
         {
-            if(transform.root.GetChild(5).GetChild(0).GetChild(2).gameObject.activeInHierarchy && !transform.root.GetChild(5).GetChild(0).GetChild(3).gameObject.activeInHierarchy)
+            if(transform.root.GetChild(6).GetChild(0).GetChild(2).gameObject.activeInHierarchy && !transform.root.GetChild(6).GetChild(0).GetChild(3).gameObject.activeInHierarchy)
             {
                 if (transform.parent.name == "InventoryMaterial" && material.itemType_ == ItemSO.ItemType.Material)
                 {
                     AddMaterialToUpgradeSlot();
                 }
             }
-            else if (transform.root.GetChild(5).GetChild(0).GetChild(3).gameObject.activeInHierarchy && !transform.root.GetChild(5).GetChild(0).GetChild(2).gameObject.activeInHierarchy)
+            else if (transform.root.GetChild(6).GetChild(0).GetChild(3).gameObject.activeInHierarchy && !transform.root.GetChild(6).GetChild(0).GetChild(2).gameObject.activeInHierarchy)
             {
                 if (transform.parent.name == "InventoryMaterial" && material.itemType_ == ItemSO.ItemType.Material)
                 {

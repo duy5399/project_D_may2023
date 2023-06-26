@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b257e895728aa4c8361cbe447ad312, type: 3}
+  m_Name: head_07
+  m_EditorClassIdentifier: 
+  itemID: head_07
+  itemType: 0
+  itemIcon: {fileID: 21300000, guid: 857332afa52104d4b8e990e828d709c8, type: 3}
+  itemName: "Slime tinh ngh\u1ECBch"
+  itemTier: 0
+  itemDescription: "Nh\u1EEFng con slime d\u1EC5 th\u01B0\u01A1ng t\u1EEB V\u01B0\u01A1ng
+    qu\u1ED1c G\xE0"
+  maxStackSize: 1
+  itemSlot: 2
+  itemShow: {fileID: 21300000, guid: 71aef10be70cb5e47849c9d7212076cf, type: 3}
+  itemStats: []
+  canUpgrade: 1
+  itemStrength: 0
+  itemStrengthImg: {fileID: 21300000, guid: 1f44c2cbb82680a4d9ecc7471ecef8d6, type: 3}

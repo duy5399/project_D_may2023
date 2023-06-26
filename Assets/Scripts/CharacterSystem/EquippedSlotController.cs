@@ -45,6 +45,22 @@ public class EquippedSlotController : MonoBehaviour, IPointerClickHandler
         //push new gear to equipment list
         slotInUse = true;
 
+        //update the display image
+        if (itemEquipped != null && slotInUse)
+        {
+            if (itemEquipped.itemSlots_ != ItemSlots.Armlet && itemEquipped.itemSlots_ != ItemSlots.Ring)
+            {
+                if (itemEquipped.itemSlots_ == ItemSlots.Weapon || itemEquipped.itemSlots_ == ItemSlots.Wing)
+                {
+                    DisplayAnimation();
+                }
+                else
+                {
+                    playerDisplayImg.gameObject.GetComponent<Image>().sprite = itemEquipped.itemShow_;
+                }
+            }
+        }
+
         UpdatePlayerStats();
         ShowPlayerStats();
         Debug.Log("EquipGear successful => UpdateUIInventory ");
@@ -204,22 +220,21 @@ public class EquippedSlotController : MonoBehaviour, IPointerClickHandler
         Debug.Log("EquippedSlot clickzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
     }
 
-    void FixedUpdate()
-    {
-        //update the display image
-        if(itemEquipped != null && slotInUse)
-        {
-            if (itemEquipped.itemSlots_ != ItemSlots.Armlet && itemEquipped.itemSlots_ != ItemSlots.Ring)
-            {
-                if (itemEquipped.itemSlots_ == ItemSlots.Weapon || itemEquipped.itemSlots_ == ItemSlots.Wing)
-                {
-                    DisplayAnimation();
-                }
-                else
-                {
-                    playerDisplayImg.gameObject.GetComponent<Image>().sprite = itemEquipped.itemShow_;
-                }
-            }
-        }
-    }
+    //void FixedUpdate()
+    //{
+    //    if (itemEquipped != null && slotInUse)
+    //    {
+    //        if (itemEquipped.itemSlots_ != ItemSlots.Armlet && itemEquipped.itemSlots_ != ItemSlots.Ring)
+    //        {
+    //            if (itemEquipped.itemSlots_ == ItemSlots.Weapon || itemEquipped.itemSlots_ == ItemSlots.Wing)
+    //            {
+    //                DisplayAnimation();
+    //            }
+    //            else
+    //            {
+    //                playerDisplayImg.gameObject.GetComponent<Image>().sprite = itemEquipped.itemShow_;
+    //            }
+    //        }
+    //    }
+    //}
 }

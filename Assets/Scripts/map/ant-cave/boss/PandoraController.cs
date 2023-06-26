@@ -42,6 +42,8 @@ public class PandoraController : MonoBehaviour, IDamageable
     private UIController uiController;
     [SerializeField]
     private bool isDead;
+    private int def = 10;
+    private float dazedTime;
 
     [Header("Mechanic")]
     [SerializeField]
@@ -167,5 +169,4 @@ public class PandoraController : MonoBehaviour, IDamageable
             anim.SetBool("isDead", isDead);
         }
     }
-
 }

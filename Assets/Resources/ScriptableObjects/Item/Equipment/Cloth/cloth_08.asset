@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b257e895728aa4c8361cbe447ad312, type: 3}
+  m_Name: cloth_08
+  m_EditorClassIdentifier: 
+  itemID: cloth_08
+  itemType: 0
+  itemIcon: {fileID: 21300000, guid: 46fa053e6c84a6d48bac188770934b54, type: 3}
+  itemName: "\xC1o d\xE0i Tr\u1EA1ng Nguy\xEAn"
+  itemTier: 0
+  itemDescription: "Trang ph\u1EE5c \xE1o d\xE0i Vi\u1EC7t Nam v\u1EDBi ch\u1EA5t
+    li\u1EC7u si\xEAu c\u1EA5p"
+  maxStackSize: 1
+  itemSlot: 8
+  itemShow: {fileID: 21300000, guid: 8aee2a1b8cde32f4b96d6def4b382232, type: 3}
+  itemStats: []
+  canUpgrade: 1
+  itemStrength: 0
+  itemStrengthImg: {fileID: 21300000, guid: 1f44c2cbb82680a4d9ecc7471ecef8d6, type: 3}

@@ -56,8 +56,11 @@ public class CombineItemManager : MonoBehaviour
             {
                 if (itemCombineSlot[i].GetComponent<UpgradeSlotController>().AddItemToCombineSlot(material_, material_.itemType_) == true)
                 {
+                    if (finishedProductSlot.GetComponent<FinishedProductCombine>().slotInUse_ == true)
+                    {
+                        finishedProductSlot.GetComponent<FinishedProductCombine>().AddFinishesProductToInventory();
+                    }
                     ////Debug.Log("ô này " + itemCombineSlot[i].name + " thêm được vật phẩm dung luyện");
-                    //AddItem(material_);
                     return true;
                 }
                 //Debug.Log("ô này " + itemCombineSlot[i].name + " không thêm được vật phẩm dung luyện");
@@ -70,8 +73,11 @@ public class CombineItemManager : MonoBehaviour
             {
                 if (itemCombineSlot[i].GetComponent<UpgradeSlotController>().AddItemToCombineSlot(equipment_, equipment_.itemType_) == true)
                 {
+                    if (finishedProductSlot.GetComponent<FinishedProductCombine>().slotInUse_ == true)
+                    {
+                        finishedProductSlot.GetComponent<FinishedProductCombine>().AddFinishesProductToInventory();
+                    }
                     ////Debug.Log("ô này " + itemCombineSlot[i].name + " thêm được vật phẩm dung luyện");
-                    //AddItem(equipment_);
                     return true;
                 }
                 //Debug.Log("ô này " + itemCombineSlot[i].name + " không thêm được vật phẩm dung luyện");

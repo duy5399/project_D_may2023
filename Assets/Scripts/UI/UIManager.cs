@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Transform characterSystem;
     [SerializeField] private Transform upgradeSystem;
     [SerializeField] private Transform inventorySystem;
+    [SerializeField] private Transform shopSystem;
     [SerializeField] private Transform itemDescription;
 
     void Start()
@@ -47,6 +48,17 @@ public class UIManager : MonoBehaviour
         CombineItemManager.instance.ResetCombineSystem();
         InventoryManager.instance.ResetParentInventory(canvas);
         upgradeSystem.gameObject.SetActive(false);
+        InventoryDesciptionController.instance.HiddenDescription();
+    }
+
+    public void OpenShop()
+    {
+        shopSystem.gameObject.SetActive(true);
+    }
+
+    public void CloseShop()
+    {
+        shopSystem.gameObject.SetActive(false);
         InventoryDesciptionController.instance.HiddenDescription();
     }
 

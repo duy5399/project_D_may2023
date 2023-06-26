@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b257e895728aa4c8361cbe447ad312, type: 3}
+  m_Name: armlet_04
+  m_EditorClassIdentifier: 
+  itemID: armlet_04
+  itemType: 0
+  itemIcon: {fileID: 21300000, guid: b9e7efc81b1d2604d94fafabc20d1bdb, type: 3}
+  itemName: "Tinh x\u1EA3o"
+  itemTier: 0
+  itemDescription: "M\xF3n \u0111\u1ED3 th\u1EE7 c\xF4ng \u0111\u1EA7y chi ti\u1EBFt
+    v\xE0 mang l\u1EA1i nhi\u1EC1u may m\u1EAFn c\u1EE7a B\u1ED9 l\u1EA1c T\xE0 th\u1EA7n"
+  maxStackSize: 1
+  itemSlot: 6
+  itemShow: {fileID: 21300000, guid: b9e7efc81b1d2604d94fafabc20d1bdb, type: 3}
+  itemStats: []
+  canUpgrade: 1
+  itemStrength: 0
+  itemStrengthImg: {fileID: 21300000, guid: 1f44c2cbb82680a4d9ecc7471ecef8d6, type: 3}

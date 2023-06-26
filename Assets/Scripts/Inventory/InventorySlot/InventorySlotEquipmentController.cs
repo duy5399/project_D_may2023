@@ -78,23 +78,23 @@ public class InventorySlotEquipmentController : InventorySlotController, IPointe
 
     public override void OnRightClick()
     {
-        if (transform.root.GetChild(4).gameObject.activeInHierarchy && !transform.root.GetChild(5).gameObject.activeInHierarchy)
+        if (transform.root.GetChild(5).gameObject.activeInHierarchy && !transform.root.GetChild(6).gameObject.activeInHierarchy)
         {
             if (transform.parent.name == "InventoryEquipment" && equipment.itemType_ == ItemSO.ItemType.Equipment)
             {
                 EquipGear();
             }
         }
-        else if (transform.root.GetChild(5).gameObject.activeInHierarchy && !transform.root.GetChild(4).gameObject.activeInHierarchy)
+        else if (transform.root.GetChild(6).gameObject.activeInHierarchy && !transform.root.GetChild(5).gameObject.activeInHierarchy)
         {
-            if(transform.root.GetChild(5).GetChild(0).GetChild(2).gameObject.activeInHierarchy && !transform.root.GetChild(5).GetChild(0).GetChild(3).gameObject.activeInHierarchy)
+            if(transform.root.GetChild(6).GetChild(0).GetChild(2).gameObject.activeInHierarchy && !transform.root.GetChild(6).GetChild(0).GetChild(3).gameObject.activeInHierarchy)
             {
                 if (transform.parent.name == "InventoryEquipment" && equipment.itemType_ == ItemSO.ItemType.Equipment)
                 {
                     AddGearToUpgradeSlot();
                 }
             }
-            else if(transform.root.GetChild(5).GetChild(0).GetChild(3).gameObject.activeInHierarchy && !transform.root.GetChild(5).GetChild(0).GetChild(2).gameObject.activeInHierarchy){
+            else if(transform.root.GetChild(6).GetChild(0).GetChild(3).gameObject.activeInHierarchy && !transform.root.GetChild(6).GetChild(0).GetChild(2).gameObject.activeInHierarchy){
                 if (transform.parent.name == "InventoryEquipment" && equipment.itemType_ == ItemSO.ItemType.Equipment)
                 {
                     AddGearToCombineSlot();

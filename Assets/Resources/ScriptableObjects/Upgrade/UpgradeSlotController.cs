@@ -59,16 +59,17 @@ public class UpgradeSlotController : MonoBehaviour, IPointerClickHandler
         InventoryManager.instance.UpdateUIInventory();
     }
 
+    //gỡ item còn gắn trong các ô nâng cấp và trả về túi đồ
     public void RemoveGearFromUpgradeSlot()
     {
         InventoryManager.instance.AddItem(equipment);
-        if (transform.root.GetChild(5).GetChild(0).GetChild(2).gameObject.activeInHierarchy && !transform.root.GetChild(5).GetChild(0).GetChild(3).gameObject.activeInHierarchy)
+        if (transform.root.GetChild(6).GetChild(0).GetChild(2).gameObject.activeInHierarchy && !transform.root.GetChild(6).GetChild(0).GetChild(3).gameObject.activeInHierarchy)
         {
             UpgradeEquipmentManager.instance.RemoveEquipment(equipment);
             UpgradeEquipmentManager.instance.UpdateSuccessRate();
         }
 
-        if (transform.root.GetChild(5).GetChild(0).GetChild(3).gameObject.activeInHierarchy && !transform.root.GetChild(5).GetChild(0).GetChild(2).gameObject.activeInHierarchy)
+        if (transform.root.GetChild(6).GetChild(0).GetChild(3).gameObject.activeInHierarchy && !transform.root.GetChild(6).GetChild(0).GetChild(2).gameObject.activeInHierarchy)
         {
             CombineItemManager.instance.RemoveItem(equipment);
             CombineItemManager.instance.SetPreviewFinishedProduct();
@@ -99,7 +100,7 @@ public class UpgradeSlotController : MonoBehaviour, IPointerClickHandler
     public void RemoveMaterialFromUpgradeSlot()
     {
         InventoryManager.instance.AddItem(material);
-        if (transform.root.GetChild(5).GetChild(0).GetChild(2).gameObject.activeInHierarchy && !transform.root.GetChild(5).GetChild(0).GetChild(3).gameObject.activeInHierarchy)
+        if (transform.root.GetChild(6).GetChild(0).GetChild(2).gameObject.activeInHierarchy && !transform.root.GetChild(6).GetChild(0).GetChild(3).gameObject.activeInHierarchy)
         {
             if (material.itemID_.Contains("strengthStone"))
             {
@@ -112,7 +113,7 @@ public class UpgradeSlotController : MonoBehaviour, IPointerClickHandler
             }
         }
 
-        if (transform.root.GetChild(5).GetChild(0).GetChild(3).gameObject.activeInHierarchy && !transform.root.GetChild(5).GetChild(0).GetChild(2).gameObject.activeInHierarchy)
+        if (transform.root.GetChild(6).GetChild(0).GetChild(3).gameObject.activeInHierarchy && !transform.root.GetChild(6).GetChild(0).GetChild(2).gameObject.activeInHierarchy)
         {
             CombineItemManager.instance.RemoveItem(material);
             CombineItemManager.instance.SetPreviewFinishedProduct();

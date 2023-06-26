@@ -14,7 +14,7 @@ public class ItemController : MonoBehaviour
     {
         //load Scriptable Objects cho gameobject
         string[] itemFolder = transform.name.ToString().Split(new char[] { '_' });
-        string resourcePath = "ScriptableObjects/Inventory/" + transform.tag + "/" + itemFolder[0] + "/" + transform.name;
+        string resourcePath = "ScriptableObjects/Item/" + transform.tag + "/" + itemFolder[0] + "/" + transform.name;
         itemSO = Resources.Load<ItemSO>(resourcePath);
 
         sr = GetComponent<SpriteRenderer>();

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b257e895728aa4c8361cbe447ad312, type: 3}
+  m_Name: face_10
+  m_EditorClassIdentifier: 
+  itemID: face_10
+  itemType: 0
+  itemIcon: {fileID: 21300000, guid: b54d9e33755594f4eaccd6acadaae53f, type: 3}
+  itemName: "Khinh b\u1EC9"
+  itemTier: 0
+  itemDescription: "Tui bi\u1EBFt h\u1EBFt r\u1ED3i, \u0111\u1EEBng c\xF3 di\u1EC5n"
+  maxStackSize: 1
+  itemSlot: 5
+  itemShow: {fileID: 21300000, guid: b965cef20985ab842bf028e05ee0e6bf, type: 3}
+  itemStats: []
+  canUpgrade: 1
+  itemStrength: 0
+  itemStrengthImg: {fileID: 21300000, guid: 1f44c2cbb82680a4d9ecc7471ecef8d6, type: 3}

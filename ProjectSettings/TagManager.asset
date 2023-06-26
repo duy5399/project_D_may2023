@@ -4,20 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
-  - Boss
-  - MobA
-  - MobB
-  - Portal In
-  - Portal Out
-  - healthbar1
-  - healthbar2
-  - Warning
-  - Equipment
   - Materials
-  - CharacterSystem
+  - Equipment
   - UpgradeSystem
   - InventorySystem
+  - CharacterSystem
+  - ShopSystem
   layers:
   - Default
   - TransparentFX
@@ -27,10 +19,10 @@ TagManager:
   - UI
   - 
   - 
-  - Ground
-  - Mobs
-  - Players
-  - Boss
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 

@@ -9,11 +9,9 @@ public class InventorySlotController : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] protected Image iconImg;
     [SerializeField] protected TextMeshProUGUI quantityTxt;
-    [SerializeField] protected string idSlot;
     [SerializeField] protected ItemSO item;
     [SerializeField] protected int quantity = 0;
 
-    public string idSlot_ => idSlot;
     public ItemSO item_ => item;
     public int quantity_ => quantity;
 
@@ -22,7 +20,7 @@ public class InventorySlotController : MonoBehaviour, IPointerClickHandler
         LoadComponents();
     }
 
-    public void LoadComponents()
+    public virtual void LoadComponents()
     {
         iconImg = transform.GetChild(0).GetComponent<Image>();
         quantityTxt = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
