@@ -7,7 +7,8 @@ using UnityEngine.UI;
 
 public class InventorySlotController : MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField] protected Image iconImg;
+    [SerializeField] protected Image itemBorder;
+    [SerializeField] protected Image itemIcon;
     [SerializeField] protected TextMeshProUGUI quantityTxt;
     [SerializeField] protected ItemSO item;
     [SerializeField] protected int quantity = 0;
@@ -22,8 +23,14 @@ public class InventorySlotController : MonoBehaviour, IPointerClickHandler
 
     public virtual void LoadComponents()
     {
-        iconImg = transform.GetChild(0).GetComponent<Image>();
-        quantityTxt = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        itemBorder = transform.GetChild(0).GetComponent<Image>();
+        itemIcon = transform.GetChild(1).GetComponent<Image>();
+        quantityTxt = transform.GetChild(2).GetComponent<TextMeshProUGUI>();
+    }
+
+    public void SetQuantity(int _quantity)
+    {
+        this.quantity = _quantity;
     }
 
     //add new item
@@ -31,7 +38,7 @@ public class InventorySlotController : MonoBehaviour, IPointerClickHandler
     {
         item = _item;
         quantity = _quantity;
-        iconImg.sprite = item.itemIcon_;
+        itemIcon.sprite = item.itemIcon_;
         quantityTxt.text = quantity.ToString();
     }
 

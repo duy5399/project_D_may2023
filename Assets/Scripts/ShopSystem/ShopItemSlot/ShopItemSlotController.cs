@@ -29,7 +29,7 @@ public class ShopItemSlotController : InventorySlotController
         item = _item;
         quantity = _quantity;
         price = _price;
-        iconImg.sprite = item.itemIcon_;
+        itemIcon.sprite = item.itemIcon_;
         quantityTxt.text = quantity.ToString();
         itemNameTxt.text = _item.itemName_;
         itemPriceTxt.text = _price.ToString();
@@ -71,7 +71,7 @@ public class ShopItemSlotController : InventorySlotController
     //hiển thị popup thông báo xác nhận giao dịch
     public void CheckOut()
     {
-        QuestionDialogUI.instance.ShowQuestion("Bạn có chắc muốn mua vật phẩm này?", item.itemIcon_, item.itemName_, quantity, price, () => { BuyItem(); },() => { } );
+        QuestionDialogUI.instance.DisplayQuestion("Bạn có chắc muốn mua vật phẩm này?", item.itemIcon_, item.itemName_, quantity, price, () => { BuyItem(); },() => { } );
     }
 
     public override void OnPointerClick(PointerEventData eventData)

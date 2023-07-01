@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
-    public static PlayerCombat instance;
+    public static PlayerCombat instance { get; private set; }
 
     [Header("Components")]
     [SerializeField] private Animator anim;
@@ -18,8 +18,13 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private LayerMask enemyLayer;
 
     [Header("Health")]
-    public int maxHealth = 100;
-    public int currentHealth;
+    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private int currentHealth;
+    [SerializeField] private HealthBarController healthBar;
+    [SerializeField] private bool isDead;
+
+    public int currentHealth_ => currentHealth;
+    public bool isDead_ => isDead;
 
     void Awake()
     {
@@ -39,12 +44,15 @@ public class PlayerCombat : MonoBehaviour
         anim = GetComponent<Animator>();
         attackPoint = transform.GetChild(1);
         currentHealth = maxHealth;
+        healthBar = this.transform.GetChild(2).GetComponent<HealthBarController>();
+        healthBar.SetHealth(currentHealth, maxHealth);
+        isDead = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !attacking)
+        if (Input.GetMouseButtonDown(0) && !attacking && !isDead)
         {
             UpdateAttack();
         }
@@ -58,7 +66,7 @@ public class PlayerCombat : MonoBehaviour
         foreach(Collider2D enemy in hitEnemies)
         {
 // HEAD
-            enemy.GetComponent<IDamageable>().TakeDamage(attackDamage);
+            //enemy.GetComponent<IDamageable>().TakeDamage(attackDamage);
             if(enemy.gameObject.CompareTag("MobA") || enemy.gameObject.CompareTag("MobB"))
             {
                 enemy.GetComponent<MobController>().TakeDamage(attackDamage);
@@ -95,27 +103,29 @@ public class PlayerCombat : MonoBehaviour
 
     public void TakeDamage(int damage, float interval)
     {
-        StartCoroutine(PlayerMovement.instance.DazedEffect(interval));
+        StartCoroutine(PlayerMovement.instance.SlowEffect(0f,interval));
         currentHealth -= damage;
+        healthBar.SetHealth(currentHealth, maxHealth);
         anim.SetTrigger("hurt");
         if (currentHealth <= 0)
-        {           
-            Die();
+        {
+            anim.SetTrigger("isDead");
         }
     }
 
     public void SlowEffect(float interval)
     {
-        StartCoroutine(PlayerMovement.instance.SlowEffect(interval));
+        StartCoroutine(PlayerMovement.instance.SlowEffect(2f, interval));
         anim.SetTrigger("hurt");
         if (currentHealth <= 0)
         {
-            Die();
+            anim.SetTrigger("isDead");
         }
     }
 
     private void Die()
     {
-        anim.SetBool("isDead", true);
+        isDead = true;
+        anim.enabled = false;
     }
 }

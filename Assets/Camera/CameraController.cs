@@ -1,0 +1,122 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
+using UnityEngine.SocialPlatforms;
+
+public class CameraController : MonoBehaviour
+{
+    public static CameraController instance {  get; private set; }
+
+    [SerializeField] private GameObject targetPlayer;
+    [SerializeField] private float smoothSpeed;
+    [SerializeField] private Vector3 offset;
+    //[SerializeField] private Vector3 velocity = Vector3.zero;
+
+    [SerializeField] private List<GameObject> targetMiniBoss;
+    [SerializeField] private List<GameObject> targetBoss;
+
+    [SerializeField] private bool introduceBoss;
+
+    [SerializeField] private float timeNextAction;
+
+    public bool introduceBoss_ => introduceBoss;
+
+    void Awake()
+    {
+        if(instance != null && instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+        }
+        targetMiniBoss.AddRange(GameObject.FindGameObjectsWithTag("MiniBoss"));
+        targetBoss.AddRange(GameObject.FindGameObjectsWithTag("Boss"));
+        targetPlayer = GameObject.FindGameObjectWithTag("Player");
+        smoothSpeed = 10f;
+        offset = new Vector3(0, 0, -5);
+        introduceBoss = true;
+        timeNextAction = 0f;
+    }
+
+    void Start()
+    {
+        //StartCoroutine(updateOff());
+    }
+
+    // LateUpdate is called after function Update
+    void LateUpdate()
+    {
+        if (introduceBoss)
+        {
+            PlayerMovement.instance.SetMoveSpeed(0f);
+            timeNextAction += Time.deltaTime;
+            if (timeNextAction < 2f)
+            {
+                CameraFollowTarget(targetPlayer);
+            }
+            else
+            {
+                StartCoroutine(IntroduceBoss());
+            }
+        }
+        else
+        {
+            CameraFollowTarget(targetPlayer);
+        }
+    }
+
+    //hướng camera vào mục tiêu cần quan sát
+    public void CameraFollowTarget(GameObject _target)
+    {
+        Vector3 desiredPosition = _target.transform.position + offset; //trị trí camera mong muốn
+        //Vector3 smoothedPosition = Vector3.SmoothDamp(transform.position, desiredPosition, ref velocity, _smoothSpeed * Time.deltaTime);
+        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
+
+        if (smoothedPosition.x < -7.5f || smoothedPosition.x > 7.5f)
+        {
+            this.transform.position = smoothedPosition.x < -7.5f ? new Vector3(-7.5f, 0, smoothedPosition.z) : new Vector3(7.5f, 0, smoothedPosition.z);
+        }
+        else
+        {
+            this.transform.position = new Vector3(smoothedPosition.x, 0, smoothedPosition.z);
+        }
+        Debug.Log("_target: " + _target.name);
+    }
+
+    //giới thiệu các boss
+    IEnumerator IntroduceBoss()
+    {
+        if (introduceBoss)
+        {
+            if (targetMiniBoss.Count > 0)
+            {
+                for (int i = 0; i < targetMiniBoss.Count; i++)
+                {
+                    CameraFollowTarget(targetMiniBoss[i]);
+                    yield return new WaitForSeconds(0.5f);
+                    UIController.instance.OnIntroduceBoss(targetMiniBoss[i].name);
+                    yield return new WaitForSeconds(UIController.instance.GetAnim().GetCurrentAnimatorStateInfo(0).length + 1f);
+                }
+            }
+            if (targetBoss.Count > 0)
+            {
+                for (int i = 0; i < targetBoss.Count; i++)
+                {
+                    CameraFollowTarget(targetBoss[i]);
+                    yield return new WaitForSeconds(0.5f);
+                    UIController.instance.OnIntroduceBoss(targetBoss[i].name);
+                    yield return new WaitForSeconds(UIController.instance.GetAnim().GetCurrentAnimatorStateInfo(0).length + 1f);
+                    if (targetBoss[i] == targetBoss[targetBoss.Count - 1])
+                    {
+                        PlayerMovement.instance.SetMoveSpeed(6f);
+                        introduceBoss = false;
+                    }
+                }
+            }
+        }
+    }
+}

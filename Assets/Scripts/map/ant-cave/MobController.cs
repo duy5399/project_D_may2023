@@ -38,10 +38,13 @@ public class MobController : MonoBehaviour, IDamageable
     {
         anim = GetComponent<Animator>();
         boxCollider2D = GetComponent<BoxCollider2D>();
-        target = GameObject.Find("Player");
         attackPoint = transform.GetChild(0);
         healthBar = this.transform.GetChild(1).GetComponent<HealthBarController>();
         LoadMobController();
+    }
+    void Start()
+    {
+        target = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void LoadMobController()

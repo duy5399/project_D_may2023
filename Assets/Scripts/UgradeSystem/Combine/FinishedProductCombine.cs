@@ -18,7 +18,7 @@ public class FinishedProductCombine : MonoBehaviour, IPointerClickHandler
         icon.enabled = false;
     }
 
-    public void ShowFinishProductCombine(ItemSO _item)
+    public void DisplayFinishProductCombine(ItemSO _item)
     {
         finishProductCombine = _item;
         icon.sprite = _item.itemIcon_;

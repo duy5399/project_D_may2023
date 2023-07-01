@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Experimental.UIElements;
 using UnityEngine.UI;
+using static ItemSO;
 
 public class InventorySlotMaterialController : InventorySlotController, IPointerClickHandler
 {
@@ -14,11 +15,6 @@ public class InventorySlotMaterialController : InventorySlotController, IPointer
     protected override void Awake()
     {
         base.Awake();
-    }
-
-    public void SetQuantity(int _quantity)
-    {
-        this.quantity = _quantity;
     }
 
     //add new item
@@ -31,8 +27,32 @@ public class InventorySlotMaterialController : InventorySlotController, IPointer
     {
         material = MaterialSO.Init(_item.idItem_, _item.type_, _item.icon_, _item.name_, _item.tier_, _item.description_, _item.maxStack_, _item.itemUses_, _item.canCombine_);
         quantity = _quantity;
-        iconImg.sprite = material.itemIcon_;
+        itemIcon.sprite = material.itemIcon_;
         quantityTxt.text = quantity.ToString();
+        switch (material.itemTier_)
+        {
+            case RarityTier.common:
+                itemBorder.color = new Color32(209, 213, 216, 255);
+                break;
+            case RarityTier.uncommmon:
+                itemBorder.color = new Color32(65, 168, 95, 255);
+                break;
+            case RarityTier.rare:
+                itemBorder.color = new Color32(44, 130, 201, 255);
+                break;
+            case RarityTier.epic:
+                itemBorder.color = new Color32(147, 101, 184, 255);
+                break;
+            case RarityTier.legendary:
+                itemBorder.color = new Color32(250, 197, 28, 255);
+                break;
+            case RarityTier.mythic:
+                itemBorder.color = new Color32(226, 80, 65, 255);
+                break;
+            default:
+                Debug.Log("Not found rarity tier of item: " + material.itemName_);
+                break;
+        }
     }
 
     //Add strength stone to strength stone slot

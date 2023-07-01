@@ -132,7 +132,7 @@ public class CombineItemManager : MonoBehaviour
             {
                 Debug.Log("combineItemSO.GetResultCombine(): " + resultCombine_);
                 combineItemSO.CombineSuccessful(resultCombine_, combineItemSO.listItems_[0]);
-                finishedProductSlot.GetComponent<FinishedProductCombine>().ShowFinishProductCombine(combineItemSO.finishedProduct_);
+                finishedProductSlot.GetComponent<FinishedProductCombine>().DisplayFinishProductCombine(combineItemSO.finishedProduct_);
                 combineItemSO.RemoveFinishedProduct();
                 StartCoroutine(DisplayedResultCombine(resultCombine_));
             }

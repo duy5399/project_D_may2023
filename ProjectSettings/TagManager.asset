@@ -10,6 +10,15 @@ TagManager:
   - InventorySystem
   - CharacterSystem
   - ShopSystem
+  - Warning
+  - Ground
+  - healthbar2
+  - Boss
+  - Portal In
+  - healthbar1
+  - MobB
+  - MobA
+  - MiniBoss
   layers:
   - Default
   - TransparentFX
@@ -19,11 +28,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Boss
+  - Mob
+  - CantAttack
+  - Player
   - 
   - 
   - 

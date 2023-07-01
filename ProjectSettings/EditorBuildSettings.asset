@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Homepage.unity
     guid: aa0474b3aee594e4fa68efb5e8f530a3
+  - enabled: 1
+    path: Assets/Scenes/AntCave.unity
+    guid: e6712cb08f8ccba4b99fa96421ffb351
+  - enabled: 1
+    path: Assets/Scenes/BugouCastle.unity
+    guid: 408cb1cb8d935df4bb72668884b59f24
   m_configObjects: {}

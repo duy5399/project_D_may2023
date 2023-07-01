@@ -346,3 +346,19 @@ public class InventoryMaterialSlot
         quantity -= _quantity;
     }
 }
+
+[System.Serializable]
+public class ItemSlot
+{
+    [SerializeField] private ItemSO item;
+    [SerializeField] private int quantity;
+
+    public ItemSO item_ => item;
+    public int quantity_ => quantity;
+
+    public ItemSlot(ItemSO item, int quantity)
+    {
+        this.item = item;
+        this.quantity = quantity;
+    }
+}

@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using static ItemSO;
 
 public class InventorySlotEquipmentController : InventorySlotController, IPointerClickHandler
 {
@@ -20,8 +21,32 @@ public class InventorySlotEquipmentController : InventorySlotController, IPointe
     {
         equipment = EquipmentSO.Init(_item.idItem_, _item.type_, _item.icon_, _item.name_, _item.tier_, _item.description_, _item.maxStack_, _item.slot_, _item.show_, _item.stats_, _item.canUpgrade_, _item.itemStrength_, _item.itemStrengthImg_);
         quantity = _quantity;
-        iconImg.sprite = equipment.itemIcon_;
+        itemIcon.sprite = equipment.itemIcon_;
         quantityTxt.text = quantity.ToString();
+        switch (equipment.itemTier_)
+        {
+            case RarityTier.common:
+                itemBorder.color = new Color32(209, 213, 216, 255);
+                break;
+            case RarityTier.uncommmon:
+                itemBorder.color = new Color32(65, 168, 95, 255);
+                break;
+            case RarityTier.rare:
+                itemBorder.color = new Color32(44, 130, 201, 255);
+                break;
+            case RarityTier.epic:
+                itemBorder.color = new Color32(147, 101, 184, 255);
+                break;
+            case RarityTier.legendary:
+                itemBorder.color = new Color32(250, 197, 28, 255);
+                break;
+            case RarityTier.mythic:
+                itemBorder.color = new Color32(226, 80, 65, 255);
+                break;
+            default:
+                Debug.Log("Not found rarity tier of item: " + equipment.itemName_);
+                break;
+        }
     }
 
     //equip item for player

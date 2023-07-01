@@ -62,7 +62,7 @@ public class EquippedSlotController : MonoBehaviour, IPointerClickHandler
         }
 
         UpdatePlayerStats();
-        ShowPlayerStats();
+        DisplayPlayerStats();
         Debug.Log("EquipGear successful => UpdateUIInventory ");
         InventoryManager.instance.UpdateUIInventory();
     }
@@ -154,7 +154,7 @@ public class EquippedSlotController : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    public void ShowPlayerStats()
+    public void DisplayPlayerStats()
     {
         PlayerStats.instance.UpdatePlayerStats();
     }
@@ -167,7 +167,7 @@ public class EquippedSlotController : MonoBehaviour, IPointerClickHandler
 
         slotInUse = false;
         UpdatePlayerStats();
-        ShowPlayerStats();
+        DisplayPlayerStats();
 
         InventoryManager.instance.AddItem(itemEquipped);
         CharacterEquipmentManager.instance.RemoveItem(itemEquipped);

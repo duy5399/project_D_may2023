@@ -39,8 +39,6 @@ public class PandoraController : MonoBehaviour, IDamageable
     [SerializeField]
     private HealthBarController healthBar01;
     [SerializeField]
-    private UIController uiController;
-    [SerializeField]
     private bool isDead;
     private int def = 10;
     private float dazedTime;
@@ -50,6 +48,7 @@ public class PandoraController : MonoBehaviour, IDamageable
     private float intervalNextAction = 2f;
     [SerializeField]
     private int turn = 1;
+    [SerializeField] private IEnumerator bossMechanics;
 
     // Start is called before the first frame update
     void Start()
@@ -61,8 +60,10 @@ public class PandoraController : MonoBehaviour, IDamageable
         isDead = false;
         currentHealth = maxHealth;
         boxCollider2D.enabled = false;
+        gameObject.layer = LayerMask.NameToLayer("CantAttack");
         UpdateHealth();
-        StartCoroutine(PandoraMechanics(intervalNextAction, turn));
+        bossMechanics = PandoraMechanics(intervalNextAction);
+        StartCoroutine(bossMechanics);
     }
 
     void FixedUpdate()
@@ -71,9 +72,9 @@ public class PandoraController : MonoBehaviour, IDamageable
         //Movement();
     }
 
-    public IEnumerator PandoraMechanics(float interval, int turn)
+    public IEnumerator PandoraMechanics(float interval)
     {
-        if (!isDead)
+        while (!isDead)
         {
             yield return new WaitForSeconds(interval);
             //SummonMobs();
@@ -92,10 +93,11 @@ public class PandoraController : MonoBehaviour, IDamageable
                 if (turn == 2)
                 {
                     StartCoroutine(Movement());
-                    boxCollider2D.enabled = true;
+                    gameObject.layer = LayerMask.NameToLayer("Boss");
                 }
-                StartCoroutine(PandoraMechanics(intervalNextAction, turn));
+                //StartCoroutine(PandoraMechanics(intervalNextAction));
             }
+            Debug.Log("turn: " +turn);
         }
         yield return null;
     }
@@ -103,7 +105,7 @@ public class PandoraController : MonoBehaviour, IDamageable
     public void UpdateHealth()
     {
         healthBar01.SetHealth(currentHealth, maxHealth);
-        uiController.SetHealth(currentHealth, maxHealth);
+        UIController.instance.SetHealth(currentHealth, maxHealth);
     }
 
     public void SummonMobs()
@@ -146,27 +148,44 @@ public class PandoraController : MonoBehaviour, IDamageable
 
     public IEnumerator Movement()
     {
-        uiController.OnAlert("Pandora chuẩn bị ra khỏi tổ, hãy tấn công!!!");
+        UIController.instance.OnAlertWarning("Pandora chuẩn bị ra khỏi tổ, hãy tấn công!!!");
         GameObject teleport = transform.GetChild(2).gameObject;
         teleport.SetActive(true);
         yield return new WaitForSeconds(2f);
         Vector2 newPosition = new Vector2(7f, -1.8f);
         this.transform.position = newPosition;
         teleport.SetActive(false);
-        uiController.OffAlert();
+        UIController.instance.OffAlertWarning();
     }
 
     public void TakeDamage(int damage)
     {
         int dmg = damage * 600 / (600 + armor);
         currentHealth -= dmg;
-        Debug.Log(dmg);
         UpdateHealth();
         anim.SetTrigger("cry");
         if (currentHealth <= 0)
         {
             isDead = true;
+            StopMechanics();
             anim.SetBool("isDead", isDead);
+        }
+    }
+
+    public void StopMechanics()
+    {
+        if (bossMechanics != null)
+        {
+            StopCoroutine(bossMechanics);
+            bossMechanics = null;
+        }
+    }
+
+    private void HideBoss()
+    {
+        if (isDead)
+        {
+            gameObject.SetActive(false);
         }
     }
 }

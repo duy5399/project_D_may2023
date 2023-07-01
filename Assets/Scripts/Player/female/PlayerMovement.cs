@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TreeEditor;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -14,13 +15,13 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private bool canMove;
     [SerializeField] private Vector2 movement;
-    [SerializeField] private float moveSpeed = 6f;
+    [SerializeField] private float moveSpeed;
     [SerializeField] private float dazedTime;
 
     [Header("Jump")]
     [SerializeField] private Transform groundCheckPoint;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private float jumpForce = 25f;
+    [SerializeField] private float jumpForce;
     [SerializeField] private bool doubleJump;
 
     void Awake()
@@ -40,24 +41,32 @@ public class PlayerMovement : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {      
-
+    {
+        canMove = true;
+        moveSpeed = 6f;
+        jumpForce = 25f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        anim.SetFloat("moveSpeed", Mathf.Abs(movement.x));
+        if (canMove)
+        {
+            movement.x = Input.GetAxisRaw("Horizontal");
+            anim.SetFloat("moveSpeed", Mathf.Abs(movement.x));
+        }
         if (Input.GetKeyDown(KeyCode.Space) && canMove)
         {
+            Debug.Log("Input.GetKeyDown(KeyCode.Space)");
             if (GroundCheck())
             {
+                Debug.Log("GroundCheck = true");
                 UpdateJump();
                 doubleJump = true;
             }
             else if (doubleJump)
             {
+                Debug.Log("GroundCheck = false");
                 this.rb2d.velocity = Vector2.up * jumpForce * 0.7f;
                 doubleJump = false;
             }
@@ -91,6 +100,7 @@ public class PlayerMovement : MonoBehaviour
     protected void Flip(int scaleX)
     {
         this.transform.localScale = new Vector3(scaleX, this.transform.localScale.y, 0);
+        transform.GetChild(2).GetChild(0).localScale = this.transform.localScale;
     }
 
     protected void UpdateAnimation()
@@ -98,6 +108,7 @@ public class PlayerMovement : MonoBehaviour
         if (movement.x != 0)
         {
             Flip((int)movement.x);
+            //bool x = movement.x > 0 ? transform.GetComponent<SpriteRenderer>().flipX = false : transform.GetComponent<SpriteRenderer>().flipX = true;
         }
         if (GroundCheck())
         {
@@ -110,19 +121,15 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("velocity.y", this.rb2d.velocity.y);
     }
 
-    public IEnumerator DazedEffect(float interval)
+    public IEnumerator SlowEffect(float _moveSpeed,float _interval)
     {
-        canMove = false;
-        moveSpeed = 0f;
-        yield return new WaitForSeconds(interval);
-        canMove = true;
+        moveSpeed = _moveSpeed;
+        yield return new WaitForSeconds(_interval);
         moveSpeed = 6f;
     }
 
-    public IEnumerator SlowEffect(float interval)
+    public void SetMoveSpeed(float _moveSpeed)
     {
-        moveSpeed = 2f;
-        yield return new WaitForSeconds(interval);
-        moveSpeed = 6f;
+        this.moveSpeed = _moveSpeed;
     }
 }

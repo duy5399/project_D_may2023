@@ -99,9 +99,20 @@ public class EquipmentSO : ItemSO
         return (T)enumValues.GetValue(UnityEngine.Random.Range(0, enumValues.Length));
     }
 
+    public T RandomEnum<T>(int _min, int _max)
+    {
+        var enumValues = Enum.GetValues(typeof(T));
+        return (T)enumValues.GetValue(UnityEngine.Random.Range(_min, _max));
+    }
+
     public void RandomTier()
     {
         itemTier = RandomEnum<RarityTier>();
+    }
+
+    public void RandomTier(int _min, int _max)
+    {
+        itemTier = RandomEnum<RarityTier>(_min, _max);
     }
 
     public void RandomAttributes()

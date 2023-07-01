@@ -45,7 +45,7 @@ public class QuestionDialogUI : MonoBehaviour
         itemPrice = transform.GetChild(7).GetComponent<TextMeshProUGUI>();
     }
 
-    public void ShowQuestion(string _question, Sprite _itemIcon, string _itemName, int _itemQuantity, int _itemPrice, UnityAction _yesAction, UnityAction _noAction)
+    public void DisplayQuestion(string _question, Sprite _itemIcon, string _itemName, int _itemQuantity, int _itemPrice, UnityAction _yesAction, UnityAction _noAction)
     {
         questionTxt.text = _question;
         itemIcon.sprite = _itemIcon;

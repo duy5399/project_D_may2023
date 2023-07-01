@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    public static UIManager instance { get; private set; }
+
     [SerializeField] private Button bagBtn;
     [SerializeField] private Transform canvas;
     [SerializeField] private Transform characterSystem;
@@ -12,6 +14,23 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Transform inventorySystem;
     [SerializeField] private Transform shopSystem;
     [SerializeField] private Transform itemDescription;
+    [SerializeField] private Transform mapSystem;
+
+    void Awake()
+    {
+        if (instance !=  null && instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+        }
+        if (Time.timeScale == 0f)
+        {
+            Time.timeScale = 1f;
+        }
+    }
 
     void Start()
     {
@@ -19,6 +38,7 @@ public class UIManager : MonoBehaviour
         upgradeSystem.gameObject.SetActive(false);
         inventorySystem.gameObject.SetActive(false);
         itemDescription.gameObject.SetActive(false);
+        mapSystem.gameObject.SetActive(false);
     }
     
     public void OpenBag()
@@ -60,6 +80,16 @@ public class UIManager : MonoBehaviour
     {
         shopSystem.gameObject.SetActive(false);
         InventoryDesciptionController.instance.HiddenDescription();
+    }
+
+    public void OpenMap()
+    {
+        mapSystem.gameObject.SetActive(true);
+    }
+
+    public void CloseMap()
+    {
+        mapSystem.gameObject.SetActive(false);
     }
 
     public void OnApplicationQuit()

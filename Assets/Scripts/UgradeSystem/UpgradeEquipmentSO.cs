@@ -115,7 +115,7 @@ public class UpgradeEquipmentSO : UpgradeSystemSO
     //Get result upgrade when click upgrade button
     public bool GetResultUpgrade()
     {
-        float result = Random.Range(1f, 101f);
+        float result = Random.Range(1f, 100f);
         Debug.Log(result);
         if (result <= UpdateSuccessRate())
         {
