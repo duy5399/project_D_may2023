@@ -7,10 +7,6 @@ public class PandoraAttack : ObjectPool
 {
     public static PandoraAttack instance { get; private set; }
 
-    [Header("Attack")]
-    [SerializeField]
-    public GameObject[] prefabBullet;
-
     void Awake()
     {
         if (instance != null && instance != this)
@@ -21,43 +17,73 @@ public class PandoraAttack : ObjectPool
         {
             instance = this;
         }
-        prefabBullet = Resources.LoadAll<GameObject>("Prefabs/map/ant-cave/bullet");
-        spawnPoint = transform.Find("AttackPoint").transform;
         poolManager = GameObject.Find("BulletPool").transform;
-        LoadPandoraAttack();
     }
 
-    public void LoadPandoraAttack()
+    //tải object từ list data vào pool
+    public void LoadBulletToAttack(List<GameObject> _prefabBullet)
     {
-        LoadPrefabDB(prefabBullet);
-        LoadBulletToPool(prefabBullet.Length, spawnPoint);
+        LoadPrefabDB(_prefabBullet);
+        LoadObjectToPool();
     }
 
-    public void IceArrow(float speed, Transform atkPoint, Vector3 tg)
+    //tải object từ list data vào pool
+    protected override void LoadObjectToPool()
     {
-        GameObject bullet = GetBulletFromPool("IceArrow(Clone)");
+        for (int i = 0; i < prefabList.Count; i++)
+        {
+            GameObject mob = Instantiate(prefabList[i]);
+            mob.transform.parent = poolManager;
+            mob.SetActive(false);
+            objPool.Add(mob);
+        }
+    }
+
+    //lấy object từ pool
+    protected override GameObject GetObjectFromPool(GameObject _gameObject)
+    {
+        for (int i = 0; i < objPool.Count; i++)
+        {
+            if (objPool[i] == _gameObject && !objPool[i].activeInHierarchy)
+            {
+                return objPool[i];
+            }
+        }
+        GameObject mob = Instantiate(_gameObject);
+        mob.transform.parent = poolManager;
+        mob.SetActive(false);
+        objPool.Add(mob);
+        return objPool[objPool.Count - 1];
+    }
+
+    public void BeatD_IceArrow(float _speed, Transform _atkPoint, Vector3 _target, Transform _spawnPoint)
+    {
+        if(objPool.Find(x => x.name == "IceArrow(Clone)")){
+            Debug.Log("Tìm thấy ice arrow: " + objPool.Find(x => x.name == "IceArrow(Clone)").name);
+        }
+        GameObject bullet = GetObjectFromPool(objPool.Find(x => x.name == "IceArrow(Clone)"));
         if (bullet != null)
         {
-            bullet.transform.GetComponent<IceArrow>().SetParameter(speed, atkPoint, tg);
-            bullet.transform.position = spawnPoint.position;
+            bullet.transform.GetComponent<IceArrow>().SetParameter(_speed, _atkPoint, _target);
+            bullet.transform.position = _spawnPoint.position;
             bullet.SetActive(true);
         }
     }
 
-    public void NormalArrow(float speed, Transform atkPoint, Vector3 tg)
+    public void BeatB_FireArrow(float _speed, Transform _atkPoint, Vector3 _target, Transform _spawnPoint)
     {
-        GameObject bullet = GetBulletFromPool("FireArrow(Clone)");
+        GameObject bullet = GetObjectFromPool(objPool.Find(x => x.name == "FireArrow(Clone)"));
         if (bullet != null)
         {
-            bullet.transform.GetComponent<FireArrow>().SetParameter(speed, atkPoint, tg);
-            bullet.transform.position = spawnPoint.position;
+            bullet.transform.GetComponent<FireArrow>().SetParameter(_speed, _atkPoint, _target);
+            bullet.transform.position = _spawnPoint.position;
             bullet.SetActive(true);
         }
     }
 
-    public void LightningArrow()
+    public void BeatC_LightningArrow()
     {
-        GameObject bullet = GetBulletFromPool("LightningBullet(Clone)");
+        GameObject bullet = GetObjectFromPool(objPool.Find(x => x.name == "LightningBullet(Clone)"));
         if (bullet != null)
         {
             bullet.SetActive(true);

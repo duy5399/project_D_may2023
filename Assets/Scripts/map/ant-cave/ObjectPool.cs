@@ -4,87 +4,40 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-    [SerializeField]
-    public List<GameObject> prefabList;
-    public List<GameObject> objPool;
-    public Transform spawnPoint;
-    public float spawnInterval;
-    public Transform poolManager;
+    [SerializeField] protected List<GameObject> prefabList;
+    [SerializeField] protected List<GameObject> objPool;
+    [SerializeField] protected Transform poolManager;
 
-    public void LoadPrefabDB(GameObject[] prefabDB)
+    //tải tất cả prefab vào danh sách dữ liệu để sử dụng
+    protected void LoadPrefabDB(List<GameObject> _prefabDB)
     {
-        foreach (GameObject prefab in prefabDB)
+        foreach (GameObject prefab in _prefabDB)
         {
             prefabList.Add(prefab.gameObject);
         }
     }
 
-    public void LoadMobToPool(int numberOfMob, Transform point)
+    //tải object từ list data vào pool
+    protected virtual void LoadObjectToPool()
     {
-        for (int i = 0; i < numberOfMob; i++)
-        {
-            int rand = Random.Range(0, prefabList.Count);          
-            GameObject mob = Instantiate(prefabList[rand], point.position, Quaternion.identity);
-            mob.transform.parent = poolManager;
-            mob.SetActive(false);
-            objPool.Add(mob);
-        }
+
     }
 
-    public GameObject GetMobFromPool()
+    //tải object từ list data vào pool với số lượng truyền vào
+    protected virtual void LoadObjectToPool(int _sizeOfPool)
     {
-        for(int i = 0; i < objPool.Count; i++)
-        {
-            if (!objPool[i].activeInHierarchy)
-            {
-                return objPool[i];
-            }
-        }
-        LoadMobToPool(1, spawnPoint);
-        return objPool[objPool.Count - 1];
+        
     }
 
-    public void SpawnMob(int numberOfMob)
+    //lấy object từ pool
+    protected virtual GameObject GetObjectFromPool()
     {
-        StartCoroutine(SpawnInterval(spawnInterval, numberOfMob));
+        return null;
     }
 
-    public IEnumerator SpawnInterval(float spawnInterval, int numberOfMob)
+    //lấy object từ pool
+    protected virtual GameObject GetObjectFromPool(GameObject _gameObject)
     {
-        for (int i = 0; i < numberOfMob; i++)
-        {
-            GameObject mob = GetMobFromPool();
-            if( mob != null )
-            {
-                //mob.GetComponent<MobController>().currentHealth = mob.GetComponent<MobController>().maxHealth;
-                mob.GetComponent<MobController>().LoadMobController();
-                mob.transform.position = spawnPoint.position;
-                mob.SetActive(true);
-            }
-            yield return new WaitForSeconds(spawnInterval);
-        }
-    }
-
-    public void LoadBulletToPool(int numberOfMob, Transform point)
-    {
-        for (int i = 0; i < numberOfMob; i++)
-        {
-            GameObject mob = Instantiate(prefabList[i], point.position, Quaternion.identity);
-            mob.transform.parent = poolManager;
-            mob.SetActive(false);
-            objPool.Add(mob);
-        }
-    }
-
-    public GameObject GetBulletFromPool(string nameBullet)
-    {
-        for (int i = 0; i < objPool.Count; i++)
-        {
-            if (objPool[i].name == nameBullet && !objPool[i].activeInHierarchy)
-            {
-                return objPool[i];
-            }
-        }
         return null;
     }
 }

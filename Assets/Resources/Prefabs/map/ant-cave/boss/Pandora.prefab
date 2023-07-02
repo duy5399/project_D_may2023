@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 5081427067593004848}
   - component: {fileID: 5790252245321352258}
   m_Layer: 9
-  m_Name: Pandora 1
+  m_Name: Pandora
   m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -632,20 +632,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa218cef7e2c9bf44b83519f431f5cf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bossSO: {fileID: 0}
   anim: {fileID: 0}
-  boxCollider2D: {fileID: 0}
-  target: {fileID: 0}
-  moveSpeed: 1
-  facingLeft: 1
   attackPoint: {fileID: 0}
-  attackDamage: 40
-  maxHealth: 100
+  target: {fileID: 0}
+  moveSpeed: 0
+  facingLeft: 0
+  attackDamage: 0
+  maxHealth: 0
   currentHealth: 0
-  armor: 50
-  healthBar01: {fileID: 5790252245190135975}
+  armor: 0
+  healthBar01: {fileID: 0}
   isDead: 0
-  intervalNextAction: 2
-  turn: 1
+  intervalNextAction: 0
+  turnAction: 0
 --- !u!114 &5081427067593004848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,6 +664,7 @@ MonoBehaviour:
   spawnInterval: 0
   poolManager: {fileID: 0}
   prefabMob: []
+  numberOfMob: 0
 --- !u!114 &5790252245321352258
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -41,8 +41,8 @@ public class MapDisplay : MonoBehaviour
     public void DisplayMap(MapSO _map)
     {
         mapImage.sprite = _map.mapImage_;
-        bossName.text = _map.mapBoss_[_map.mapBoss_.Count - 1].name;
-        bossImage.sprite = _map.mapBoss_[_map.mapBoss_.Count - 1].GetComponent<SpriteRenderer>().sprite;
+        bossName.text = _map.mapBoss_[_map.mapBoss_.Count - 1].bossPrefab_.name;
+        bossImage.sprite = _map.mapBoss_[_map.mapBoss_.Count - 1].bossPrefab_.GetComponent<SpriteRenderer>().sprite;
         for(int i = 0; i < mapReward.Count; i++)
         {
             if (mapReward[i] != null)

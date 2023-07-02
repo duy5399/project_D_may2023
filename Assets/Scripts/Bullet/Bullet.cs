@@ -4,31 +4,17 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField]
-    protected Transform attackPoint;
-    [SerializeField]
-    protected Vector3 target;
-    [SerializeField]
-    protected float attackInterval;
-    [SerializeField]
-    protected int numberOfAttack;
+    [SerializeField] protected Transform attackPoint;
+    [SerializeField] protected Vector3 target;
 
-    [SerializeField]
-    protected GameObject blastOut;
-    [SerializeField]
-    protected float moveSpeed;
-    [SerializeField]
-    protected float attackPointX;
-    [SerializeField]
-    protected float targetX;
-    [SerializeField]
-    protected float distance;
-    [SerializeField]
-    protected float nextX;
-    [SerializeField]
-    protected float baseY;
-    [SerializeField]
-    protected float height;
+    [SerializeField] protected GameObject blastOut;
+    [SerializeField] protected float moveSpeed;
+    [SerializeField] protected float attackPointX;
+    [SerializeField] protected float targetX;
+    [SerializeField] protected float distance;
+    [SerializeField] protected float nextX;
+    [SerializeField] protected float baseY;
+    [SerializeField] protected float height;
 
     public void SetParameter(float speed, Transform atkPoint, Vector3 tg)
     {
@@ -57,17 +43,4 @@ public class Bullet : MonoBehaviour
     {
         return Quaternion.Euler(0, 0, Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg);
     }
-
-    //spawn bullet on position of player
-    public IEnumerator MoveToTargetWithMark(float attackInterval, int numberOfAttack)
-    {
-        for (int i = 0; i < numberOfAttack; i++)
-        {
-            Vector3 targetPoint = GameObject.Find("Player").transform.position;
-            transform.position = new Vector3(targetPoint.x, -2.246191f, 0);
-            yield return new WaitForSeconds(attackInterval);
-        }
-        gameObject.SetActive(false);
-    }
-
 }

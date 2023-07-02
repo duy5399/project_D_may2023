@@ -6,12 +6,6 @@ public class PandoraSummon : ObjectPool
 {
     public static PandoraSummon instance { get; private set; }
 
-    [Header("SummonMob")]
-    [SerializeField]
-    private GameObject[] prefabMob;
-    private int numberOfMob;
-
-
     void Awake()
     {
         if (instance != null && instance != this)
@@ -22,22 +16,54 @@ public class PandoraSummon : ObjectPool
         {
             instance = this;
         }
-        prefabMob = Resources.LoadAll<GameObject>("Prefabs/map/ant-cave/mob");
-        spawnPoint = GameObject.Find("MobSpawnPoint").transform;
         poolManager = GameObject.Find("MobPool").transform;
-        LoadPandoraSummon();
     }
 
-    public void LoadPandoraSummon()
+    //tải object từ list data vào pool với số lượng truyền vào -> lấy ngẫu nhiên
+    protected override void LoadObjectToPool(int _sizeOfPool)
     {
-        numberOfMob = 3;
-        spawnInterval = 0.75f;
-        LoadPrefabDB(prefabMob);
-        LoadMobToPool(numberOfMob, spawnPoint);
+        for (int i = 0; i < _sizeOfPool; i++)
+        {
+            int rand = Random.Range(0, prefabList.Count);
+            GameObject mob = Instantiate(prefabList[rand]);
+            mob.transform.parent = poolManager;
+            mob.SetActive(false);
+            objPool.Add(mob);
+        }
     }
 
-    public void Summon()
+    //lấy object từ pool
+    protected override GameObject GetObjectFromPool()
     {
-        SpawnMob(numberOfMob);
+        for (int i = 0; i < objPool.Count; i++)
+        {
+            if (!objPool[i].activeInHierarchy)
+            {
+                return objPool[i];
+            }
+        }
+        LoadObjectToPool(1);
+        return objPool[objPool.Count - 1];
+    }
+
+    public void LoadMobToSummon(List<GameObject> _prefabMob, int _numberOfMob)
+    {
+        LoadPrefabDB(_prefabMob);
+        LoadObjectToPool(_numberOfMob);
+    }
+
+    public IEnumerator SummonMobs(int _numberOfMob, float _spawnInterval, Transform _spawnPoint)
+    {
+        for (int i = 0; i < _numberOfMob; i++)
+        {
+            GameObject mob = GetObjectFromPool();
+            if (mob != null)
+            {
+                mob.GetComponent<MobController>().LoadMobController();
+                mob.transform.position = _spawnPoint.position;
+                mob.SetActive(true);
+            }
+            yield return new WaitForSeconds(_spawnInterval);
+        }
     }
 }

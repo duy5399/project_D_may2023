@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using static ItemSO;
 
 public class RewardBox : MonoBehaviour, IPointerClickHandler
@@ -73,7 +74,22 @@ public class RewardBox : MonoBehaviour, IPointerClickHandler
                 if (reward.item_.itemType_ == ItemSO.ItemType.Equipment)
                 {
                     EquipmentSO equipment = ScriptableObject.Instantiate((EquipmentSO)reward.item_);
-                    equipment.RandomTier(0, 2);
+
+                    switch (MapInfo.instance.mapInfo_.mapDifficulty_)
+                    {
+                        case MapDifficulty.easy:
+                            equipment.RandomTier(0, 2);
+                            break;
+                        case MapDifficulty.normal:
+                            equipment.RandomTier(1, 3);
+                            break;
+                        case MapDifficulty.difficult:
+                            equipment.RandomTier(2, 4);
+                            break;
+                        case MapDifficulty.hero:
+                            equipment.RandomTier(3, 4);
+                            break;
+                    }
                     equipment.RandomStats(equipment.itemTier_);
                     equipment.SetItemID(equipment.itemID_ + "_" + equipment.itemTier_ + "_" + equipment.GetStatsInfo() + "_" + equipment.GetRandomItemID());
                     GameObject obj = Instantiate(rewardItem, parentRewardList);
@@ -130,5 +146,14 @@ public class RewardBox : MonoBehaviour, IPointerClickHandler
     public void onClickConfirmBtn()
     {
         rewardList.gameObject.SetActive(false);
+        StartCoroutine(AutoReturnHome(3f));
+    }
+
+    IEnumerator AutoReturnHome(float _interval)
+    {
+        UIController.instance.OnAlertWarning("Tự động về lại trang chủ sau " + _interval + " giây!!!");
+        yield return new WaitForSeconds(_interval);
+        MapInfo.instance.Destroy();
+        SceneManager.LoadScene("Homepage");
     }
 }

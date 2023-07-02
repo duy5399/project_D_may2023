@@ -4,18 +4,27 @@ using UnityEngine;
 
 public class LightningBullet : Bullet
 {
+    [SerializeField] private float attackInterval;
+    [SerializeField] private int numberOfAttack;
+
     // Start is called before the first frame update
     void Start()
     {
         attackInterval = 2f;
-        numberOfAttack = 10;
+        numberOfAttack = 2;
         StartCoroutine(MoveToTargetWithMark(attackInterval, numberOfAttack));
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    //spawn bullet on position of player
+    public IEnumerator MoveToTargetWithMark(float _attackInterval, int _numberOfAttack)
     {
-
+        for (int i = 0; i < _numberOfAttack; i++)
+        {
+            Vector3 targetPoint = GameObject.Find("Player").transform.position;
+            transform.position = new Vector3(targetPoint.x, -2.246191f, 0);
+            yield return new WaitForSeconds(_attackInterval);
+        }
+        gameObject.SetActive(false);
     }
 
     public void OnTriggerEnter2D(Collider2D collider)

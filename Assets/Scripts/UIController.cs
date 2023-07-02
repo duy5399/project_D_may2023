@@ -75,7 +75,8 @@ public class UIController : MonoBehaviour
     {
         healthbar.maxValue = maxHealth;
         healthbar.value = health;
-        txt_hp.text = Math.Round((double)health / maxHealth * 100) > 0 ? Math.Round((double)health / maxHealth * 100) + "%" : "0%";
+        //txt_hp.text = Math.Round((double)health / maxHealth * 100) > 0 ? Math.Round((double)health / maxHealth * 100) + "%" : "0%";
+        txt_hp.text = health + "/" + maxHealth;
     }
 
     #region Introduce BOSS

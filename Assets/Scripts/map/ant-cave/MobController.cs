@@ -14,25 +14,25 @@ public class MobController : MonoBehaviour, IDamageable
     [SerializeField] private BoxCollider2D boxCollider2D;
 
     [Header("Movement")]
-    public GameObject target;
-    public float moveSpeed;
+    [SerializeField] private GameObject target;
+    [SerializeField] private float moveSpeed;
 
     [Header("Flip")]
-    public bool facingLeft = true;
+    [SerializeField] private bool facingLeft = true;
 
     [Header("Attack")]
-    public bool isAttack;
-    public float attackRange;
-    public Transform attackPoint;
-    public int attackDamage;
-    public LayerMask playerLayer;
+    [SerializeField] private bool isAttack;
+    [SerializeField] private float attackRange;
+    [SerializeField] private Transform attackPoint;
+    [SerializeField] private int attackDamage;
+    [SerializeField] private LayerMask playerLayer;
 
     [Header("Health")]
-    public HealthBarController healthBar;
-    public int armor;
-    public int maxHealth;
-    public int currentHealth;
-    public bool isDead;
+    [SerializeField] private HealthBarController healthBar;
+    [SerializeField] private int armor;
+    [SerializeField] private int maxHealth;
+    [SerializeField] private int currentHealth;
+    [SerializeField] private bool isDead;
 
     void Awake()
     {

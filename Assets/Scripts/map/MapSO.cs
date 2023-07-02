@@ -10,8 +10,9 @@ public class MapSO : ScriptableObject
     [SerializeField] private string mapDescription;
     [SerializeField] private Sprite mapImage;
     [SerializeField] private Object sceneToLoad;
-    [SerializeField] private List<GameObject> mapMiniBoss;
-    [SerializeField] private List<GameObject> mapBoss;
+    [SerializeField] private MapDifficulty mapDifficulty;
+    [SerializeField] private List<Boss> mapMiniBoss;
+    [SerializeField] private List<Boss> mapBoss;
     [SerializeField] private List<MapRewards> mapRewards;
     [SerializeField] private int mapTime;
 
@@ -20,8 +21,9 @@ public class MapSO : ScriptableObject
     public string mapDescription_ => mapDescription;
     public Sprite mapImage_ => mapImage;
     public Object sceneToLoad_ => sceneToLoad;
-    public List<GameObject> mapMiniBoss_ => mapMiniBoss;
-    public List<GameObject> mapBoss_ => mapBoss;
+    public MapDifficulty mapDifficulty_ => mapDifficulty;
+    public List<Boss> mapMiniBoss_ => mapMiniBoss;
+    public List<Boss> mapBoss_ => mapBoss;
     public List<MapRewards> mapRewards_ => mapRewards;
     public int mapTime_ => mapTime;
 
@@ -43,4 +45,28 @@ public class MapRewards{
         this.quantity = quantity;
         this.dropRate = dropRate;
     }
+}
+
+[System.Serializable]
+public class Boss
+{
+    [SerializeField] private GameObject bossPrefab;
+    [SerializeField] private BossSO bossInfo;
+
+    public GameObject bossPrefab_ => bossPrefab;
+    public BossSO bossInfo_ => bossInfo;
+
+    public Boss(GameObject bossPrefab, BossSO bossInfo)
+    {
+        this.bossPrefab = bossPrefab;
+        this.bossInfo = bossInfo;
+    }
+}
+
+public enum MapDifficulty
+{
+    easy,
+    normal,
+    difficult,
+    hero
 }

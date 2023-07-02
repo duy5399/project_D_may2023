@@ -25,7 +25,7 @@ public class MapController : MonoBehaviour
         InstantiateBoss(mapInfo.mapMiniBoss_);
         Debug.Log("Time.TimeScale = " + Time.timeScale);
 
-        InstantiateRewardBox(rewardBox);
+        //InstantiateRewardBox(rewardBox);
     }
 
     void Start()
@@ -41,14 +41,15 @@ public class MapController : MonoBehaviour
     }
 
     //khởi tạo BOSS
-    public void InstantiateBoss(List<GameObject> _boss)
+    public void InstantiateBoss(List<Boss> _boss)
     {
         if(_boss != null)
         {
             for (int i = 0; i < _boss.Count; i++)
             {
-                GameObject boss = Instantiate(_boss[i]);
-                boss.name = _boss[i].name;
+                GameObject boss = Instantiate(_boss[i].bossPrefab_);
+                boss.GetComponent<BossController>().SetDataForBoss(_boss[i].bossInfo_);
+                boss.name = _boss[i].bossPrefab_.name;
                 if (_boss[i] == mapInfo.mapBoss_[mapInfo.mapBoss_.Count - 1])
                 {
                     finalBoss = boss;
@@ -84,7 +85,7 @@ public class MapController : MonoBehaviour
         if(player.GetComponent<PlayerCombat>().currentHealth_ <= 0 || TimerInBattle.instance.timeOut_)
         {
             TimerInBattle.instance.TimerSwitch(false);
-            finalBoss.GetComponent<PandoraController>().StopMechanics();
+            finalBoss.GetComponent<BossController>().StopMechanics();
             player.GetComponent<PlayerMovement>().enabled = false;
             player.GetComponent<PlayerCombat>().enabled = false;
             UIController.instance.OnAlertLose();
