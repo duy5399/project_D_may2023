@@ -78,6 +78,11 @@ public class EquipmentSO : ItemSO
         itemID = _idItem;
     }
 
+    public void SetItemIcon(Sprite _itemIcon)
+    {
+        itemIcon = _itemIcon;
+    }
+
     public void SetTier(RarityTier _tier)
     {
         itemTier = _tier;

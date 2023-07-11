@@ -151,14 +151,18 @@ public class UpgradeEquipmentManager : MonoBehaviour
             bool resultUpgarde_ = upgradeEquipmentSO_.GetResultUpgrade();   //get result upgrade
             if (resultUpgarde_)                                             //upgrade successful
             {
-                Debug.Log("upgradeEquipmentSO_.GetResultUpgrade(): " + resultUpgarde_);
+                //Debug.Log("upgradeEquipmentSO_.GetResultUpgrade(): " + resultUpgarde_);
                 upgradeEquipmentSO_.UpgradeSuccessful(resultUpgarde_);
+                equipmentUpgradeSlot.GetComponent<UpgradeSlotController>().SetIcon(upgradeEquipmentSO_.equipmentSO_.itemSO_);
+                AudioManager.instance.UpgradeSuccessSFX();
                 StartCoroutine(DisplayedResultUpgrade(resultUpgarde_));
             }
             else                                                            //upgrade failed
             {
-                Debug.Log("upgradeEquipmentSO_.GetResultUpgrade(): " + resultUpgarde_);
+                //Debug.Log("upgradeEquipmentSO_.GetResultUpgrade(): " + resultUpgarde_);
                 upgradeEquipmentSO_.UpgradeFailed(resultUpgarde_);
+                equipmentUpgradeSlot.GetComponent<UpgradeSlotController>().SetIcon(upgradeEquipmentSO_.equipmentSO_.itemSO_);
+                AudioManager.instance.UpgradeFailureSFX();
                 StartCoroutine(DisplayedResultUpgrade(resultUpgarde_));              
             }
         }
@@ -190,11 +194,5 @@ public class UpgradeEquipmentManager : MonoBehaviour
         }
         upgradeEquipmentSO_.godCharm_.ResetGodCharmUpgrade();
         godCharmSlot.GetComponent<UpgradeSlotController>().ResetDisplayUpgradeSlot();
-    }
-
-    public void OnApplicationQuit()
-    {
-        upgradeEquipmentSO_.RemoveEquipmentUpgrade();
-        upgradeEquipmentSO_.materialsList_.ClearStrengthStoneList();
     }
 }

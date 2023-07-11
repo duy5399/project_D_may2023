@@ -21,6 +21,12 @@ public class CharacterEquipmentManager : BagManager
     }
     #endregion
 
+    void Start()
+    {
+        LoadChatacterEquipment();
+        UpdateUICharacterEquipment();
+    }
+
     public Transform character;
 
     [SerializeField] private string savePathCharacterEquipment = "/characterEquipment.lsd";
@@ -36,7 +42,10 @@ public class CharacterEquipmentManager : BagManager
     [SerializeField] private EquippedSlotController weaponSlot; //Bag - Player Equipment - Center - weaponSlot
     [SerializeField] private EquippedSlotController offhandSlot; //Bag - Player Equipment - Center - offhandSlot
 
-
+    [SerializeField] private TextMeshProUGUI attackStatTxt; //Bag - PlayerStats - ATK - Stat
+    [SerializeField] private TextMeshProUGUI defenseStatTxt; //Bag - PlayerStats - DEF - Stat
+    [SerializeField] private TextMeshProUGUI hitPointStatTxt; //Bag - PlayerStats - HP - Stat
+    [SerializeField] private TextMeshProUGUI luckStatTxt; //Bag - PlayerStats - LUCK - Stat
     //equipment item for character
     public void EquipGear(EquipmentSO _item)
     {
@@ -75,7 +84,7 @@ public class CharacterEquipmentManager : BagManager
                     offhandSlot.EquipGear(_item);
                     break;
                 default:
-                    Debug.Log("cant equip gear");
+                    //Debug.Log("cant equip gear");
                     break;
             }
         }
@@ -83,24 +92,36 @@ public class CharacterEquipmentManager : BagManager
 
     public void UpdateUICharacterEquipment()
     {
+        PlayerStats.instance.playerStat_.ResetStat();
         //update ui list item in inventory
         for (int i = 0; i < inventorySO.listEquipmentSO_.equipments.Count; i++)
         {
+            Sprite iconItem_ = Resources.Load<Sprite>(inventorySO.listEquipmentSO_.equipments[i].iconPath_);
+            Sprite showItem_ = Resources.Load<Sprite>(inventorySO.listEquipmentSO_.equipments[i].showPath_);
+            Sprite strengthImgItem_ = Resources.Load<Sprite>(inventorySO.listEquipmentSO_.equipments[i].itemStrengthImgPath_);
             EquipmentSO equipment = EquipmentSO.Init(inventorySO.listEquipmentSO_.equipments[i].idItem_,
                 inventorySO.listEquipmentSO_.equipments[i].type_,
-                inventorySO.listEquipmentSO_.equipments[i].icon_,
+                iconItem_,
                 inventorySO.listEquipmentSO_.equipments[i].name_,
                 inventorySO.listEquipmentSO_.equipments[i].tier_,
                 inventorySO.listEquipmentSO_.equipments[i].description_,
                 inventorySO.listEquipmentSO_.equipments[i].maxStack_,
-                inventorySO.listEquipmentSO_.equipments[i].slot_, 
-                inventorySO.listEquipmentSO_.equipments[i].show_, 
+                inventorySO.listEquipmentSO_.equipments[i].slot_,
+                showItem_, 
                 inventorySO.listEquipmentSO_.equipments[i].stats_, 
                 inventorySO.listEquipmentSO_.equipments[i].canUpgrade_,
-                inventorySO.listEquipmentSO_.equipments[i].itemStrength_, 
-                inventorySO.listEquipmentSO_.equipments[i].itemStrengthImg_);
+                inventorySO.listEquipmentSO_.equipments[i].itemStrength_,
+                strengthImgItem_);
             EquipGear(equipment);
         }
+    }
+
+    public void DisplayPlayerStats()
+    {
+        attackStatTxt.text = PlayerStats.instance.playerStat_.attack_.ToString();
+        defenseStatTxt.text = PlayerStats.instance.playerStat_.defense_.ToString();
+        hitPointStatTxt.text = PlayerStats.instance.playerStat_.hitPoint_.ToString();
+        luckStatTxt.text = PlayerStats.instance.playerStat_.luck_.ToString();
     }
 
     public void CloseButton()
@@ -111,25 +132,16 @@ public class CharacterEquipmentManager : BagManager
 
     public void OnApplicationQuit()
     {
-        inventorySO.listEquipmentSO_.equipments.Clear();
+        //inventorySO.listEquipmentSO_.equipments.Clear();
     }
 
-    void Start()
+    public void SaveCharacterEquipment()
     {
-        //inventorySO.LoadEquipment(savePathCharacterEquipment);
-        //UpdateUICharacterEquipment();
+        inventorySO.SaveEquipment(savePathCharacterEquipment);
     }
 
-    void Update()
+    public void LoadChatacterEquipment()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            inventorySO.SaveEquipment(savePathCharacterEquipment);
-        }
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
-        {
-            inventorySO.LoadEquipment(savePathCharacterEquipment);
-            UpdateUICharacterEquipment();
-        }
+        inventorySO.LoadEquipment(savePathCharacterEquipment);
     }
 }

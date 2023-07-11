@@ -16,7 +16,7 @@ public class UpgradeEquipmentSO : UpgradeSystemSO
     public GodCharmUpgrade godCharm_ => godCharm;
 
     #region Equipment
-    //Add equipment to the list of data.
+    //thêm trang bị để nâng cấp
     public void AddEquipmentUpgrade(ItemSO _itemSO, int _quantity)
     {
         if (_itemSO != null)
@@ -25,7 +25,7 @@ public class UpgradeEquipmentSO : UpgradeSystemSO
         }
     }
 
-    //Remove equipment from list data.
+    //gỡ trang bị nâng cấp
     public void RemoveEquipmentUpgrade()
     {
         equipment.ResetEquipmentUpgrade();
@@ -38,7 +38,7 @@ public class UpgradeEquipmentSO : UpgradeSystemSO
     }
 
     #region Strength Stone List
-    //Add strength stone to the list of data
+    //thêm đá cường hóa
     public void AddStrengthStoneUpgrade(ItemSO _itemSO, int _quantity)
     {
         MaterialSO materialSO_ = _itemSO as MaterialSO;
@@ -48,7 +48,7 @@ public class UpgradeEquipmentSO : UpgradeSystemSO
         }
     }
 
-    //Remove equipment from list data.
+    //gỡ đá cường hóa
     public void RemoveStrengthStoneUpgrade(ItemSO _itemSO, int _quantity)
     {
         MaterialSO materialSO_ = _itemSO as MaterialSO;
@@ -83,7 +83,7 @@ public class UpgradeEquipmentSO : UpgradeSystemSO
     #endregion
 
 
-    //Check upgrade item, required: have equipment (equipment's strength < 15 and a strength stone).
+    //kiểm tra các vật phẩm đầu vào,yêu cầu: 1 trang bị có cấp độ cường hóa < 15 và ít nhất 1 đá cường hóa
     public bool CanUpgrade()
     {
         if (equipment.itemSO_ != null && materialsList.strengthStoneList_.Count > 0)
@@ -96,7 +96,7 @@ public class UpgradeEquipmentSO : UpgradeSystemSO
         return false;
     }
 
-    //Get success rate when upgrade
+    //tỉ lệ thành công khi nâng cấp
     public float UpdateSuccessRate()
     {
         if (CanUpgrade())
@@ -112,7 +112,7 @@ public class UpgradeEquipmentSO : UpgradeSystemSO
             return 0f;
     }
 
-    //Get result upgrade when click upgrade button
+    //nhận kết quả khi nhấn nút "Cường hóa" =. nhận giá trị tru ( thành công) hoặc false (thất bại)
     public bool GetResultUpgrade()
     {
         float result = Random.Range(1f, 100f);
@@ -125,46 +125,54 @@ public class UpgradeEquipmentSO : UpgradeSystemSO
             return false;   //upgrade equipment failed
     }
 
-    //If upgrade equipment successful
+    //nâng cấp trang bi thành công
     public void UpgradeSuccessful(bool _result)
     {
         if (_result)
         {
             equipment.itemSO_.SetItemStrength(equipment.itemSO_.itemStrength_ + 1);
             equipment.itemSO_.SetItemStrengthImg(upgradeCondition.GetStrengthImg(equipment.itemSO_.itemStrength_));
+            if (equipment.itemSO_.itemStrength_ == 6 || equipment.itemSO_.itemStrength_ == 7 || equipment.itemSO_.itemStrength_ == 9 || equipment.itemSO_.itemStrength_ == 10 || equipment.itemSO_.itemStrength_ == 12 || equipment.itemSO_.itemStrength_ == 13 || equipment.itemSO_.itemStrength_ == 15)
+            {
+                equipment.itemSO_.SetItemIcon(upgradeCondition.GetNewItemIcon(equipment.itemSO_));
+            }
             SetValueBonusStrengthForEquipment();
         }
     }
 
-    //If upgrade equipment failed
+    //nâng cấp trang bi thất bại
     public void UpgradeFailed(bool _result)
     {
         if (_result == false && equipment.itemSO_.itemStrength_ > 6)
         {
             if(godCharm.itemSO_ == null && ReduceEquipmentStrength() == true)
             {
-                Debug.Log("Reduce Strength: " + equipment.itemSO_.itemStrength_.ToString() + "=> " + (equipment.itemSO_.itemStrength_ - 1).ToString());
+                //Debug.Log("Reduce Strength: " + equipment.itemSO_.itemStrength_.ToString() + "=> " + (equipment.itemSO_.itemStrength_ - 1).ToString());
                 equipment.itemSO_.SetItemStrength(equipment.itemSO_.itemStrength_ - 1);
                 equipment.itemSO_.SetItemStrengthImg(upgradeCondition.GetStrengthImg(equipment.itemSO_.itemStrength_));
+                if (equipment.itemSO_.itemStrength_ == 6 || equipment.itemSO_.itemStrength_ == 7 || equipment.itemSO_.itemStrength_ == 9 || equipment.itemSO_.itemStrength_ == 10 || equipment.itemSO_.itemStrength_ == 12 || equipment.itemSO_.itemStrength_ == 13 || equipment.itemSO_.itemStrength_ == 15)
+                {
+                    equipment.itemSO_.SetItemIcon(upgradeCondition.GetNewItemIcon(equipment.itemSO_));
+                }
                 SetValueBonusStrengthForEquipment();
             }
         }
     }
 
-    //If upgrading equipment fails, equipment can be reduced in strength.
+    //nếu nâng cấp thất bại có thể bị giảm cấp trang bị
     public bool ReduceEquipmentStrength()
     {
         int result = Random.Range(1, 11);
-        Debug.Log(result);
+        //Debug.Log(result);
         if (result <= 5)
         {
-            return true;    //reduce strength level
+            return true;    //giảm cấp
         }
         else
-            return false;   //not reduce strength level
+            return false;   //không thay đổi
     }
 
-    //Set valuse bonus of equipment when upgrade success or reduce strength
+    //thêm hoặc bớt valuse bonus khi nâng cấp thành công hoặc thất bại
     public void SetValueBonusStrengthForEquipment()
     {
         for(int i = 0; i < equipment.itemSO_.itemStats_.Length; i++)

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using static ItemSO;
@@ -16,6 +17,7 @@ public class ShopSystemManager : MonoBehaviour
     [SerializeField] private Sprite subBtnUp;
     [SerializeField] private Sprite subBtnDown;
     [SerializeField] private List<Transform> slotItem;
+    [SerializeField] private Transform currency;
 
     void Awake()
     {
@@ -37,12 +39,14 @@ public class ShopSystemManager : MonoBehaviour
         }
     }
 
+
     //hiển thị danh sách vật phẩm theo từng loại (tùy button truyền vào khi nhấn)
     public void ShowListItem(Button _subBtn)
     {
+        AudioManager.instance.ClickSuccessSFX();
         int indexSubButton_ = -1;
         int indexListContent_ = -1;
-        Debug.Log(_subBtn.name + " " + _subBtn.gameObject);
+        //Debug.Log(_subBtn.name + " " + _subBtn.gameObject);
         switch (_subBtn.name)
         {
             case "SubBtnWeapon":
@@ -172,9 +176,9 @@ public class ShopSystemManager : MonoBehaviour
                     GameObject obj = Instantiate(shopItemSlot, _shopItemSlotParent);
                     if (obj != null && equipment_.itemSlots_ == ItemSlots.Weapon || equipment_.itemSlots_ == ItemSlots.Ring || equipment_.itemSlots_ == ItemSlots.Armlet)
                     {
-                        obj.transform.GetChild(5).gameObject.SetActive(false);
+                        obj.transform.GetChild(7).gameObject.SetActive(false);
                     }
-                    obj.GetComponent<ShopItemSlotController>().AddItemShop(shopDatabase.shopItem_[j].item_, 1, shopDatabase.shopItem_[j].price_);
+                    obj.GetComponent<ShopItemSlotController>().AddItemShop(shopDatabase.shopItem_[j].item_, shopDatabase.shopItem_[j].currency_, shopDatabase.shopItem_[j].price_, shopDatabase.shopItem_[j].quantity_);
                     obj.GetComponent<ShopItemSlotController>().LoadComponents();
                 }
             }
@@ -192,8 +196,8 @@ public class ShopSystemManager : MonoBehaviour
                 if (material_ != null)
                 {
                     GameObject obj = Instantiate(shopItemSlot, _shopItemSlotParent);
-                    obj.transform.GetChild(5).gameObject.SetActive(false);
-                    obj.GetComponent<ShopItemSlotController>().AddItemShop(shopDatabase.shopItem_[j].item_, 1, shopDatabase.shopItem_[j].price_);
+                    obj.transform.GetChild(7).gameObject.SetActive(false);
+                    obj.GetComponent<ShopItemSlotController>().AddItemShop(shopDatabase.shopItem_[j].item_, shopDatabase.shopItem_[j].currency_, shopDatabase.shopItem_[j].price_ , shopDatabase.shopItem_[j].quantity_);
                     obj.GetComponent<ShopItemSlotController>().LoadComponents();
                 }
             }
@@ -203,19 +207,19 @@ public class ShopSystemManager : MonoBehaviour
     //hiển thị 1 danh sách vật phẩm theo mục - ẩn các danh sách vật phẩm khác
     public void SetActiveListContent(int _indexListContent, int _indexSubButton)
     {
-        Debug.Log("index: " + _indexListContent);
+        //Debug.Log("index: " + _indexListContent);
         for (int i = 0; i < shopItemSlotParent.Count; i++)
         {
             if (i == _indexListContent)
             {
                 shopItemSlotParent[i].gameObject.SetActive(true);
                 shopItem.content = shopItemSlotParent[i].GetComponent<RectTransform>();
-                Debug.Log("SetActive true:" + shopItemSlotParent[i].gameObject);
+                //Debug.Log("SetActive true:" + shopItemSlotParent[i].gameObject);
             }
             else
             {
                 shopItemSlotParent[i].gameObject.SetActive(false);
-                Debug.Log("SetActive false:" + shopItemSlotParent[i].gameObject);
+                //Debug.Log("SetActive false:" + shopItemSlotParent[i].gameObject);
             }
         }
         for (int i = 0; i < subButton.Count; i++)
@@ -265,5 +269,20 @@ public class ShopSystemManager : MonoBehaviour
         {
             slotItem[indexSlot_].GetComponent<GearSlotPreview>().PreviewIconAndShow(_item);
         }
+    }
+
+    public void RemoveEquipmentPreview()
+    {
+        foreach(Transform slot in slotItem)
+        {
+            slot.GetComponent<GearSlotPreview>().ResetGearSlotPreview();
+        }
+    }
+
+    //load tiền 
+    public void LoadCurrency()
+    {       
+        currency.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = InventoryManager.instance.GetMaterial("gold_01") != null ? string.Format("{0:0,0}", InventoryManager.instance.GetMaterial("gold_01").quantity_) : "0";
+        currency.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = InventoryManager.instance.GetMaterial("medal_01") != null ? string.Format("{0:0,0}", InventoryManager.instance.GetMaterial("medal_01").quantity_) : "0";
     }
 }

@@ -25,7 +25,9 @@ public class InventorySlotMaterialController : InventorySlotController, IPointer
 
     public void AddItemInfo(InventoryMaterialSlot _item, int _quantity)
     {
-        material = MaterialSO.Init(_item.idItem_, _item.type_, _item.icon_, _item.name_, _item.tier_, _item.description_, _item.maxStack_, _item.itemUses_, _item.canCombine_);
+        Sprite iconItem_ = Resources.Load<Sprite>(_item.iconPath_);
+
+        material = MaterialSO.Init(_item.idItem_, _item.type_, iconItem_, _item.name_, _item.tier_, _item.description_, _item.maxStack_, _item.itemUses_, _item.canCombine_);
         quantity = _quantity;
         itemIcon.sprite = material.itemIcon_;
         quantityTxt.text = quantity.ToString();
@@ -50,7 +52,7 @@ public class InventorySlotMaterialController : InventorySlotController, IPointer
                 itemBorder.color = new Color32(226, 80, 65, 255);
                 break;
             default:
-                Debug.Log("Not found rarity tier of item: " + material.itemName_);
+                //Debug.Log("Not found rarity tier of item: " + material.itemName_);
                 break;
         }
     }
@@ -65,7 +67,7 @@ public class InventorySlotMaterialController : InventorySlotController, IPointer
                 quantity -= 1;
                 quantityTxt.text = quantity.ToString();
                 UpgradeEquipmentManager.instance.AddStrengthStone(material);
-                InventoryManager.instance.RemoveItem(material);
+                InventoryManager.instance.RemoveItem(material, 1);
                 UpgradeEquipmentManager.instance.UpdateSuccessRate();
                 if (quantity == 0)
                 {
@@ -77,9 +79,14 @@ public class InventorySlotMaterialController : InventorySlotController, IPointer
         {
             if (UpgradeEquipmentManager.instance.AddGodCharmToUpgradeSlot(material))
             {
-                InventoryManager.instance.RemoveItem(material);
+                quantity -= 1;
+                quantityTxt.text = quantity.ToString();
+                InventoryManager.instance.RemoveItem(material, 1);
                 UpgradeEquipmentManager.instance.UpdateSuccessRate();
-                Destroy(gameObject);
+                if (quantity == 0)
+                {
+                    Destroy(gameObject);
+                }
             }
         }
         
@@ -95,7 +102,7 @@ public class InventorySlotMaterialController : InventorySlotController, IPointer
                 quantity -= 1;
                 quantityTxt.text = quantity.ToString();
                 CombineItemManager.instance.AddItem(material);
-                InventoryManager.instance.RemoveItem(material);
+                InventoryManager.instance.RemoveItem(material, 1);
                 CombineItemManager.instance.SetPreviewFinishedProduct();
                 CombineItemManager.instance.SetSuccessRateCombine();
                 if (quantity == 0)
@@ -111,6 +118,7 @@ public class InventorySlotMaterialController : InventorySlotController, IPointer
         if (eventData.button == PointerEventData.InputButton.Left)
         {
             OnLeftClick();
+            AudioManager.instance.ClickSuccessSFX();
         }
         if (eventData.button == PointerEventData.InputButton.Right)
         {
@@ -125,16 +133,16 @@ public class InventorySlotMaterialController : InventorySlotController, IPointer
 
     public override void OnRightClick()
     {
-        if (transform.root.GetChild(6).gameObject.activeInHierarchy && !transform.root.GetChild(5).gameObject.activeInHierarchy)
+        if (transform.root.GetChild(7).gameObject.activeInHierarchy && !transform.root.GetChild(6).gameObject.activeInHierarchy)
         {
-            if(transform.root.GetChild(6).GetChild(0).GetChild(2).gameObject.activeInHierarchy && !transform.root.GetChild(6).GetChild(0).GetChild(3).gameObject.activeInHierarchy)
+            if(transform.root.GetChild(7).GetChild(0).GetChild(2).gameObject.activeInHierarchy && !transform.root.GetChild(7).GetChild(0).GetChild(3).gameObject.activeInHierarchy)
             {
                 if (transform.parent.name == "InventoryMaterial" && material.itemType_ == ItemSO.ItemType.Material)
                 {
                     AddMaterialToUpgradeSlot();
                 }
             }
-            else if (transform.root.GetChild(6).GetChild(0).GetChild(3).gameObject.activeInHierarchy && !transform.root.GetChild(6).GetChild(0).GetChild(2).gameObject.activeInHierarchy)
+            else if (transform.root.GetChild(7).GetChild(0).GetChild(3).gameObject.activeInHierarchy && !transform.root.GetChild(7).GetChild(0).GetChild(2).gameObject.activeInHierarchy)
             {
                 if (transform.parent.name == "InventoryMaterial" && material.itemType_ == ItemSO.ItemType.Material)
                 {

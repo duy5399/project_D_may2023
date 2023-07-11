@@ -37,7 +37,7 @@ public class RewardBox : MonoBehaviour, IPointerClickHandler
 
     private void OnMouseDown()
     {
-        Debug.Log("Mouse Click Detected");
+        //Debug.Log("Mouse Click Detected");
         if (!beenClicked)
         {
             transform.GetComponent<Animator>().SetTrigger("OpenBox");
@@ -45,6 +45,18 @@ public class RewardBox : MonoBehaviour, IPointerClickHandler
             RandomRewardToList();
             beenClicked = true;
         }
+    }
+
+    public void OnClickOpen()
+    {
+        //Debug.Log("Mouse Click Detected");
+        //if (!beenClicked)
+        //{
+        //    transform.GetComponent<Animator>().SetTrigger("OpenBox");
+        //    rewardList.gameObject.SetActive(true);
+        //    RandomRewardToList();
+        //    beenClicked = true;
+        //}
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -65,7 +77,7 @@ public class RewardBox : MonoBehaviour, IPointerClickHandler
     {
         int numberOfItemsDropped = Random.Range(5, 30);
         Transform parentRewardList = rewardList.GetChild(0).GetChild(0);
-        Debug.Log("numberOfItemsDropped = " + numberOfItemsDropped);
+        //Debug.Log("numberOfItemsDropped = " + numberOfItemsDropped);
         for (int i = 0; i < numberOfItemsDropped; i++)
         {
             MapRewards reward = GetRandomItemFromMapRewards(mapRewards);
@@ -94,8 +106,8 @@ public class RewardBox : MonoBehaviour, IPointerClickHandler
                     equipment.SetItemID(equipment.itemID_ + "_" + equipment.itemTier_ + "_" + equipment.GetStatsInfo() + "_" + equipment.GetRandomItemID());
                     GameObject obj = Instantiate(rewardItem, parentRewardList);
                     obj.GetComponent<RewardItem>().AddItemInfoToSlot(equipment, reward.quantity_);
-                    InventoryManager.instance.AddItem(equipment);
-                    Debug.Log("Vật phẩm thứ [ " + i + "]: " + equipment.itemName_);
+                    InventoryManager.instance.AddItem(equipment, reward.quantity_);
+                    //Debug.Log("Vật phẩm thứ [ " + i + "]: " + equipment.itemName_ + " - " + reward.quantity_);
                 }
                 else if (reward.item_.itemType_ == ItemSO.ItemType.Material)
                 {
@@ -112,20 +124,24 @@ public class RewardBox : MonoBehaviour, IPointerClickHandler
                         obj.GetComponent<RewardItem>().AddItemInfoToSlot(material, reward.quantity_);
                         rewardSlotDisplayed.Add(material.itemID_, obj);
                     }
-                    InventoryManager.instance.AddItem(material);
-                    Debug.Log("Vật phẩm thứ [ " + i + "]: " + material.itemName_);
+                    InventoryManager.instance.AddItem(material, reward.quantity_);
+                    //Debug.Log("Vật phẩm thứ [ " + i + "]: " + material.itemName_ + " - " + reward.quantity_);
                 }
             }
             else
-                Debug.Log("Lỗi khi tạo vật phẩm ngẫu nhiên");
+            {
+
+            }
+                //Debug.Log("Lỗi khi tạo vật phẩm ngẫu nhiên");
         }
+        InventoryManager.instance.SaveDataInventory();
     }
 
     //lấy ngẫu nhiên (có tỉ lệ) vật phẩm có thể rớt trong phó bản đang khiêu chiến
     private MapRewards GetRandomItemFromMapRewards(List<MapRewards> _mapRewards)
     {
         float random = Random.Range(0f, 1f);
-        Debug.Log("tỉ lệ vật phẩm => " + random);
+        //Debug.Log("tỉ lệ vật phẩm => " + random);
         float cumulativeChance = 0;
         for (int i = 0; i <  _mapRewards.Count; i++)
         {
@@ -154,6 +170,7 @@ public class RewardBox : MonoBehaviour, IPointerClickHandler
         UIController.instance.OnAlertWarning("Tự động về lại trang chủ sau " + _interval + " giây!!!");
         yield return new WaitForSeconds(_interval);
         MapInfo.instance.Destroy();
+        AudioManager.instance.Destroy();
         SceneManager.LoadScene("Homepage");
     }
 }

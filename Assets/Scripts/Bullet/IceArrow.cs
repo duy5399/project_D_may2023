@@ -11,12 +11,13 @@ public class IceArrow : Bullet
 
     public void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.CompareTag("Player"))
+        if (collider.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
+            collider.gameObject.GetComponent<PlayerCombat>().TakeDamage(damage/2, 0.5f);
             collider.gameObject.GetComponent<PlayerCombat>().SlowEffect(3f);
             Debug.Log("Hit player");
         }
-        if (collider.gameObject.CompareTag("Ground"))
+        if (collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             Debug.Log("Hit ground");
         }

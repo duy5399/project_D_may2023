@@ -95,7 +95,7 @@ public class InventorySO : ScriptableObject
                 }
             }
         }
-        listMaterialSO.materials.Add(new InventoryMaterialSlot(_item.itemID_, _item.itemType_, _item.itemIcon_, _item.itemName_, _item.itemTier_, _item.itemDescription_, _item.maxStackSize_, _item.itemUses_, _item.canCombine_, 1));
+        listMaterialSO.materials.Add(new InventoryMaterialSlot(_item.itemID_, _item.itemType_, _item.itemIcon_, _item.itemName_, _item.itemTier_, _item.itemDescription_, _item.maxStackSize_, _item.itemUses_, _item.canCombine_, _quantity));
     }
 
     //gỡ đạo cụ ra khỏi kho đồ khi cần sử dụng (VD: khi trang bị, cường hóa, dung luyện,...)
@@ -105,14 +105,19 @@ public class InventorySO : ScriptableObject
         {
             if (listMaterialSO.materials[i].idItem_ == _item.itemID_)
             {
-                if (listMaterialSO.materials[i].quantity_ > 1)
+                if (listMaterialSO.materials[i].quantity_ > _quantity)
                 {
                     listMaterialSO.materials[i].RemoveQuantiy(_quantity);
                     return;
                 }
-                else
+                else if (listMaterialSO.materials[i].quantity_ == _quantity)
                 {
                     listMaterialSO.materials.RemoveAt(i);
+                    return;
+                }
+                else
+                {
+                    Debug.Log("Số lượng vật phẩm cần loại bỏ nhiều hơn so với số lượng vật phẩm hiện có");
                     return;
                 }
             }
@@ -123,12 +128,13 @@ public class InventorySO : ScriptableObject
     public void SaveEquipment(string savePath)
     {
         string saveData = JsonUtility.ToJson(listEquipmentSO, true); //chuyển đổi dữ liệu về các trang bị thành đình dạng JSON
-        Debug.Log(saveData);
-        BinaryFormatter binaryFormatter = new BinaryFormatter(); //binary formatter
-        FileStream fileStream = new FileStream(string.Concat(Application.persistentDataPath, savePath), FileMode.Create);
-        binaryFormatter.Serialize(fileStream, saveData); //convert saveData to binary format and write data
-        fileStream.Close();
-        Debug.Log("Save equipment succesful: " + string.Concat(Application.persistentDataPath, savePath));
+        File.WriteAllText(string.Concat(Application.persistentDataPath, savePath), saveData);
+        //Debug.Log(saveData);
+        //BinaryFormatter binaryFormatter = new BinaryFormatter(); //binary formatter
+        //FileStream fileStream = new FileStream(string.Concat(Application.persistentDataPath, savePath), FileMode.Create);
+        //binaryFormatter.Serialize(fileStream, saveData); //convert saveData to binary format and write data
+        //fileStream.Close();
+        //Debug.Log("Save equipment succesful: " + string.Concat(Application.persistentDataPath, savePath));
 
         //IFormatter formatter = new BinaryFormatter();
         //Stream stream = new FileStream(string.Concat(Application.persistentDataPath, savePath), FileMode.Create, FileAccess.Write);
@@ -140,11 +146,14 @@ public class InventorySO : ScriptableObject
     {
         if (File.Exists(string.Concat(Application.persistentDataPath, savePath)))
         {
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
-            FileStream fileStream = new FileStream(string.Concat(Application.persistentDataPath, savePath), FileMode.Open);
-            JsonUtility.FromJsonOverwrite(binaryFormatter.Deserialize(fileStream).ToString(), listEquipmentSO);
-            fileStream.Close();
-            Debug.Log("Load equipment succesful");
+            string loadPlayerData = File.ReadAllText(string.Concat(Application.persistentDataPath, savePath));
+            JsonUtility.FromJsonOverwrite(loadPlayerData, listEquipmentSO);
+
+            //BinaryFormatter binaryFormatter = new BinaryFormatter();
+            //FileStream fileStream = new FileStream(string.Concat(Application.persistentDataPath, savePath), FileMode.Open);
+            //JsonUtility.FromJsonOverwrite(binaryFormatter.Deserialize(fileStream).ToString(), listEquipmentSO);
+            //fileStream.Close();
+            //Debug.Log("Load equipment succesful");
 
             //IFormatter formatter = new BinaryFormatter();
             //Stream stream = new FileStream(string.Concat(Application.persistentDataPath, savePath), FileMode.Open, FileAccess.Read);
@@ -153,19 +162,20 @@ public class InventorySO : ScriptableObject
         }
         else
         {
-            Debug.LogError("Save path not found" + string.Concat(Application.persistentDataPath, savePath));
+            //Debug.LogError("Save path not found" + string.Concat(Application.persistentDataPath, savePath));
         }
     }
 
     public void SaveMaterial(string savePath)
     {
         string saveData = JsonUtility.ToJson(listMaterialSO, true); //chuyển đổi dữ liệu về các đạo cụ thành đình dạng JSON
-        Debug.Log(saveData);
-        BinaryFormatter binaryFormatter = new BinaryFormatter(); //binary formatter
-        FileStream fileStream = new FileStream(string.Concat(Application.persistentDataPath, savePath), FileMode.Create);
-        binaryFormatter.Serialize(fileStream, saveData); //convert saveData to binary format and write data
-        fileStream.Close();
-        Debug.Log("Save material succesful: " + string.Concat(Application.persistentDataPath, savePath));
+        File.WriteAllText(string.Concat(Application.persistentDataPath, savePath), saveData);
+        //Debug.Log(saveData);
+        //BinaryFormatter binaryFormatter = new BinaryFormatter(); //binary formatter
+        //FileStream fileStream = new FileStream(string.Concat(Application.persistentDataPath, savePath), FileMode.Create);
+        //binaryFormatter.Serialize(fileStream, saveData); //convert saveData to binary format and write data
+        //fileStream.Close();
+        ////Debug.Log("Save material succesful: " + string.Concat(Application.persistentDataPath, savePath));
 
         //IFormatter formatter = new BinaryFormatter();
         //Stream stream = new FileStream(string.Concat(Application.persistentDataPath, savePath), FileMode.Create, FileAccess.Write);
@@ -177,11 +187,14 @@ public class InventorySO : ScriptableObject
     {
         if (File.Exists(string.Concat(Application.persistentDataPath, savePath)))
         {
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
-            FileStream fileStream = new FileStream(string.Concat(Application.persistentDataPath, savePath), FileMode.Open);
-            JsonUtility.FromJsonOverwrite(binaryFormatter.Deserialize(fileStream).ToString(), listMaterialSO);
-            fileStream.Close();
-            Debug.Log("Load material succesful");
+            string loadPlayerData = File.ReadAllText(string.Concat(Application.persistentDataPath, savePath));
+            JsonUtility.FromJsonOverwrite(loadPlayerData, listMaterialSO);
+
+            //BinaryFormatter binaryFormatter = new BinaryFormatter();
+            //FileStream fileStream = new FileStream(string.Concat(Application.persistentDataPath, savePath), FileMode.Open);
+            //JsonUtility.FromJsonOverwrite(binaryFormatter.Deserialize(fileStream).ToString(), listMaterialSO);
+            //fileStream.Close();
+            //Debug.Log("Load material succesful");
 
             //IFormatter formatter = new BinaryFormatter();
             //Stream stream = new FileStream(string.Concat(Application.persistentDataPath, savePath), FileMode.Open, FileAccess.Read);
@@ -190,7 +203,7 @@ public class InventorySO : ScriptableObject
         }
         else
         {
-            Debug.LogError("Save path not found" + string.Concat(Application.persistentDataPath, savePath));
+            //Debug.LogError("Save path not found" + string.Concat(Application.persistentDataPath, savePath));
         }
     }
 
@@ -212,16 +225,19 @@ public class InventoryEquipmentSlot
     [SerializeField] protected string idItem;
     [SerializeField] protected ItemType type;
     [SerializeField] protected Sprite icon;
+    [SerializeField] protected string iconPath;
     [SerializeField] protected string name;
     [SerializeField] protected RarityTier tier;
     [SerializeField] protected string description;
     [SerializeField] protected int maxStack;
     [SerializeField] private ItemSlots slot;
     [SerializeField] private Sprite show;
+    [SerializeField] protected string showPath;
     [SerializeField] private Stats[] stats;
     [SerializeField] private bool canUpgrade;
     [SerializeField] private int itemStrength;
     [SerializeField] private Sprite itemStrengthImg;
+    [SerializeField] protected string itemStrengthImgPath;
 
     [SerializeField] protected EquipmentSO equipmentSO;
     [SerializeField] private int quantity;
@@ -229,16 +245,19 @@ public class InventoryEquipmentSlot
     public string idItem_ => idItem;
     public ItemType type_ => type;
     public Sprite icon_ => icon;
+    public string iconPath_ => iconPath;
     public string name_ => name;
     public RarityTier tier_ => tier;
     public string description_ => description;
     public int maxStack_ => maxStack;
     public ItemSlots slot_ => slot;
     public Sprite show_ => show;
+    public string showPath_ => showPath;
     public Stats[] stats_ => stats;
     public bool canUpgrade_ => canUpgrade;
     public int itemStrength_ => itemStrength;
     public Sprite itemStrengthImg_ => itemStrengthImg;
+    public string itemStrengthImgPath_ => itemStrengthImgPath;
 
     public EquipmentSO equipmentSO_ => equipmentSO;
     public int quantity_ => quantity;
@@ -248,18 +267,23 @@ public class InventoryEquipmentSlot
         this.idItem = idItem;
         this.type = type;
         this.icon = icon;
+        string[] split_ = idItem.Split(new char[] { '_' });
+        this.iconPath = "Sprites/Inventory/Equipment/" + slot + "/" + split_[0] + split_[1] + "/" + icon.name;
+        //System.IO.File.Exists(Application.dataPath + "/Resources/file01.obj");
         this.name = name;
         this.tier = tier;
         this.description = description;
         this.maxStack = maxStack;
         this.slot = slot;
         this.show = show;
+        this.showPath = "Sprites/Inventory/Equipment/" + slot + "/" + split_[0] + split_[1] + "/" + show.name;
         this.stats = stats;
         this.canUpgrade = canUpgrade;
         this.itemStrength = itemStrength;
         this.itemStrengthImg = itemStrengthImg;
+        this.itemStrengthImgPath = "Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/" + itemStrengthImg.name;
         this.quantity = quantity;
-        equipmentSO = EquipmentSO.Init(idItem, type, icon, name, tier, description, maxStack, slot, show, stats, canUpgrade, itemStrength, itemStrengthImg);
+        this.equipmentSO = EquipmentSO.Init(idItem, type, icon, name, tier, description, maxStack, slot, show, stats, canUpgrade, itemStrength, itemStrengthImg);
     }
 
     public void AddQuantiy(int _quantity)
@@ -302,6 +326,7 @@ public class InventoryMaterialSlot
     [SerializeField] protected string idItem;
     [SerializeField] protected ItemType type;
     [SerializeField] protected Sprite icon;
+    [SerializeField] protected string iconPath;
     [SerializeField] protected string name;
     [SerializeField] protected RarityTier tier;
     [SerializeField] protected string description;
@@ -314,6 +339,7 @@ public class InventoryMaterialSlot
     public string idItem_ => idItem;
     public ItemType type_ => type;
     public Sprite icon_ => icon;
+    public string iconPath_ => iconPath;
     public string name_ => name;
     public RarityTier tier_ => tier;
     public string description_ => description;
@@ -327,6 +353,7 @@ public class InventoryMaterialSlot
         this.idItem = idItem;
         this.type = type;
         this.icon = icon;
+        this.iconPath = "Sprites/Inventory/Materials/" + icon.name;
         this.name = name;
         this.tier = tier;
         this.description = description;

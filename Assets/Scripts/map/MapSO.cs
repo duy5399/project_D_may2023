@@ -9,7 +9,7 @@ public class MapSO : ScriptableObject
     [SerializeField] private string mapName;
     [SerializeField] private string mapDescription;
     [SerializeField] private Sprite mapImage;
-    [SerializeField] private Object sceneToLoad;
+    [SerializeField] private MapScene sceneToLoad;
     [SerializeField] private MapDifficulty mapDifficulty;
     [SerializeField] private List<Boss> mapMiniBoss;
     [SerializeField] private List<Boss> mapBoss;
@@ -20,13 +20,12 @@ public class MapSO : ScriptableObject
     public string mapName_ => mapName;
     public string mapDescription_ => mapDescription;
     public Sprite mapImage_ => mapImage;
-    public Object sceneToLoad_ => sceneToLoad;
+    public MapScene sceneToLoad_ => sceneToLoad;
     public MapDifficulty mapDifficulty_ => mapDifficulty;
     public List<Boss> mapMiniBoss_ => mapMiniBoss;
     public List<Boss> mapBoss_ => mapBoss;
     public List<MapRewards> mapRewards_ => mapRewards;
     public int mapTime_ => mapTime;
-
 }
 
 [System.Serializable]
@@ -69,4 +68,11 @@ public enum MapDifficulty
     normal,
     difficult,
     hero
+}
+
+public enum MapScene
+{
+    AntCave,
+    BugouCastle,
+    EvilTribe
 }

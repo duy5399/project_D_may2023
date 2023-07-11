@@ -57,7 +57,7 @@ public class ItemController : MonoBehaviour
             //    equipment = null;
             //}
         }
-        bool wasPickedUp = (itemSO.itemType_ == ItemSO.ItemType.Equipment) ? InventoryManager.instance.AddItem(equipment) : InventoryManager.instance.AddItem(material);
+        bool wasPickedUp = (itemSO.itemType_ == ItemSO.ItemType.Equipment) ? InventoryManager.instance.AddItem(equipment, 1) : InventoryManager.instance.AddItem(material, 1);
         if(wasPickedUp)
         {
             Destroy(gameObject);

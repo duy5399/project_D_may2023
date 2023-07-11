@@ -10,50 +10,66 @@ public class BossController : MonoBehaviour, IDamageable
     [SerializeField] protected Animator anim;
     [SerializeField] protected Transform attackPoint;
     [SerializeField] protected Transform summonPoint;
+    [SerializeField] protected AudioSource audioSource;
+    public Transform attackPoint_ => attackPoint;
+    public Transform summonPoint_ => summonPoint;
 
     [Header("Target")]
     [SerializeField] protected Transform target;
+    public Transform target_ => target;
 
     [Header("Movement")]
-    [SerializeField] protected float moveSpeed; //************************
+    [SerializeField] protected float moveSpeed; 
 
     [Header("Flip")]
-    [SerializeField] protected bool facingLeft; //************************
+    [SerializeField] protected bool facingLeft; 
+    public bool facingLeft_ => facingLeft;
 
     [Header("Attack")]
-    [SerializeField] protected int attackDamage; //************************
-    [SerializeField] protected List<GameObject> prefabBullet; //************************
+    [SerializeField] protected int attackDamage; 
+    [SerializeField] protected List<GameObject> prefabBullet; 
+    public int attackDamage_ => attackDamage; 
 
     [Header("Health")]
-    [SerializeField] protected int maxHealth; //************************
+    [SerializeField] protected int maxHealth; 
     [SerializeField] protected int currentHealth;
-    [SerializeField] protected int armor; //************************
-    [SerializeField] protected HealthBarController healthBar01;
+    [SerializeField] protected int armor; 
+    [SerializeField] protected HealthBarController healthBar;
     [SerializeField] protected bool isDead;
+    public int maxHealth_ => maxHealth;
+    public int currentHealth_ => currentHealth;
+    public int armor_ => armor; 
+    public bool isDead_ => isDead;
 
     [Header("SummonMob")]
-    [SerializeField] protected List<GameObject> prefabMob; //************************
-    [SerializeField] protected int numberOfMob; //************************
+    [SerializeField] protected List<GameObject> prefabMob; 
+    [SerializeField] protected int numberOfMob; 
+    public List<GameObject> prefabMob_ => prefabMob; 
+    public int numberOfMob_ => numberOfMob; 
 
     [Header("Mechanic")]
     [SerializeField] protected IEnumerator bossMechanics;
-    [SerializeField] protected float intervalNextAction; //************************
+    [SerializeField] protected bool nextAction;
+    [SerializeField] protected float intervalNextAction; 
     [SerializeField] protected int turnAction;
+
+    public IEnumerator bossMechanics_ => bossMechanics;
 
     // Start is called before the first frame update
     protected virtual void Start()
     {
         anim = GetComponent<Animator>();
         attackPoint = transform.GetChild(0).transform;
+        audioSource = GetComponent<AudioSource>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
         gameObject.layer = LayerMask.NameToLayer("CantAttack");
-        healthBar01 = transform.GetChild(1).GetComponent<HealthBarController>();
+        healthBar = transform.GetChild(1).GetComponent<HealthBarController>();
         isDead = false;
         currentHealth = maxHealth;
         turnAction = 0;
-        UpdateHealth();
+        //UpdateHealth();
         bossMechanics = BossMechanics(intervalNextAction);
-        StartCoroutine(bossMechanics);
+        nextAction = true;
     }
 
     protected virtual void FixedUpdate()
@@ -83,9 +99,9 @@ public class BossController : MonoBehaviour, IDamageable
         yield return null;
     }
 
-    protected void UpdateHealth()
+    public void UpdateHealth()
     {
-        healthBar01.SetHealth(currentHealth, maxHealth);
+        healthBar.SetHealth(currentHealth, maxHealth);
         UIController.instance.SetHealth(currentHealth, maxHealth);
     }
 
@@ -100,12 +116,12 @@ public class BossController : MonoBehaviour, IDamageable
     }
 
 
-    protected virtual void BuffATK()
+    public virtual void BuffATK()
     {
        
     }
 
-    protected virtual void BuffDEF()
+    public virtual void BuffDEF()
     {
         
     }
@@ -124,9 +140,9 @@ public class BossController : MonoBehaviour, IDamageable
         }
     }
 
-    public void TakeDamage(int _damage)
+    public virtual void TakeDamage(int _damage)
     {
-        int dmg = _damage * 600 / (600 + armor);
+        int dmg = _damage * 100 / (100 + armor);
         currentHealth -= dmg;
         UpdateHealth();
         anim.SetTrigger("cry");
@@ -135,6 +151,22 @@ public class BossController : MonoBehaviour, IDamageable
             isDead = true;
             StopMechanics();
             anim.SetBool("isDead", isDead);
+        }
+    }
+
+    protected void AllowNextAction(int  _nextAction)
+    {
+        if(_nextAction == 1)
+            nextAction = true;
+        else
+            nextAction = false;
+    }
+
+    public void StartMechanics()
+    {
+        if (bossMechanics != null)
+        {
+            StartCoroutine(bossMechanics);
         }
     }
 

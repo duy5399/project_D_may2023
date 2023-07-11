@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static ItemSO;
 
 public class MapDisplay : MonoBehaviour
 {
@@ -47,10 +49,40 @@ public class MapDisplay : MonoBehaviour
         {
             if (mapReward[i] != null)
             {
-                mapReward[i].GetComponent<Image>().sprite = _map.mapRewards_[i].item_.itemIcon_;
+                mapReward[i].GetChild(1).GetComponent<Image>().sprite = _map.mapRewards_[i].item_.itemIcon_;
+                mapReward[i].GetChild(2).GetComponent<TextMeshProUGUI>().text = _map.mapRewards_[i].quantity_.ToString();
+
+                switch (_map.mapDifficulty_)
+                {
+                    case MapDifficulty.easy:
+                        mapReward[i].GetChild(0).GetComponent<Image>().color = new Color32(209, 213, 216, 255);
+                        break;
+                    case MapDifficulty.normal:
+                        mapReward[i].GetChild(0).GetComponent<Image>().color = new Color32(65, 168, 95, 255);
+                        break;
+                    case MapDifficulty.difficult:
+                        mapReward[i].GetChild(0).GetComponent<Image>().color = new Color32(44, 130, 201, 255);
+                        break;
+                    case MapDifficulty.hero:
+                        mapReward[i].GetChild(0).GetComponent<Image>().color = new Color32(147, 101, 184, 255);
+                        break;
+                    default:
+                        Debug.Log("Not found mapDifficulty_: " + _map.mapDifficulty_);
+                        break;
+                }
             }
         }
         startBtn.onClick.RemoveAllListeners();
-        startBtn.onClick.AddListener(() => SceneManager.LoadScene(_map.sceneToLoad_.name));
+        
+        startBtn.onClick.AddListener(delegate { onClickStartBtn(_map); });
+        //startBtn.onClick.AddListener(delegate { onClickStartBtn(_map); });
+    }
+
+    private void onClickStartBtn(MapSO _map)
+    {
+        //Debug.Log(_map.sceneToLoad_.ToString());
+        InventoryManager.instance.SaveDataInventory();
+        CharacterEquipmentManager.instance.SaveCharacterEquipment();
+        SceneManager.LoadScene(_map.sceneToLoad_.ToString());
     }
 }

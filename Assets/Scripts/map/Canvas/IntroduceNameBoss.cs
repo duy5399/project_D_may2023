@@ -19,7 +19,7 @@ public class IntroduceNameBoss : MonoBehaviour
     {
         if (!introduceBossDone.ContainsKey("introduce" + _nameBoss))
         {
-            Debug.Log("IntroduceNameBoss" + _nameBoss);
+            //Debug.Log("IntroduceNameBoss" + _nameBoss);
             gameObject.SetActive(true);
             anim.SetTrigger("introduce" + _nameBoss);
             introduceBossDone.Add("introduce" + _nameBoss, true);

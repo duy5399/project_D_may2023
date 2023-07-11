@@ -19,7 +19,11 @@ public class InventorySlotEquipmentController : InventorySlotController, IPointe
     //thêm thông tin vật phẩm cho object InventorySlot này
     public void AddItemInfo(InventoryEquipmentSlot _item, int _quantity)
     {
-        equipment = EquipmentSO.Init(_item.idItem_, _item.type_, _item.icon_, _item.name_, _item.tier_, _item.description_, _item.maxStack_, _item.slot_, _item.show_, _item.stats_, _item.canUpgrade_, _item.itemStrength_, _item.itemStrengthImg_);
+        Sprite iconItem_ = Resources.Load<Sprite>(_item.iconPath_);
+        Sprite showItem_ = Resources.Load<Sprite>(_item.showPath_);
+        Sprite strengthImgItem_ = Resources.Load<Sprite>(_item.itemStrengthImgPath_);
+
+        equipment = EquipmentSO.Init(_item.idItem_, _item.type_, iconItem_, _item.name_, _item.tier_, _item.description_, _item.maxStack_, _item.slot_, showItem_, _item.stats_, _item.canUpgrade_, _item.itemStrength_, strengthImgItem_);
         quantity = _quantity;
         itemIcon.sprite = equipment.itemIcon_;
         quantityTxt.text = quantity.ToString();
@@ -44,7 +48,7 @@ public class InventorySlotEquipmentController : InventorySlotController, IPointe
                 itemBorder.color = new Color32(226, 80, 65, 255);
                 break;
             default:
-                Debug.Log("Not found rarity tier of item: " + equipment.itemName_);
+                //Debug.Log("Not found rarity tier of item: " + equipment.itemName_);
                 break;
         }
     }
@@ -53,8 +57,8 @@ public class InventorySlotEquipmentController : InventorySlotController, IPointe
     public void EquipGear()
     {
         CharacterEquipmentManager.instance.EquipGear(equipment);
-        CharacterEquipmentManager.instance.AddItem(equipment);
-        InventoryManager.instance.RemoveItem(equipment);
+        CharacterEquipmentManager.instance.AddItem(equipment, 1);
+        InventoryManager.instance.RemoveItem(equipment, 1);
         Destroy(gameObject);
     }
 
@@ -63,7 +67,7 @@ public class InventorySlotEquipmentController : InventorySlotController, IPointe
     {
         UpgradeEquipmentManager.instance.AddGearToUpgradeSlot(equipment);
         UpgradeEquipmentManager.instance.AddEquipment(equipment);
-        InventoryManager.instance.RemoveItem(equipment);
+        InventoryManager.instance.RemoveItem(equipment, 1);
         UpgradeEquipmentManager.instance.UpdateSuccessRate();
         Destroy(gameObject);
     }
@@ -76,7 +80,7 @@ public class InventorySlotEquipmentController : InventorySlotController, IPointe
             if (CombineItemManager.instance.AddItemToCombineSlot(equipment))
             {
                 CombineItemManager.instance.AddItem(equipment);
-                InventoryManager.instance.RemoveItem(equipment);
+                InventoryManager.instance.RemoveItem(equipment, 1);
                 CombineItemManager.instance.SetPreviewFinishedProduct();
                 CombineItemManager.instance.SetSuccessRateCombine();
                 Destroy(gameObject);
@@ -89,6 +93,7 @@ public class InventorySlotEquipmentController : InventorySlotController, IPointe
         if (eventData.button == PointerEventData.InputButton.Left)
         {
             OnLeftClick();
+            AudioManager.instance.ClickSuccessSFX();
         }
         if (eventData.button == PointerEventData.InputButton.Right)
         {
@@ -103,23 +108,24 @@ public class InventorySlotEquipmentController : InventorySlotController, IPointe
 
     public override void OnRightClick()
     {
-        if (transform.root.GetChild(5).gameObject.activeInHierarchy && !transform.root.GetChild(6).gameObject.activeInHierarchy)
+        if (transform.root.GetChild(6).gameObject.activeInHierarchy && !transform.root.GetChild(7).gameObject.activeInHierarchy)
         {
             if (transform.parent.name == "InventoryEquipment" && equipment.itemType_ == ItemSO.ItemType.Equipment)
             {
+                AudioManager.instance.EquipGearSFX();
                 EquipGear();
             }
         }
-        else if (transform.root.GetChild(6).gameObject.activeInHierarchy && !transform.root.GetChild(5).gameObject.activeInHierarchy)
+        else if (transform.root.GetChild(7).gameObject.activeInHierarchy && !transform.root.GetChild(6).gameObject.activeInHierarchy)
         {
-            if(transform.root.GetChild(6).GetChild(0).GetChild(2).gameObject.activeInHierarchy && !transform.root.GetChild(6).GetChild(0).GetChild(3).gameObject.activeInHierarchy)
+            if(transform.root.GetChild(7).GetChild(0).GetChild(2).gameObject.activeInHierarchy && !transform.root.GetChild(7).GetChild(0).GetChild(3).gameObject.activeInHierarchy)
             {
                 if (transform.parent.name == "InventoryEquipment" && equipment.itemType_ == ItemSO.ItemType.Equipment)
                 {
                     AddGearToUpgradeSlot();
                 }
             }
-            else if(transform.root.GetChild(6).GetChild(0).GetChild(3).gameObject.activeInHierarchy && !transform.root.GetChild(6).GetChild(0).GetChild(2).gameObject.activeInHierarchy){
+            else if(transform.root.GetChild(7).GetChild(0).GetChild(3).gameObject.activeInHierarchy && !transform.root.GetChild(7).GetChild(0).GetChild(2).gameObject.activeInHierarchy){
                 if (transform.parent.name == "InventoryEquipment" && equipment.itemType_ == ItemSO.ItemType.Equipment)
                 {
                     AddGearToCombineSlot();

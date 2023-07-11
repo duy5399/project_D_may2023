@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditorInternal.VersionControl;
 using UnityEngine;
 using UnityEngine.UI;
+using static ItemSO;
 
 public class CombineItemManager : MonoBehaviour
 {
@@ -60,7 +60,7 @@ public class CombineItemManager : MonoBehaviour
                     {
                         finishedProductSlot.GetComponent<FinishedProductCombine>().AddFinishesProductToInventory();
                     }
-                    ////Debug.Log("ô này " + itemCombineSlot[i].name + " thêm được vật phẩm dung luyện");
+                    //Debug.Log("ô này " + itemCombineSlot[i].name + " thêm được vật phẩm dung luyện");
                     return true;
                 }
                 //Debug.Log("ô này " + itemCombineSlot[i].name + " không thêm được vật phẩm dung luyện");
@@ -77,7 +77,7 @@ public class CombineItemManager : MonoBehaviour
                     {
                         finishedProductSlot.GetComponent<FinishedProductCombine>().AddFinishesProductToInventory();
                     }
-                    ////Debug.Log("ô này " + itemCombineSlot[i].name + " thêm được vật phẩm dung luyện");
+                    //Debug.Log("ô này " + itemCombineSlot[i].name + " thêm được vật phẩm dung luyện");
                     return true;
                 }
                 //Debug.Log("ô này " + itemCombineSlot[i].name + " không thêm được vật phẩm dung luyện");
@@ -90,9 +90,10 @@ public class CombineItemManager : MonoBehaviour
     public void SetPreviewFinishedProduct()
     {
         if(combineItemSO.listItems_.Count == 0){
-            previewProduct.GetChild(0).GetComponent<Image>().sprite = null;
             previewProduct.GetChild(0).GetComponent<Image>().enabled = false;
-            previewProduct.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
+            previewProduct.GetChild(1).GetComponent<Image>().sprite = null;
+            previewProduct.GetChild(1).GetComponent<Image>().enabled = false;
+            previewProduct.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
         }
         else
         {
@@ -100,26 +101,52 @@ public class CombineItemManager : MonoBehaviour
             {
                 string[] itemID_0_ = combineItemSO.listItems_[0].itemID_.Split(new char[] { '_' });
                 string[] itemID_i_ = combineItemSO.listItems_[i].itemID_.Split(new char[] { '_' });
-                Debug.Log(itemID_0_[0] + itemID_0_[1] + " vs " + itemID_i_[0] + itemID_i_[1] + " ------------------- " + combineItemSO.listItems_[0].itemTier_ + " vs " + combineItemSO.listItems_[i].itemTier_);
+                //Debug.Log(itemID_0_[0] + itemID_0_[1] + " vs " + itemID_i_[0] + itemID_i_[1] + " ------------------- " + combineItemSO.listItems_[0].itemTier_ + " vs " + combineItemSO.listItems_[i].itemTier_);
                 if (itemID_0_[0] + itemID_0_[1] != itemID_i_[0] + itemID_i_[1] || combineItemSO.listItems_[0].itemTier_ != combineItemSO.listItems_[i].itemTier_)
                 {
-                    previewProduct.GetChild(0).GetComponent<Image>().sprite = null;
                     previewProduct.GetChild(0).GetComponent<Image>().enabled = false;
-                    previewProduct.GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
+                    previewProduct.GetChild(1).GetComponent<Image>().sprite = null;
+                    previewProduct.GetChild(1).GetComponent<Image>().enabled = false;
+                    previewProduct.GetChild(2).GetComponent<TextMeshProUGUI>().text = "";
                     return;
                 }
             }
             finishedProductPreview = combineItemSO.GetItemFinishedProduct(combineItemSO.listItems_[0]);
-            previewProduct.GetChild(0).GetComponent<Image>().sprite = finishedProductPreview.itemIcon_;
+            switch (finishedProductPreview.itemTier_)
+            {
+                case RarityTier.common:
+                    previewProduct.GetChild(0).GetComponent<Image>().color = new Color32(209, 213, 216, 255);
+                    break;
+                case RarityTier.uncommmon:
+                    previewProduct.GetChild(0).GetComponent<Image>().color = new Color32(65, 168, 95, 255);
+                    break;
+                case RarityTier.rare:
+                    previewProduct.GetChild(0).GetComponent<Image>().color = new Color32(44, 130, 201, 255);
+                    break;
+                case RarityTier.epic:
+                    previewProduct.GetChild(0).GetComponent<Image>().color = new Color32(147, 101, 184, 255);
+                    break;
+                case RarityTier.legendary:
+                    previewProduct.GetChild(0).GetComponent<Image>().color = new Color32(250, 197, 28, 255);
+                    break;
+                case RarityTier.mythic:
+                    previewProduct.GetChild(0).GetComponent<Image>().color = new Color32(226, 80, 65, 255);
+                    break;
+                default:
+                    //Debug.Log("Not found rarity tier of item: " + equipment.itemName_);
+                    break;
+            }
             previewProduct.GetChild(0).GetComponent<Image>().enabled = true;
-            previewProduct.GetChild(1).GetComponent<TextMeshProUGUI>().text = finishedProductPreview.itemName_;
+            previewProduct.GetChild(1).GetComponent<Image>().sprite = finishedProductPreview.itemIcon_;
+            previewProduct.GetChild(1).GetComponent<Image>().enabled = true;
+            previewProduct.GetChild(2).GetComponent<TextMeshProUGUI>().text = finishedProductPreview.itemName_;
         }
     }
 
     //cập nhật tỉ lệ thành công khi bỏ vật phẩm cần dung luyện vào ô
     public void SetSuccessRateCombine()
     {
-        previewProduct.GetChild(2).GetComponent<TextMeshProUGUI>().text = combineItemSO.CombineSuccessRate() > 100 ? "100%" : combineItemSO.CombineSuccessRate().ToString() + "%";
+        previewProduct.GetChild(3).GetComponent<TextMeshProUGUI>().text = combineItemSO.CombineSuccessRate() > 100 ? "100%" : combineItemSO.CombineSuccessRate().ToString() + "%";
     }
 
     //khi nhấn nút Dung luyện
@@ -130,7 +157,8 @@ public class CombineItemManager : MonoBehaviour
             bool resultCombine_ = combineItemSO.GetResultCombine();   //lấy kết quả thành công hoặc thạt bại (hiện tại đang set mức 100% => chưa có tỉ lệ thất bại - có thể phát triển thêm sau)
             if (resultCombine_)                                             //Dung luyện vật phẩm
             {
-                Debug.Log("combineItemSO.GetResultCombine(): " + resultCombine_);
+                //Debug.Log("combineItemSO.GetResultCombine(): " + resultCombine_);
+                AudioManager.instance.UpgradeSuccessSFX();
                 combineItemSO.CombineSuccessful(resultCombine_, combineItemSO.listItems_[0]);
                 finishedProductSlot.GetComponent<FinishedProductCombine>().DisplayFinishProductCombine(combineItemSO.finishedProduct_);
                 combineItemSO.RemoveFinishedProduct();
@@ -138,7 +166,8 @@ public class CombineItemManager : MonoBehaviour
             }
             else                                                            //Dung luyện vật phẩm thất bại
             {
-                Debug.Log("combineItemSO.GetResultCombine(): " + resultCombine_);
+                AudioManager.instance.UpgradeFailureSFX();
+                //Debug.Log("combineItemSO.GetResultCombine(): " + resultCombine_);
                 combineItemSO.CombineFailed(resultCombine_);
                 StartCoroutine(DisplayedResultCombine(resultCombine_));
             }
@@ -169,11 +198,6 @@ public class CombineItemManager : MonoBehaviour
         {
             itemCombineSlot[i].GetComponent<UpgradeSlotController>().ResetDisplayUpgradeSlot();
         }
-    }
-
-    public void OnApplicationQuit()
-    {
-        combineItemSO.ClearCombineList();
     }
 
     //trả các vật phẩm còn trong ô Dung luyện về kho đồ nếu có

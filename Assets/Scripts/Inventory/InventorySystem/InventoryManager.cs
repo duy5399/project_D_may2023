@@ -18,12 +18,12 @@ public class InventoryManager : BagManager
         {
             instance = this;
         }
+        LoadDataInventory();
     }
     #endregion
-
     #region Inventory
 
-    [SerializeField] private int space = 200;
+    [SerializeField] private int space = 999;
     [SerializeField] private string savePathEquipmentInventory = "/inventoryEquipment.lsd";
     [SerializeField] private string savePathMaterialInventory = "/inventoryMaterial.lsd";
 
@@ -37,22 +37,22 @@ public class InventoryManager : BagManager
     private Dictionary<InventoryMaterialSlot, GameObject> inventoryMaterialSlotDisplayed = new Dictionary<InventoryMaterialSlot, GameObject>();
 
     //thêm trang bị hoặc tài nguyên vào kho đồ
-    public override bool AddItem(ItemSO _item)
+    public override bool AddItem(ItemSO _item, int _quantity)
     {
         if (inventorySO.listEquipmentSO_.equipments.Count + inventorySO.listMaterialSO_.materials.Count  > space)
         {
-            Debug.Log("Not enough space");
+            //Debug.Log("Not enough space");
             return false;
         }
-        inventorySO.AddItem(_item, 1);
+        inventorySO.AddItem(_item, _quantity);
         return true;
     }
 
     //xóa trang bị hoặc tài nguyên ra khỏi kho đồ
-    public override bool RemoveItem(ItemSO _item)
+    public override bool RemoveItem(ItemSO _item, int _quantity)
     {
 
-        inventorySO.RemoveItem(_item, 1);
+        inventorySO.RemoveItem(_item, _quantity);
         return true;
     }
 
@@ -92,7 +92,7 @@ public class InventoryManager : BagManager
             if (inventoryMaterialSlotDisplayed.ContainsKey(inventorySO.listMaterialSO_.materials[i]))
             {
                 inventoryMaterialSlotDisplayed[inventorySO.listMaterialSO_.materials[i]].GetComponent<InventorySlotMaterialController>().SetQuantity(inventorySO.listMaterialSO_.materials[i].quantity_);
-                Debug.Log("inventoryMaterialSlotDisplayed.ContainsKey: " + i);
+                //Debug.Log("inventoryMaterialSlotDisplayed.ContainsKey: " + i);
                 inventoryMaterialSlotDisplayed[inventorySO.listMaterialSO_.materials[i]].GetComponentInChildren<TextMeshProUGUI>().text = inventorySO.listMaterialSO_.materials[i].quantity_.ToString();
             }
             else
@@ -105,25 +105,15 @@ public class InventoryManager : BagManager
     }
     #endregion
 
-    public void OnApplicationQuit()
+    public void SaveDataInventory()
     {
-        //inventorySO.listItemSO_.items.Clear();
-        inventorySO.listEquipmentSO_.equipments.Clear();
-        inventorySO.listMaterialSO_.materials.Clear();
+        inventorySO.SaveEquipment(savePathEquipmentInventory);
+        inventorySO.SaveMaterial(savePathMaterialInventory);
     }
 
-    void Update()
+    public void LoadDataInventory()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            inventorySO.SaveEquipment(savePathEquipmentInventory);
-            inventorySO.SaveMaterial(savePathMaterialInventory);
-        }
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
-        {
-            inventorySO.LoadEquipment(savePathEquipmentInventory);
-            inventorySO.LoadMaterial(savePathMaterialInventory);
-            UpdateUIInventory();
-        }
+        inventorySO.LoadEquipment(savePathEquipmentInventory);
+        inventorySO.LoadMaterial(savePathMaterialInventory);
     }
 }

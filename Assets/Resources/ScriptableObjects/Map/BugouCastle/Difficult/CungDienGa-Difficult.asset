@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd29d35fa0de94048beb854e5f8a5b95, type: 3}
+  m_Name: CungDienGa-Difficult
+  m_EditorClassIdentifier: 
+  mapIndex: 2
+  mapName: "Cung \u0110i\u1EC7n G\xE0"
+  mapDescription: 
+  mapImage: {fileID: 21300000, guid: 2bc01a6480f1ec945863901a3e906ed1, type: 3}
+  sceneToLoad: 1
+  mapDifficulty: 2
+  mapMiniBoss:
+  - bossPrefab: {fileID: 8189815594640184480, guid: cd29b5d4f9c2f0f42816c2dbee428a4f,
+      type: 3}
+    bossInfo: {fileID: 11400000, guid: 3e7040272ae4f68428bf9475f6f54ed4, type: 2}
+  mapBoss:
+  - bossPrefab: {fileID: 5092553031374659084, guid: 99b784c92dbaabc49bdce597c1740ceb,
+      type: 3}
+    bossInfo: {fileID: 11400000, guid: cd742f2ab69a2a3409526a0524ef72ff, type: 2}
+  mapRewards:
+  - item: {fileID: 11400000, guid: 8c6f41858ce928c4d90fe434e6519f1e, type: 2}
+    quantity: 1
+    dropRate: 20
+  - item: {fileID: 11400000, guid: a82f6a1ae4fbc4f44b18b4ae38edcbe7, type: 2}
+    quantity: 1
+    dropRate: 20
+  - item: {fileID: 11400000, guid: b70ba986db326ce4b97f50de20d23f52, type: 2}
+    quantity: 1
+    dropRate: 20
+  - item: {fileID: 11400000, guid: fc60cbba0555e624ea32c4f3fcd023df, type: 2}
+    quantity: 200
+    dropRate: 40
+  mapTime: 120

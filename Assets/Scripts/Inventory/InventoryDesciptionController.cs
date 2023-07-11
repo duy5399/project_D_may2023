@@ -86,7 +86,6 @@ public class InventoryDesciptionController : MonoBehaviour
             itemTypeTxt.text = "Trang bị";
             itemStatsTxt.text = equipmentSO.GetStats();
             itemDescriptionTxt.text = equipmentSO.itemDescription_ + "\n";
-            Debug.Log("Show Description of equipment");
         }
         else
         {

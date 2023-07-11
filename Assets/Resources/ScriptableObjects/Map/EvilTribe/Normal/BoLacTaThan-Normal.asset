@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd29d35fa0de94048beb854e5f8a5b95, type: 3}
+  m_Name: BoLacTaThan-Normal
+  m_EditorClassIdentifier: 
+  mapIndex: 2
+  mapName: "B\u1ED9 L\u1EA1c T\xE0 Th\u1EA7n"
+  mapDescription: 
+  mapImage: {fileID: 21300000, guid: 516cce6cca48d514899f64d41629c00b, type: 3}
+  sceneToLoad: 2
+  mapDifficulty: 1
+  mapMiniBoss: []
+  mapBoss:
+  - bossPrefab: {fileID: 7066237643977731438, guid: 79deea5b65e01374e9d2ec9710b33bec,
+      type: 3}
+    bossInfo: {fileID: 11400000, guid: bf6f1613dcfc10c45925388522020a91, type: 2}
+  mapRewards:
+  - item: {fileID: 11400000, guid: af8e28b4dfd5d204ca0a85c7061a511c, type: 2}
+    quantity: 1
+    dropRate: 20
+  - item: {fileID: 11400000, guid: 1033df6e9c5bba9479e404946e9bfb3d, type: 2}
+    quantity: 1
+    dropRate: 20
+  - item: {fileID: 11400000, guid: b70ba986db326ce4b97f50de20d23f52, type: 2}
+    quantity: 1
+    dropRate: 20
+  - item: {fileID: 11400000, guid: 239b05cead517c44b94c74d39f7ddb1b, type: 2}
+    quantity: 1000
+    dropRate: 40
+  mapTime: 180

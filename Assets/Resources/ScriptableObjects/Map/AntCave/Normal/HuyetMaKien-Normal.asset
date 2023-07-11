@@ -16,24 +16,24 @@ MonoBehaviour:
   mapName: "Huy\u1EC7t Ma Ki\u1EBFn"
   mapDescription: 
   mapImage: {fileID: 21300000, guid: 938be8dde2c333b4397107a8d2988bcf, type: 3}
-  sceneToLoad: {fileID: 102900000, guid: e6712cb08f8ccba4b99fa96421ffb351, type: 3}
-  mapMode: 1
+  sceneToLoad: 0
+  mapDifficulty: 1
   mapMiniBoss: []
   mapBoss:
   - bossPrefab: {fileID: 6734387472148442292, guid: d30e86e26561dd942bc6303d0808557c,
       type: 3}
     bossInfo: {fileID: 11400000, guid: a04ac3aab0f760d47aaf4ea9e52c2715, type: 2}
   mapRewards:
-  - item: {fileID: 11400000, guid: 51dcdd59bab5a4145b5053750fa51500, type: 2}
+  - item: {fileID: 11400000, guid: 641cf8eb7e12138428124a38521dd652, type: 2}
     quantity: 1
     dropRate: 20
-  - item: {fileID: 11400000, guid: f131e3290ab81704695153a7f3df804e, type: 2}
+  - item: {fileID: 11400000, guid: a7c98bca3782c0643894057a277e698a, type: 2}
     quantity: 1
     dropRate: 20
-  - item: {fileID: 11400000, guid: 35462d8408a8f4f48b350c5193c48bdb, type: 2}
+  - item: {fileID: 11400000, guid: c65a9cbfb25368444bd3ad6f9a20bfcf, type: 2}
     quantity: 1
     dropRate: 20
-  - item: {fileID: 11400000, guid: 78c4e429d5878564cb38b6e47bfe6304, type: 2}
-    quantity: 1
+  - item: {fileID: 11400000, guid: fc60cbba0555e624ea32c4f3fcd023df, type: 2}
+    quantity: 200
     dropRate: 40
   mapTime: 120

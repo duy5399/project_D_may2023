@@ -63,14 +63,13 @@ public class CombineItemSO : UpgradeSystemSO
         {
             if (listItems[0].itemType_ == ItemSO.ItemType.Equipment)
             {
-                EquipmentSO equip_ = (EquipmentSO)listItems[0];
-                if(equip_ != null && equip_.itemTier_ != ItemSO.RarityTier.mythic)
+                if(listItems[0].itemTier_ != ItemSO.RarityTier.mythic)
                 {
+                    string[] itemID_0_ = listItems[0].itemID_.Split(new char[] { '_' });
                     for (int i = 1; i < listItems.Count; i++)
                     {
-                        string[] itemID_0_ = equip_.itemID_.Split(new char[] { '_' });
-                        string[] itemID_i_ = equip_.itemID_.Split(new char[] { '_' });
-                        //Debug.Log(itemID_0_[0] + itemID_0_[1] + " vs " + itemID_i_[0] + itemID_i_[1] + " ------------------- " + listItems[0].itemTier_ + " vs " + listItems[i].itemTier_);
+                        string[] itemID_i_ = listItems[i].itemID_.Split(new char[] { '_' });
+                        Debug.Log(itemID_0_[0] + itemID_0_[1] + " vs " + itemID_i_[0] + itemID_i_[1] + " ------------------- " + listItems[0].itemTier_ + " vs " + listItems[i].itemTier_ + " --------------------- "+ i);
                         if ((itemID_0_[0] + itemID_0_[1]) != (itemID_i_[0] + itemID_i_[1]) || listItems[0].itemTier_ != listItems[i].itemTier_)
                         {
                             return 0;
@@ -103,7 +102,7 @@ public class CombineItemSO : UpgradeSystemSO
     public float CombineSuccessRate()
     {      
         int canCombine_ = CanCombine();
-        Debug.Log("camcombine: " + canCombine_);
+        //Debug.Log("camcombine: " + canCombine_);
         if (canCombine_ == 1 || canCombine_ == 2)
         {
             return 100f;

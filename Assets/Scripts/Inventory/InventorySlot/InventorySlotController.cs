@@ -50,7 +50,7 @@ public class InventorySlotController : MonoBehaviour, IPointerClickHandler
 
     public virtual void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("OnPointerClick"); 
+        //Debug.Log("OnPointerClick"); 
     }
 
     public void OnLeftClick()
@@ -60,6 +60,6 @@ public class InventorySlotController : MonoBehaviour, IPointerClickHandler
 
     public virtual void OnRightClick()
     {
-        Debug.Log("OnRightClick");
+        //Debug.Log("OnRightClick");
     }
 }

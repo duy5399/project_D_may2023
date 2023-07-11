@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class QuestionDialogUI : MonoBehaviour
 {
     public static QuestionDialogUI instance { get; private set; }
+
     [SerializeField] private TextMeshProUGUI questionTxt;
     [SerializeField] private Button yesBtn;
     [SerializeField] private Button noBtn;
@@ -16,6 +17,7 @@ public class QuestionDialogUI : MonoBehaviour
     [SerializeField] private Image itemIcon;
     [SerializeField] private TextMeshProUGUI itemName;
     [SerializeField] private TextMeshProUGUI itemPrice;
+    [SerializeField] private Image itemCurrency;
 
     [SerializeField] private UnityAction yesAction;
     [SerializeField] private UnityAction noAction;
@@ -43,14 +45,49 @@ public class QuestionDialogUI : MonoBehaviour
         itemIcon = transform.GetChild(5).GetComponent<Image>();
         itemName = transform.GetChild(6).GetComponent<TextMeshProUGUI>();
         itemPrice = transform.GetChild(7).GetComponent<TextMeshProUGUI>();
+        itemCurrency = transform.GetChild(8).GetComponent<Image>();
     }
 
-    public void DisplayQuestion(string _question, Sprite _itemIcon, string _itemName, int _itemQuantity, int _itemPrice, UnityAction _yesAction, UnityAction _noAction)
+    public void DisplayConfirmPurchase(string _question, Sprite _itemIcon, string _itemName, int _itemQuantity, int _itemPrice, Sprite _itemCurrency,UnityAction _yesAction, UnityAction _noAction)
     {
         questionTxt.text = _question;
         itemIcon.sprite = _itemIcon;
         itemName.text = _itemName + " x" + _itemQuantity;
         itemPrice.text = _itemPrice.ToString();
+        itemCurrency.sprite = _itemCurrency;
+
+        itemIcon.enabled = true;
+        itemName.enabled = true;
+        itemPrice.enabled = true;
+        itemCurrency.enabled = true;
+
+        yesAction = _yesAction;
+        noAction = _noAction;
+
+        gameObject.SetActive(true);
+    }
+
+    public void DisplayPurchaseFailed(string _question, UnityAction _yesAction, UnityAction _noAction)
+    {
+        questionTxt.text = _question;
+        itemIcon.enabled = false;
+        itemName.enabled = false;
+        itemPrice.enabled = false;
+        itemCurrency.enabled = false;
+
+        yesAction = _yesAction;
+        noAction = _noAction;
+
+        gameObject.SetActive(true);
+    }
+
+    public void DisplayPurchaseSuccesful(string _question, UnityAction _yesAction, UnityAction _noAction)
+    {
+        questionTxt.text = _question;
+        itemIcon.enabled = false;
+        itemName.enabled = false;
+        itemPrice.enabled = false;
+        itemCurrency.enabled = false;
 
         yesAction = _yesAction;
         noAction = _noAction;
@@ -94,5 +131,19 @@ public class QuestionDialogUI : MonoBehaviour
     public void HideQuestionDialogUI()
     {
         this.gameObject.SetActive(false);
+    }
+
+    public void DisplayConfirmQuitGame(string _question, UnityAction _yesAction, UnityAction _noAction)
+    {
+        questionTxt.text = _question;
+        itemIcon.enabled = false;
+        itemName.enabled = false;
+        itemPrice.enabled = false;
+        itemCurrency.enabled = false;
+
+        yesAction = _yesAction;
+        noAction = _noAction;
+
+        gameObject.SetActive(true);
     }
 }

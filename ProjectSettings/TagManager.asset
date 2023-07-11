@@ -19,6 +19,7 @@ TagManager:
   - MobB
   - MobA
   - MiniBoss
+  - Totem
   layers:
   - Default
   - TransparentFX
@@ -33,7 +34,7 @@ TagManager:
   - Mob
   - CantAttack
   - Player
-  - 
+  - Totem
   - 
   - 
   - 

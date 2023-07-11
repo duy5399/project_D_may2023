@@ -14,6 +14,3347 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemDatabase: {fileID: 11400000, guid: 8ba2bec8dd23df64d97b07b845fce8e2, type: 2}
   listEquipmentSO:
-    equipments: []
+    equipments:
+    - idItem: weapon_01_mythic_luck:907defense:913luck:850luck:893_6FRI7K
+      type: 0
+      icon: {fileID: 21300000, guid: 749a9069b9818844e808dc24c2d443fe, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon01/02
+      name: "VIP - L\u1EF1u \u0111\u1EA1n"
+      tier: 5
+      description: "S\u1EE9c c\xF4ng ph\xE1 kh\u1EE7ng khi\u1EBFp"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: fdb7f36579f2e7e4abdc68ad70f244ee, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon01/00
+      stats:
+      - attributes: 3
+        valueBasic: 907
+        valueBonusStrength: 700
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 1
+        valueBasic: 913
+        valueBonusStrength: 700
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 3
+        valueBasic: 850
+        valueBonusStrength: 700
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 3
+        valueBasic: 893
+        valueBonusStrength: 700
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      canUpgrade: 1
+      itemStrength: 10
+      itemStrengthImg: {fileID: 21300000, guid: 5170ccc71c9491440ac2e240cb2b1721,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength10
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_07_mythic_hp:832hp:960defense:938hp:833_MBHCVO
+      type: 0
+      icon: {fileID: 21300000, guid: 8fce09cfb920a7b4b85cbeaf4bbf5bec, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon07/01
+      name: "Vip - T\u1EE7 thu\u1ED1c"
+      tier: 5
+      description: "B\xE1c s\u0129 t\u1EDBi ch\u01A1i"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: d9655bb0718c5504eb275c9dea6d1995, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon07/00
+      stats:
+      - attributes: 2
+        valueBasic: 832
+        valueBonusStrength: 400
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 2
+        valueBasic: 960
+        valueBonusStrength: 400
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 1
+        valueBasic: 938
+        valueBonusStrength: 400
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 2
+        valueBasic: 833
+        valueBonusStrength: 400
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      canUpgrade: 1
+      itemStrength: 7
+      itemStrengthImg: {fileID: 21300000, guid: af929721680a80c4ca80d3b0b8c3b494,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength7
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_06_mythic_luck:949defense:804luck:977luck:886_77IXG8
+      type: 0
+      icon: {fileID: 21300000, guid: ec1419b00e0b57843a7005d1a6316e80, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon06/00
+      name: "VIP - B\xFAa Minotaure"
+      tier: 5
+      description: "M\u1ED9t v\u0169 kh\xED c\u1EF1c k\xEC qu\xFD hi\u1EBFm"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: ec1419b00e0b57843a7005d1a6316e80, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon06/00
+      stats:
+      - attributes: 3
+        valueBasic: 949
+        valueBonusStrength: 0
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 1
+        valueBasic: 804
+        valueBonusStrength: 0
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 3
+        valueBasic: 977
+        valueBonusStrength: 0
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 3
+        valueBasic: 886
+        valueBonusStrength: 0
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_04_mythic_attack:741luck:751defense:900defense:820_OUHSKP
+      type: 0
+      icon: {fileID: 21300000, guid: f9eecef1f45790c4691f95f2de5672b3, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon04/02
+      name: "VIP - Lu g\u1EA1ch"
+      tier: 5
+      description: "V\u0169 kh\xED ph\u1ED5 th\xF4ng \u0111\u01B0\u1EE3c y\xEAu th\xEDch
+        nh\u1EA5t"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      stats:
+      - attributes: 0
+        valueBasic: 741
+        valueBonusStrength: 700
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 3
+        valueBasic: 751
+        valueBonusStrength: 700
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 1
+        valueBasic: 900
+        valueBonusStrength: 700
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 1
+        valueBasic: 820
+        valueBonusStrength: 700
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      canUpgrade: 1
+      itemStrength: 10
+      itemStrengthImg: {fileID: 21300000, guid: 5170ccc71c9491440ac2e240cb2b1721,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength10
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_03_mythic_defense:898hp:914luck:843luck:980_UMA2ZY
+      type: 0
+      icon: {fileID: 21300000, guid: 2ead6f91230912441a281884e73e8b4f, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon03/03
+      name: VIP - Boomerang
+      tier: 5
+      description: "V\u0169 kh\xED \u0111\u1EB7c tr\u01B0ng c\u1EE7a t\xF9 tr\u01B0\u1EDFng
+        B\u1ED9 l\u1EA1c  T\xE0 th\u1EA7n"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 2fada71afc9b6734fb77cbc11fa4a3db, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon03/00
+      stats:
+      - attributes: 1
+        valueBasic: 898
+        valueBonusStrength: 1500
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 2
+        valueBasic: 914
+        valueBonusStrength: 1500
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 3
+        valueBasic: 843
+        valueBonusStrength: 1500
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 3
+        valueBasic: 980
+        valueBonusStrength: 1500
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      canUpgrade: 1
+      itemStrength: 13
+      itemStrengthImg: {fileID: 21300000, guid: 5e1a2930027d18f4da70fa680b15ce07,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength13
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_02_mythic_luck:792hp:775attack:703defense:989_Y3PTXZ
+      type: 0
+      icon: {fileID: 21300000, guid: 5566ae673c26a904a99725f4f262f1a1, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon02/00
+      name: "VIP - Ph\xE1o"
+      tier: 5
+      description: "S\u1EE9c c\xF4ng ph\xE1 kh\u1EE7ng khi\u1EBFp"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 5566ae673c26a904a99725f4f262f1a1, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon02/00
+      stats:
+      - attributes: 3
+        valueBasic: 792
+        valueBonusStrength: 0
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 2
+        valueBasic: 775
+        valueBonusStrength: 0
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 0
+        valueBasic: 703
+        valueBonusStrength: 0
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 1
+        valueBasic: 989
+        valueBonusStrength: 0
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_05_mythic_luck:876attack:806hp:779luck:723_U9TW6C
+      type: 0
+      icon: {fileID: 21300000, guid: c3071b9b66416524682cf2fed6402ac1, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon05/01
+      name: "VIP - S\u1EA5m s\xE9t"
+      tier: 5
+      description: "S\u1EE9c m\u1EA1nh c\u1EE7a Zeus \u0111\u01B0\u1EE3c phong \u1EA5n
+        trong v\u0169 kh\xED n\xE0y"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 3259da67c7a13eb408f61ce5c0488d38, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon05/00
+      stats:
+      - attributes: 3
+        valueBasic: 876
+        valueBonusStrength: 400
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 0
+        valueBasic: 806
+        valueBonusStrength: 400
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 2
+        valueBasic: 779
+        valueBonusStrength: 400
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      - attributes: 3
+        valueBasic: 723
+        valueBonusStrength: 400
+        valueBasicMin: 701
+        valueBasicMax: 1000
+      canUpgrade: 1
+      itemStrength: 7
+      itemStrengthImg: {fileID: 21300000, guid: af929721680a80c4ca80d3b0b8c3b494,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength7
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_04_legendary_hp:624defense:626attack:527luck:656_WLQFW6
+      type: 0
+      icon: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      name: "VIP - Lu g\u1EA1ch"
+      tier: 4
+      description: "V\u0169 kh\xED ph\u1ED5 th\xF4ng \u0111\u01B0\u1EE3c y\xEAu th\xEDch
+        nh\u1EA5t"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      stats:
+      - attributes: 2
+        valueBasic: 624
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 626
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 527
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 656
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_04_legendary_luck:626luck:574hp:578attack:687_EXGY8A
+      type: 0
+      icon: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      name: "VIP - Lu g\u1EA1ch"
+      tier: 4
+      description: "V\u0169 kh\xED ph\u1ED5 th\xF4ng \u0111\u01B0\u1EE3c y\xEAu th\xEDch
+        nh\u1EA5t"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      stats:
+      - attributes: 3
+        valueBasic: 626
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 574
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 578
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 687
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: armlet_01_legendary_defense:646attack:633defense:504attack:675_CC9343
+      type: 0
+      icon: {fileID: 21300000, guid: 2450d2e50a0807548a538b91fcdae470, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Armlet/armlet01/acma_1
+      name: "\xC1c ma"
+      tier: 4
+      description: "V\xF2ng tay \xC1c ma mang l\u1EA1i may m\u1EAFn cho ng\u01B0\u1EDDi
+        \u0111eo n\xF3."
+      maxStack: 1
+      slot: 6
+      show: {fileID: 21300000, guid: 2450d2e50a0807548a538b91fcdae470, type: 3}
+      showPath: Sprites/Inventory/Equipment/Armlet/armlet01/acma_1
+      stats:
+      - attributes: 1
+        valueBasic: 646
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 633
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 504
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 675
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: cloth_07_legendary_defense:578defense:566attack:628hp:581_7ON5MS
+      type: 0
+      icon: {fileID: 21300000, guid: 316547e8a5330994b913a50da005f4db, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Cloth/cloth07/cloth07_icon
+      name: "\xC1o gi\xE1p Minotaure"
+      tier: 4
+      description: "\xC1o gi\xE1p s\u1EAFt c\u1EF1c k\xEC b\u1EC1n v\xE0 tho\u1EA3i
+        m\xE1i khi m\u1EB7c"
+      maxStack: 1
+      slot: 8
+      show: {fileID: 21300000, guid: 165d6941903cc2f4386112cfea9ca11a, type: 3}
+      showPath: Sprites/Inventory/Equipment/Cloth/cloth07/cloth07_show
+      stats:
+      - attributes: 1
+        valueBasic: 578
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 566
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 628
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 581
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: cloth_02_legendary_hp:660attack:501attack:527hp:591_WQULJX
+      type: 0
+      icon: {fileID: 21300000, guid: 8f9e451c6e806df469010408420b2ae4, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Cloth/cloth02/cloth02_icon
+      name: "C\u01A1n th\u1ECBnh n\u1ED9 Sulan"
+      tier: 4
+      description: "C\u01A1n th\u1ECBnh n\u1ED9 Sulan - b\u1ED9 trang ph\u1EE5c \u0111\u1EB7c
+        tr\u01B0ng c\u1EE7a B\u1ED9 l\u1EA1c T\xE0 th\u1EA7n."
+      maxStack: 1
+      slot: 8
+      show: {fileID: 21300000, guid: 0a16a8a864e496c42a63a3ee7dc62509, type: 3}
+      showPath: Sprites/Inventory/Equipment/Cloth/cloth02/cloth02_show
+      stats:
+      - attributes: 2
+        valueBasic: 660
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 501
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 527
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 591
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: face_05_legendary_hp:530luck:654defense:597hp:663_AD8ET1
+      type: 0
+      icon: {fileID: 21300000, guid: 2e450b384ed924440902c030de6b2b38, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Face/face05/face05_icon
+      name: "Th\u1EE7 l\u0129nh b\u1ED9 t\u1ED9c"
+      tier: 4
+      description: "G\u01B0\u01A1ng m\u1EB7t n\xEAn c\xF3 c\u1EE7a ng\u01B0\u1EDDi
+        \u0111\u1EE9ng \u0111\u1EA7u b\u1ED9 t\u1ED9c"
+      maxStack: 1
+      slot: 5
+      show: {fileID: 21300000, guid: 523b978b6501b7b40859b17d622f1111, type: 3}
+      showPath: Sprites/Inventory/Equipment/Face/face05/face05_show
+      stats:
+      - attributes: 2
+        valueBasic: 530
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 654
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 597
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 663
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: glass_06_legendary_defense:594attack:682luck:551luck:562_07R9O6
+      type: 0
+      icon: {fileID: 21300000, guid: 9e4d35470ae9b774e8d17d73a85b3811, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Glass/glass06/glass06_icon
+      name: "M\u1EB7t n\u1EA1 t\xE0 th\u1EA7n"
+      tier: 4
+      description: "Chi\u1EBFn binh B\u1ED9 l\u1EA1c T\xE0 th\u1EA7n th\u01B0\u1EDDng
+        \u0111eo chi\u1EBFc m\u1EB7t n\u1EA1 n\xE0y"
+      maxStack: 1
+      slot: 4
+      show: {fileID: 21300000, guid: 584d7536bf090fc4ebe344a6bc7aba21, type: 3}
+      showPath: Sprites/Inventory/Equipment/Glass/glass06/glass06_show
+      stats:
+      - attributes: 1
+        valueBasic: 594
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 682
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 551
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 562
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: head_09_legendary_hp:567luck:646hp:608attack:629_ZADTIW
+      type: 0
+      icon: {fileID: 21300000, guid: 4051a0c70a6123d42ae1d8c9dc996705, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Head/head09/head09_icon
+      name: "N\xF3n Goblin"
+      tier: 4
+      description: "Chi\u1EBFn l\u1EE3i ph\u1EA9m t\u1EEB l\u0169 Goblin \u0111\xE1ng
+        gh\xE9t"
+      maxStack: 1
+      slot: 2
+      show: {fileID: 21300000, guid: d83ac87a60deaf941adc7e91f83019ab, type: 3}
+      showPath: Sprites/Inventory/Equipment/Head/head09/head09_show
+      stats:
+      - attributes: 2
+        valueBasic: 567
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 646
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 608
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 629
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: wing_06_legendary_hp:680hp:658attack:525attack:677_T7XSCD
+      type: 0
+      icon: {fileID: 21300000, guid: fbfb311bbccb319499547ee3893d021e, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Wing/wing06/wing06_icon
+      name: "H\u1ECFa th\u1EA7n"
+      tier: 4
+      description: "C\xE1nh H\u1ECFa th\u1EA7n mang s\u1EE9c m\u1EA1nh c\u1EE7a l\u1EEDa."
+      maxStack: 1
+      slot: 9
+      show: {fileID: 21300000, guid: fbfb311bbccb319499547ee3893d021e, type: 3}
+      showPath: Sprites/Inventory/Equipment/Wing/wing06/wing06_icon
+      stats:
+      - attributes: 2
+        valueBasic: 680
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 658
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 525
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 677
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: hair_10_legendary_hp:616defense:553attack:580hp:517_KSEL3B
+      type: 0
+      icon: {fileID: 21300000, guid: 505d91cb2d7ab244997d1348f3cbc634, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Hair/hair10/hair10_icon
+      name: "Thi\u1EBFu gia"
+      tier: 4
+      description: "Ng\u1EA7u l\xF2i kh\xF4ng t\u01B0\u1EDFng"
+      maxStack: 1
+      slot: 3
+      show: {fileID: 21300000, guid: 4448867877e0198499006c69b6cb441a, type: 3}
+      showPath: Sprites/Inventory/Equipment/Hair/hair10/hair10_show
+      stats:
+      - attributes: 2
+        valueBasic: 616
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 553
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 580
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 517
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_07_legendary_luck:545hp:546defense:534hp:598_66NTZT
+      type: 0
+      icon: {fileID: 21300000, guid: d9655bb0718c5504eb275c9dea6d1995, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon07/00
+      name: "Vip - T\u1EE7 thu\u1ED1c"
+      tier: 4
+      description: "B\xE1c s\u0129 t\u1EDBi ch\u01A1i"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: d9655bb0718c5504eb275c9dea6d1995, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon07/00
+      stats:
+      - attributes: 3
+        valueBasic: 545
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 546
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 534
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 598
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_08_legendary_luck:620luck:611defense:570attack:686_ASR20Y
+      type: 0
+      icon: {fileID: 21300000, guid: fb796a8389438bf47868844c7d7c08c3, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon08/00
+      name: "VIP - Th\u01B0\u01A1ng c\u1ED5"
+      tier: 4
+      description: "B\xE1c s\u0129 t\u1EDBi ch\u01A1i"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: fb796a8389438bf47868844c7d7c08c3, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon08/00
+      stats:
+      - attributes: 3
+        valueBasic: 620
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 611
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 570
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 686
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: ring_01_legendary_attack:617defense:548attack:622luck:654_T0JWJT
+      type: 0
+      icon: {fileID: 21300000, guid: dade257d3887dc542b12eff9d4299211, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Ring/ring01/hanhphuc_1
+      name: "H\u1EA1nh ph\xFAc"
+      tier: 4
+      description: "Chi\u1EBFc nh\u1EABn mang \xFD ngh\u0129a \"h\u1EA1nh ph\xFAc\"
+        cho ng\u01B0\u1EDDi mang n\xF3."
+      maxStack: 1
+      slot: 7
+      show: {fileID: 21300000, guid: dade257d3887dc542b12eff9d4299211, type: 3}
+      showPath: Sprites/Inventory/Equipment/Ring/ring01/hanhphuc_1
+      stats:
+      - attributes: 0
+        valueBasic: 617
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 548
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 622
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 654
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_03_legendary_defense:683attack:648luck:549hp:639_9OSLUB
+      type: 0
+      icon: {fileID: 21300000, guid: 2fada71afc9b6734fb77cbc11fa4a3db, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon03/00
+      name: VIP - Boomerang
+      tier: 4
+      description: "V\u0169 kh\xED \u0111\u1EB7c tr\u01B0ng c\u1EE7a t\xF9 tr\u01B0\u1EDFng
+        B\u1ED9 l\u1EA1c  T\xE0 th\u1EA7n"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 2fada71afc9b6734fb77cbc11fa4a3db, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon03/00
+      stats:
+      - attributes: 1
+        valueBasic: 683
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 648
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 549
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 639
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_06_legendary_hp:650luck:518attack:689defense:696_5O6NZA
+      type: 0
+      icon: {fileID: 21300000, guid: ec1419b00e0b57843a7005d1a6316e80, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon06/00
+      name: "VIP - B\xFAa Minotaure"
+      tier: 4
+      description: "M\u1ED9t v\u0169 kh\xED c\u1EF1c k\xEC qu\xFD hi\u1EBFm"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: ec1419b00e0b57843a7005d1a6316e80, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon06/00
+      stats:
+      - attributes: 2
+        valueBasic: 650
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 518
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 689
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 696
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_04_legendary_defense:518defense:573attack:630luck:628_RVP8GH
+      type: 0
+      icon: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      name: "VIP - Lu g\u1EA1ch"
+      tier: 4
+      description: "V\u0169 kh\xED ph\u1ED5 th\xF4ng \u0111\u01B0\u1EE3c y\xEAu th\xEDch
+        nh\u1EA5t"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      stats:
+      - attributes: 1
+        valueBasic: 518
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 573
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 630
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 628
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: head_05_legendary_hp:628attack:692hp:539hp:511_ZXHUXC
+      type: 0
+      icon: {fileID: 21300000, guid: f4b543e51e5f31f40bb9b7ee2427c402, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Head/head05/head05_icon
+      name: "N\xF3n \u0111\u1ED9i tr\u01B0\u1EDFng"
+      tier: 4
+      description: "Ch\u1EC9 huy t\xE0i gi\u1ECFi m\u1EDBi c\xF3 th\u1EC3 s\u1EDF
+        h\u1EEFu"
+      maxStack: 1
+      slot: 2
+      show: {fileID: 21300000, guid: 97ade50eeae1ad9469031fcb27056738, type: 3}
+      showPath: Sprites/Inventory/Equipment/Head/head05/head05_show
+      stats:
+      - attributes: 2
+        valueBasic: 628
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 692
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 539
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 511
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: hair_02_legendary_luck:582luck:580luck:686defense:551_OJYHTY
+      type: 0
+      icon: {fileID: 21300000, guid: 115380655e01f5a409c326d9cb6180bf, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Hair/hair02/hair02_icon
+      name: "\u0110\u1EA7u \u0111inh H\xE0n Qu\u1ED1c"
+      tier: 4
+      description: "V\u1EEBa g\u1ECDn g\xE0ng v\u1EEBa to\xE1t l\xEAn v\u1EBB \u0111\u1EB9p
+        nam t\xEDnh, ch\u1EA5t ch\u01A1i v\xF4 c\xF9ng"
+      maxStack: 1
+      slot: 3
+      show: {fileID: 21300000, guid: 4ac4ae6f763d18740aba82d187eb6ebe, type: 3}
+      showPath: Sprites/Inventory/Equipment/Hair/hair02/hair02_show
+      stats:
+      - attributes: 3
+        valueBasic: 582
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 580
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 686
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 551
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: glass_05_legendary_luck:506defense:594luck:525defense:695_D5CUKJ
+      type: 0
+      icon: {fileID: 21300000, guid: cd03a210db770374a93d155184c5a545, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Glass/glass05/glass05_icon
+      name: "K\xEDnh vu\xF4ng"
+      tier: 4
+      description: "Mang l\u1EA1i v\u1EBB \u0111\u1EB9p tri th\u1EE9c."
+      maxStack: 1
+      slot: 4
+      show: {fileID: 21300000, guid: 688a7b14a065a604993a40c404cdf003, type: 3}
+      showPath: Sprites/Inventory/Equipment/Glass/glass05/glass05_show
+      stats:
+      - attributes: 3
+        valueBasic: 506
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 594
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 525
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 695
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: face_08_legendary_defense:534luck:697hp:601luck:671_58ZDK8
+      type: 0
+      icon: {fileID: 21300000, guid: c9376b93e99f5b142851f063c9a342c6, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Face/face08/face08_icon
+      name: "\u0110\u1EAFc \xFD"
+      tier: 4
+      description: "H\u1ED1 h\u1ED1"
+      maxStack: 1
+      slot: 5
+      show: {fileID: 21300000, guid: ac27d113726fa6f4382b16a969026c98, type: 3}
+      showPath: Sprites/Inventory/Equipment/Face/face08/face08_show
+      stats:
+      - attributes: 1
+        valueBasic: 534
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 697
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 601
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 671
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: offhand_02_legendary_luck:544attack:682luck:675defense:623_XYSTWA
+      type: 0
+      icon: {fileID: 21300000, guid: 4ed6a66f8940d594986818deb678ff61, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Offhand/offhand02/offhand02_icon
+      name: "Khi\xEAn Bolobala"
+      tier: 4
+      description: "Khi\xEAn cao c\u1EA5p, s\u1EE9c ph\xF2ng th\u1EE7 tuy\u1EC7t v\u1EDDi."
+      maxStack: 1
+      slot: 1
+      show: {fileID: 21300000, guid: 4ed6a66f8940d594986818deb678ff61, type: 3}
+      showPath: Sprites/Inventory/Equipment/Offhand/offhand02/offhand02_icon
+      stats:
+      - attributes: 3
+        valueBasic: 544
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 682
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 675
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 623
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: wing_04_legendary_defense:617attack:548luck:609hp:584_IHEBFK
+      type: 0
+      icon: {fileID: 21300000, guid: d17ac946f965a5a49bdcaea9d230d3e6, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Wing/wing04/wing04_icon
+      name: "Phong th\u1EA7n"
+      tier: 4
+      description: "C\xE1nh Phong th\u1EA7n mang s\u1EE9c m\u1EA1nh c\u1EE7a gi\xF3."
+      maxStack: 1
+      slot: 9
+      show: {fileID: 21300000, guid: d17ac946f965a5a49bdcaea9d230d3e6, type: 3}
+      showPath: Sprites/Inventory/Equipment/Wing/wing04/wing04_icon
+      stats:
+      - attributes: 1
+        valueBasic: 617
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 0
+        valueBasic: 548
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 609
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 584
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: cloth_03_legendary_hp:604luck:561hp:686defense:661_SHPB29
+      type: 0
+      icon: {fileID: 21300000, guid: b157fea9c04e70446b35e447168d51fd, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Cloth/cloth03/cloth03_icon
+      name: "K\u1EF5 S\u0129 R\u1ED3ng"
+      tier: 4
+      description: "\u0110\xF4i c\xE1nh cu\u1ED3ng long m\xE0u \u0111en d\u0169ng
+        m\xE3nh, tr\xEAn tay l\xE0 quy\u1EC1n tr\u01B0\u1EE3ng t\u01B0\u1EE3ng tr\u01B0ng
+        cho s\u1EE9c m\u1EA1nh v\xF4 song."
+      maxStack: 1
+      slot: 8
+      show: {fileID: 21300000, guid: ff24bff97d4f7eb45a4f35d09a303874, type: 3}
+      showPath: Sprites/Inventory/Equipment/Cloth/cloth03/cloth03_show
+      stats:
+      - attributes: 2
+        valueBasic: 604
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 561
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 686
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 661
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: ring_02_legendary_hp:528hp:553luck:527luck:598_J2GMFR
+      type: 0
+      icon: {fileID: 21300000, guid: 6630c2f05ad7895478ad322d4f6cb89a, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Ring/ring02/langman_1
+      name: "L\xE3ng m\u1EA1n"
+      tier: 4
+      description: "Chi\u1EBFc nh\u1EABn mang \xFD ngh\u0129a \"l\xE3ng m\u1EA1n\"
+        cho ng\u01B0\u1EDDi mang n\xF3."
+      maxStack: 1
+      slot: 7
+      show: {fileID: 21300000, guid: 6630c2f05ad7895478ad322d4f6cb89a, type: 3}
+      showPath: Sprites/Inventory/Equipment/Ring/ring02/langman_1
+      stats:
+      - attributes: 2
+        valueBasic: 528
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 2
+        valueBasic: 553
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 527
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 598
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: armlet_02_legendary_attack:648luck:569defense:563luck:512_SHU6XH
+      type: 0
+      icon: {fileID: 21300000, guid: 62634bf2b4994ec4394a14216277949d, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Armlet/armlet02/venus_1
+      name: Venus
+      tier: 4
+      description: "G\u0103ng tay c\u1EE7a n\u1EEF th\u1EA7n Venus, ch\u1EE9a s\u1EE9c
+        m\u1EA1nh c\u1EF1c l\u1EDBn."
+      maxStack: 1
+      slot: 6
+      show: {fileID: 21300000, guid: 62634bf2b4994ec4394a14216277949d, type: 3}
+      showPath: Sprites/Inventory/Equipment/Armlet/armlet02/venus_1
+      stats:
+      - attributes: 0
+        valueBasic: 648
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 569
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 1
+        valueBasic: 563
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      - attributes: 3
+        valueBasic: 512
+        valueBonusStrength: 0
+        valueBasicMin: 501
+        valueBasicMax: 700
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_08_epic_defense:472luck:407hp:369_5AEPYQ
+      type: 0
+      icon: {fileID: 21300000, guid: fb796a8389438bf47868844c7d7c08c3, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon08/00
+      name: "VIP - Th\u01B0\u01A1ng c\u1ED5"
+      tier: 3
+      description: "B\xE1c s\u0129 t\u1EDBi ch\u01A1i"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: fb796a8389438bf47868844c7d7c08c3, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon08/00
+      stats:
+      - attributes: 1
+        valueBasic: 472
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 3
+        valueBasic: 407
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 2
+        valueBasic: 369
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_07_epic_luck:486attack:413defense:353_0VC000
+      type: 0
+      icon: {fileID: 21300000, guid: d9655bb0718c5504eb275c9dea6d1995, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon07/00
+      name: "Vip - T\u1EE7 thu\u1ED1c"
+      tier: 3
+      description: "B\xE1c s\u0129 t\u1EDBi ch\u01A1i"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: d9655bb0718c5504eb275c9dea6d1995, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon07/00
+      stats:
+      - attributes: 3
+        valueBasic: 486
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 0
+        valueBasic: 413
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 1
+        valueBasic: 353
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_06_epic_luck:464attack:444luck:371_TV2TLC
+      type: 0
+      icon: {fileID: 21300000, guid: ec1419b00e0b57843a7005d1a6316e80, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon06/00
+      name: "VIP - B\xFAa Minotaure"
+      tier: 3
+      description: "M\u1ED9t v\u0169 kh\xED c\u1EF1c k\xEC qu\xFD hi\u1EBFm"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: ec1419b00e0b57843a7005d1a6316e80, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon06/00
+      stats:
+      - attributes: 3
+        valueBasic: 464
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 0
+        valueBasic: 444
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 3
+        valueBasic: 371
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_04_epic_attack:448defense:473luck:362_NNDG23
+      type: 0
+      icon: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      name: "VIP - Lu g\u1EA1ch"
+      tier: 3
+      description: "V\u0169 kh\xED ph\u1ED5 th\xF4ng \u0111\u01B0\u1EE3c y\xEAu th\xEDch
+        nh\u1EA5t"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      stats:
+      - attributes: 0
+        valueBasic: 448
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 1
+        valueBasic: 473
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 3
+        valueBasic: 362
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_04_epic_defense:330attack:334defense:307_5SH9Z4
+      type: 0
+      icon: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      name: "VIP - Lu g\u1EA1ch"
+      tier: 3
+      description: "V\u0169 kh\xED ph\u1ED5 th\xF4ng \u0111\u01B0\u1EE3c y\xEAu th\xEDch
+        nh\u1EA5t"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      stats:
+      - attributes: 1
+        valueBasic: 330
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 0
+        valueBasic: 334
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 1
+        valueBasic: 307
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_03_epic_defense:309luck:313luck:485_MWJND9
+      type: 0
+      icon: {fileID: 21300000, guid: 2fada71afc9b6734fb77cbc11fa4a3db, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon03/00
+      name: VIP - Boomerang
+      tier: 3
+      description: "V\u0169 kh\xED \u0111\u1EB7c tr\u01B0ng c\u1EE7a t\xF9 tr\u01B0\u1EDFng
+        B\u1ED9 l\u1EA1c  T\xE0 th\u1EA7n"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 2fada71afc9b6734fb77cbc11fa4a3db, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon03/00
+      stats:
+      - attributes: 1
+        valueBasic: 309
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 3
+        valueBasic: 313
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 3
+        valueBasic: 485
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_04_epic_hp:320hp:397defense:495_UWO3EL
+      type: 0
+      icon: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      name: "VIP - Lu g\u1EA1ch"
+      tier: 3
+      description: "V\u0169 kh\xED ph\u1ED5 th\xF4ng \u0111\u01B0\u1EE3c y\xEAu th\xEDch
+        nh\u1EA5t"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      stats:
+      - attributes: 2
+        valueBasic: 320
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 2
+        valueBasic: 397
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 1
+        valueBasic: 495
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: armlet_01_epic_luck:344attack:392attack:352_C427L3
+      type: 0
+      icon: {fileID: 21300000, guid: 2450d2e50a0807548a538b91fcdae470, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Armlet/armlet01/acma_1
+      name: "\xC1c ma"
+      tier: 3
+      description: "V\xF2ng tay \xC1c ma mang l\u1EA1i may m\u1EAFn cho ng\u01B0\u1EDDi
+        \u0111eo n\xF3."
+      maxStack: 1
+      slot: 6
+      show: {fileID: 21300000, guid: 2450d2e50a0807548a538b91fcdae470, type: 3}
+      showPath: Sprites/Inventory/Equipment/Armlet/armlet01/acma_1
+      stats:
+      - attributes: 3
+        valueBasic: 344
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 0
+        valueBasic: 392
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 0
+        valueBasic: 352
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: armlet_02_epic_attack:393hp:490luck:434_4EKUI7
+      type: 0
+      icon: {fileID: 21300000, guid: 62634bf2b4994ec4394a14216277949d, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Armlet/armlet02/venus_1
+      name: Venus
+      tier: 3
+      description: "G\u0103ng tay c\u1EE7a n\u1EEF th\u1EA7n Venus, ch\u1EE9a s\u1EE9c
+        m\u1EA1nh c\u1EF1c l\u1EDBn."
+      maxStack: 1
+      slot: 6
+      show: {fileID: 21300000, guid: 62634bf2b4994ec4394a14216277949d, type: 3}
+      showPath: Sprites/Inventory/Equipment/Armlet/armlet02/venus_1
+      stats:
+      - attributes: 0
+        valueBasic: 393
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 2
+        valueBasic: 490
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 3
+        valueBasic: 434
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: cloth_07_epic_hp:378luck:334defense:468_1CSS2H
+      type: 0
+      icon: {fileID: 21300000, guid: 316547e8a5330994b913a50da005f4db, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Cloth/cloth07/cloth07_icon
+      name: "\xC1o gi\xE1p Minotaure"
+      tier: 3
+      description: "\xC1o gi\xE1p s\u1EAFt c\u1EF1c k\xEC b\u1EC1n v\xE0 tho\u1EA3i
+        m\xE1i khi m\u1EB7c"
+      maxStack: 1
+      slot: 8
+      show: {fileID: 21300000, guid: 165d6941903cc2f4386112cfea9ca11a, type: 3}
+      showPath: Sprites/Inventory/Equipment/Cloth/cloth07/cloth07_show
+      stats:
+      - attributes: 2
+        valueBasic: 378
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 3
+        valueBasic: 334
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 1
+        valueBasic: 468
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: cloth_02_epic_defense:332luck:351defense:328_P3D5AA
+      type: 0
+      icon: {fileID: 21300000, guid: 8f9e451c6e806df469010408420b2ae4, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Cloth/cloth02/cloth02_icon
+      name: "C\u01A1n th\u1ECBnh n\u1ED9 Sulan"
+      tier: 3
+      description: "C\u01A1n th\u1ECBnh n\u1ED9 Sulan - b\u1ED9 trang ph\u1EE5c \u0111\u1EB7c
+        tr\u01B0ng c\u1EE7a B\u1ED9 l\u1EA1c T\xE0 th\u1EA7n."
+      maxStack: 1
+      slot: 8
+      show: {fileID: 21300000, guid: 0a16a8a864e496c42a63a3ee7dc62509, type: 3}
+      showPath: Sprites/Inventory/Equipment/Cloth/cloth02/cloth02_show
+      stats:
+      - attributes: 1
+        valueBasic: 332
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 3
+        valueBasic: 351
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 1
+        valueBasic: 328
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: cloth_03_epic_luck:439defense:372defense:384_FVMPMM
+      type: 0
+      icon: {fileID: 21300000, guid: b157fea9c04e70446b35e447168d51fd, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Cloth/cloth03/cloth03_icon
+      name: "K\u1EF5 S\u0129 R\u1ED3ng"
+      tier: 3
+      description: "\u0110\xF4i c\xE1nh cu\u1ED3ng long m\xE0u \u0111en d\u0169ng
+        m\xE3nh, tr\xEAn tay l\xE0 quy\u1EC1n tr\u01B0\u1EE3ng t\u01B0\u1EE3ng tr\u01B0ng
+        cho s\u1EE9c m\u1EA1nh v\xF4 song."
+      maxStack: 1
+      slot: 8
+      show: {fileID: 21300000, guid: ff24bff97d4f7eb45a4f35d09a303874, type: 3}
+      showPath: Sprites/Inventory/Equipment/Cloth/cloth03/cloth03_show
+      stats:
+      - attributes: 3
+        valueBasic: 439
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 1
+        valueBasic: 372
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 1
+        valueBasic: 384
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: face_05_epic_hp:430defense:478attack:389_ISZP0Z
+      type: 0
+      icon: {fileID: 21300000, guid: 2e450b384ed924440902c030de6b2b38, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Face/face05/face05_icon
+      name: "Th\u1EE7 l\u0129nh b\u1ED9 t\u1ED9c"
+      tier: 3
+      description: "G\u01B0\u01A1ng m\u1EB7t n\xEAn c\xF3 c\u1EE7a ng\u01B0\u1EDDi
+        \u0111\u1EE9ng \u0111\u1EA7u b\u1ED9 t\u1ED9c"
+      maxStack: 1
+      slot: 5
+      show: {fileID: 21300000, guid: 523b978b6501b7b40859b17d622f1111, type: 3}
+      showPath: Sprites/Inventory/Equipment/Face/face05/face05_show
+      stats:
+      - attributes: 2
+        valueBasic: 430
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 1
+        valueBasic: 478
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 0
+        valueBasic: 389
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: face_08_epic_attack:367luck:355attack:377_SIGLWT
+      type: 0
+      icon: {fileID: 21300000, guid: c9376b93e99f5b142851f063c9a342c6, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Face/face08/face08_icon
+      name: "\u0110\u1EAFc \xFD"
+      tier: 3
+      description: "H\u1ED1 h\u1ED1"
+      maxStack: 1
+      slot: 5
+      show: {fileID: 21300000, guid: ac27d113726fa6f4382b16a969026c98, type: 3}
+      showPath: Sprites/Inventory/Equipment/Face/face08/face08_show
+      stats:
+      - attributes: 0
+        valueBasic: 367
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 3
+        valueBasic: 355
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 0
+        valueBasic: 377
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: glass_06_epic_luck:380defense:463hp:322_5ME68C
+      type: 0
+      icon: {fileID: 21300000, guid: 9e4d35470ae9b774e8d17d73a85b3811, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Glass/glass06/glass06_icon
+      name: "M\u1EB7t n\u1EA1 t\xE0 th\u1EA7n"
+      tier: 3
+      description: "Chi\u1EBFn binh B\u1ED9 l\u1EA1c T\xE0 th\u1EA7n th\u01B0\u1EDDng
+        \u0111eo chi\u1EBFc m\u1EB7t n\u1EA1 n\xE0y"
+      maxStack: 1
+      slot: 4
+      show: {fileID: 21300000, guid: 584d7536bf090fc4ebe344a6bc7aba21, type: 3}
+      showPath: Sprites/Inventory/Equipment/Glass/glass06/glass06_show
+      stats:
+      - attributes: 3
+        valueBasic: 380
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 1
+        valueBasic: 463
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 2
+        valueBasic: 322
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: glass_05_epic_defense:332hp:411defense:335_3QC7IR
+      type: 0
+      icon: {fileID: 21300000, guid: cd03a210db770374a93d155184c5a545, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Glass/glass05/glass05_icon
+      name: "K\xEDnh vu\xF4ng"
+      tier: 3
+      description: "Mang l\u1EA1i v\u1EBB \u0111\u1EB9p tri th\u1EE9c."
+      maxStack: 1
+      slot: 4
+      show: {fileID: 21300000, guid: 688a7b14a065a604993a40c404cdf003, type: 3}
+      showPath: Sprites/Inventory/Equipment/Glass/glass05/glass05_show
+      stats:
+      - attributes: 1
+        valueBasic: 332
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 2
+        valueBasic: 411
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 1
+        valueBasic: 335
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: hair_10_epic_defense:341attack:419luck:460_EFXAKZ
+      type: 0
+      icon: {fileID: 21300000, guid: 505d91cb2d7ab244997d1348f3cbc634, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Hair/hair10/hair10_icon
+      name: "Thi\u1EBFu gia"
+      tier: 3
+      description: "Ng\u1EA7u l\xF2i kh\xF4ng t\u01B0\u1EDFng"
+      maxStack: 1
+      slot: 3
+      show: {fileID: 21300000, guid: 4448867877e0198499006c69b6cb441a, type: 3}
+      showPath: Sprites/Inventory/Equipment/Hair/hair10/hair10_show
+      stats:
+      - attributes: 1
+        valueBasic: 341
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 0
+        valueBasic: 419
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 3
+        valueBasic: 460
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: hair_02_epic_hp:381attack:477hp:379_WQL0FC
+      type: 0
+      icon: {fileID: 21300000, guid: 115380655e01f5a409c326d9cb6180bf, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Hair/hair02/hair02_icon
+      name: "\u0110\u1EA7u \u0111inh H\xE0n Qu\u1ED1c"
+      tier: 3
+      description: "V\u1EEBa g\u1ECDn g\xE0ng v\u1EEBa to\xE1t l\xEAn v\u1EBB \u0111\u1EB9p
+        nam t\xEDnh, ch\u1EA5t ch\u01A1i v\xF4 c\xF9ng"
+      maxStack: 1
+      slot: 3
+      show: {fileID: 21300000, guid: 4ac4ae6f763d18740aba82d187eb6ebe, type: 3}
+      showPath: Sprites/Inventory/Equipment/Hair/hair02/hair02_show
+      stats:
+      - attributes: 2
+        valueBasic: 381
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 0
+        valueBasic: 477
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 2
+        valueBasic: 379
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: head_09_epic_hp:466attack:303attack:325_UCZFAK
+      type: 0
+      icon: {fileID: 21300000, guid: 4051a0c70a6123d42ae1d8c9dc996705, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Head/head09/head09_icon
+      name: "N\xF3n Goblin"
+      tier: 3
+      description: "Chi\u1EBFn l\u1EE3i ph\u1EA9m t\u1EEB l\u0169 Goblin \u0111\xE1ng
+        gh\xE9t"
+      maxStack: 1
+      slot: 2
+      show: {fileID: 21300000, guid: d83ac87a60deaf941adc7e91f83019ab, type: 3}
+      showPath: Sprites/Inventory/Equipment/Head/head09/head09_show
+      stats:
+      - attributes: 2
+        valueBasic: 466
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 0
+        valueBasic: 303
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 0
+        valueBasic: 325
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: head_05_epic_defense:330attack:394defense:429_91HJJK
+      type: 0
+      icon: {fileID: 21300000, guid: f4b543e51e5f31f40bb9b7ee2427c402, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Head/head05/head05_icon
+      name: "N\xF3n \u0111\u1ED9i tr\u01B0\u1EDFng"
+      tier: 3
+      description: "Ch\u1EC9 huy t\xE0i gi\u1ECFi m\u1EDBi c\xF3 th\u1EC3 s\u1EDF
+        h\u1EEFu"
+      maxStack: 1
+      slot: 2
+      show: {fileID: 21300000, guid: 97ade50eeae1ad9469031fcb27056738, type: 3}
+      showPath: Sprites/Inventory/Equipment/Head/head05/head05_show
+      stats:
+      - attributes: 1
+        valueBasic: 330
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 0
+        valueBasic: 394
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 1
+        valueBasic: 429
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: offhand_02_epic_hp:370luck:379attack:470_ZLLJ8F
+      type: 0
+      icon: {fileID: 21300000, guid: 4ed6a66f8940d594986818deb678ff61, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Offhand/offhand02/offhand02_icon
+      name: "Khi\xEAn Bolobala"
+      tier: 3
+      description: "Khi\xEAn cao c\u1EA5p, s\u1EE9c ph\xF2ng th\u1EE7 tuy\u1EC7t v\u1EDDi."
+      maxStack: 1
+      slot: 1
+      show: {fileID: 21300000, guid: 4ed6a66f8940d594986818deb678ff61, type: 3}
+      showPath: Sprites/Inventory/Equipment/Offhand/offhand02/offhand02_icon
+      stats:
+      - attributes: 2
+        valueBasic: 370
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 3
+        valueBasic: 379
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 0
+        valueBasic: 470
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: ring_02_epic_attack:457luck:394luck:409_RL3KTT
+      type: 0
+      icon: {fileID: 21300000, guid: 6630c2f05ad7895478ad322d4f6cb89a, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Ring/ring02/langman_1
+      name: "L\xE3ng m\u1EA1n"
+      tier: 3
+      description: "Chi\u1EBFc nh\u1EABn mang \xFD ngh\u0129a \"l\xE3ng m\u1EA1n\"
+        cho ng\u01B0\u1EDDi mang n\xF3."
+      maxStack: 1
+      slot: 7
+      show: {fileID: 21300000, guid: 6630c2f05ad7895478ad322d4f6cb89a, type: 3}
+      showPath: Sprites/Inventory/Equipment/Ring/ring02/langman_1
+      stats:
+      - attributes: 0
+        valueBasic: 457
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 3
+        valueBasic: 394
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 3
+        valueBasic: 409
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: wing_04_epic_luck:339hp:476hp:373_08U18R
+      type: 0
+      icon: {fileID: 21300000, guid: d17ac946f965a5a49bdcaea9d230d3e6, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Wing/wing04/wing04_icon
+      name: "Phong th\u1EA7n"
+      tier: 3
+      description: "C\xE1nh Phong th\u1EA7n mang s\u1EE9c m\u1EA1nh c\u1EE7a gi\xF3."
+      maxStack: 1
+      slot: 9
+      show: {fileID: 21300000, guid: d17ac946f965a5a49bdcaea9d230d3e6, type: 3}
+      showPath: Sprites/Inventory/Equipment/Wing/wing04/wing04_icon
+      stats:
+      - attributes: 3
+        valueBasic: 339
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 2
+        valueBasic: 476
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 2
+        valueBasic: 373
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: wing_06_epic_defense:440attack:323luck:426_BVFS6L
+      type: 0
+      icon: {fileID: 21300000, guid: fbfb311bbccb319499547ee3893d021e, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Wing/wing06/wing06_icon
+      name: "H\u1ECFa th\u1EA7n"
+      tier: 3
+      description: "C\xE1nh H\u1ECFa th\u1EA7n mang s\u1EE9c m\u1EA1nh c\u1EE7a l\u1EEDa."
+      maxStack: 1
+      slot: 9
+      show: {fileID: 21300000, guid: fbfb311bbccb319499547ee3893d021e, type: 3}
+      showPath: Sprites/Inventory/Equipment/Wing/wing06/wing06_icon
+      stats:
+      - attributes: 1
+        valueBasic: 440
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 0
+        valueBasic: 323
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 3
+        valueBasic: 426
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: ring_01_epic_attack:389luck:338attack:352_QAGICQ
+      type: 0
+      icon: {fileID: 21300000, guid: dade257d3887dc542b12eff9d4299211, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Ring/ring01/hanhphuc_1
+      name: "H\u1EA1nh ph\xFAc"
+      tier: 3
+      description: "Chi\u1EBFc nh\u1EABn mang \xFD ngh\u0129a \"h\u1EA1nh ph\xFAc\"
+        cho ng\u01B0\u1EDDi mang n\xF3."
+      maxStack: 1
+      slot: 7
+      show: {fileID: 21300000, guid: dade257d3887dc542b12eff9d4299211, type: 3}
+      showPath: Sprites/Inventory/Equipment/Ring/ring01/hanhphuc_1
+      stats:
+      - attributes: 0
+        valueBasic: 389
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 3
+        valueBasic: 338
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      - attributes: 0
+        valueBasic: 352
+        valueBonusStrength: 0
+        valueBasicMin: 301
+        valueBasicMax: 500
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_08_rare_luck:270luck:203_2H9OC1
+      type: 0
+      icon: {fileID: 21300000, guid: fb796a8389438bf47868844c7d7c08c3, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon08/00
+      name: "VIP - Th\u01B0\u01A1ng c\u1ED5"
+      tier: 2
+      description: "B\xE1c s\u0129 t\u1EDBi ch\u01A1i"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: fb796a8389438bf47868844c7d7c08c3, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon08/00
+      stats:
+      - attributes: 3
+        valueBasic: 270
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 3
+        valueBasic: 203
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_07_rare_luck:252luck:257_IRQ8YR
+      type: 0
+      icon: {fileID: 21300000, guid: d9655bb0718c5504eb275c9dea6d1995, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon07/00
+      name: "Vip - T\u1EE7 thu\u1ED1c"
+      tier: 2
+      description: "B\xE1c s\u0129 t\u1EDBi ch\u01A1i"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: d9655bb0718c5504eb275c9dea6d1995, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon07/00
+      stats:
+      - attributes: 3
+        valueBasic: 252
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 3
+        valueBasic: 257
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_06_rare_hp:280hp:221_XHAGXE
+      type: 0
+      icon: {fileID: 21300000, guid: ec1419b00e0b57843a7005d1a6316e80, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon06/00
+      name: "VIP - B\xFAa Minotaure"
+      tier: 2
+      description: "M\u1ED9t v\u0169 kh\xED c\u1EF1c k\xEC qu\xFD hi\u1EBFm"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: ec1419b00e0b57843a7005d1a6316e80, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon06/00
+      stats:
+      - attributes: 2
+        valueBasic: 280
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 2
+        valueBasic: 221
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_04_rare_defense:247defense:224_BHXMKH
+      type: 0
+      icon: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      name: "VIP - Lu g\u1EA1ch"
+      tier: 2
+      description: "V\u0169 kh\xED ph\u1ED5 th\xF4ng \u0111\u01B0\u1EE3c y\xEAu th\xEDch
+        nh\u1EA5t"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      stats:
+      - attributes: 1
+        valueBasic: 247
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 1
+        valueBasic: 224
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_04_rare_luck:205attack:218_G4DB63
+      type: 0
+      icon: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      name: "VIP - Lu g\u1EA1ch"
+      tier: 2
+      description: "V\u0169 kh\xED ph\u1ED5 th\xF4ng \u0111\u01B0\u1EE3c y\xEAu th\xEDch
+        nh\u1EA5t"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      stats:
+      - attributes: 3
+        valueBasic: 205
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 0
+        valueBasic: 218
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_03_rare_defense:264attack:257_66IMQR
+      type: 0
+      icon: {fileID: 21300000, guid: 2fada71afc9b6734fb77cbc11fa4a3db, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon03/00
+      name: VIP - Boomerang
+      tier: 2
+      description: "V\u0169 kh\xED \u0111\u1EB7c tr\u01B0ng c\u1EE7a t\xF9 tr\u01B0\u1EDFng
+        B\u1ED9 l\u1EA1c  T\xE0 th\u1EA7n"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 2fada71afc9b6734fb77cbc11fa4a3db, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon03/00
+      stats:
+      - attributes: 1
+        valueBasic: 264
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 0
+        valueBasic: 257
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: weapon_04_rare_hp:204attack:273_9PXZ4O
+      type: 0
+      icon: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      name: "VIP - Lu g\u1EA1ch"
+      tier: 2
+      description: "V\u0169 kh\xED ph\u1ED5 th\xF4ng \u0111\u01B0\u1EE3c y\xEAu th\xEDch
+        nh\u1EA5t"
+      maxStack: 1
+      slot: 0
+      show: {fileID: 21300000, guid: 67870b61c98a987449cc960bcfba2774, type: 3}
+      showPath: Sprites/Inventory/Equipment/Weapon/weapon04/00
+      stats:
+      - attributes: 2
+        valueBasic: 204
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 0
+        valueBasic: 273
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: armlet_01_rare_defense:220luck:280_5YA85K
+      type: 0
+      icon: {fileID: 21300000, guid: 2450d2e50a0807548a538b91fcdae470, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Armlet/armlet01/acma_1
+      name: "\xC1c ma"
+      tier: 2
+      description: "V\xF2ng tay \xC1c ma mang l\u1EA1i may m\u1EAFn cho ng\u01B0\u1EDDi
+        \u0111eo n\xF3."
+      maxStack: 1
+      slot: 6
+      show: {fileID: 21300000, guid: 2450d2e50a0807548a538b91fcdae470, type: 3}
+      showPath: Sprites/Inventory/Equipment/Armlet/armlet01/acma_1
+      stats:
+      - attributes: 1
+        valueBasic: 220
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 3
+        valueBasic: 280
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: armlet_02_rare_attack:225attack:254_US3XC9
+      type: 0
+      icon: {fileID: 21300000, guid: 62634bf2b4994ec4394a14216277949d, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Armlet/armlet02/venus_1
+      name: Venus
+      tier: 2
+      description: "G\u0103ng tay c\u1EE7a n\u1EEF th\u1EA7n Venus, ch\u1EE9a s\u1EE9c
+        m\u1EA1nh c\u1EF1c l\u1EDBn."
+      maxStack: 1
+      slot: 6
+      show: {fileID: 21300000, guid: 62634bf2b4994ec4394a14216277949d, type: 3}
+      showPath: Sprites/Inventory/Equipment/Armlet/armlet02/venus_1
+      stats:
+      - attributes: 0
+        valueBasic: 225
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 0
+        valueBasic: 254
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: cloth_07_rare_hp:229attack:203_Y5PBTZ
+      type: 0
+      icon: {fileID: 21300000, guid: 316547e8a5330994b913a50da005f4db, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Cloth/cloth07/cloth07_icon
+      name: "\xC1o gi\xE1p Minotaure"
+      tier: 2
+      description: "\xC1o gi\xE1p s\u1EAFt c\u1EF1c k\xEC b\u1EC1n v\xE0 tho\u1EA3i
+        m\xE1i khi m\u1EB7c"
+      maxStack: 1
+      slot: 8
+      show: {fileID: 21300000, guid: 165d6941903cc2f4386112cfea9ca11a, type: 3}
+      showPath: Sprites/Inventory/Equipment/Cloth/cloth07/cloth07_show
+      stats:
+      - attributes: 2
+        valueBasic: 229
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 0
+        valueBasic: 203
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: cloth_02_rare_attack:294luck:280_VB87GJ
+      type: 0
+      icon: {fileID: 21300000, guid: 8f9e451c6e806df469010408420b2ae4, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Cloth/cloth02/cloth02_icon
+      name: "C\u01A1n th\u1ECBnh n\u1ED9 Sulan"
+      tier: 2
+      description: "C\u01A1n th\u1ECBnh n\u1ED9 Sulan - b\u1ED9 trang ph\u1EE5c \u0111\u1EB7c
+        tr\u01B0ng c\u1EE7a B\u1ED9 l\u1EA1c T\xE0 th\u1EA7n."
+      maxStack: 1
+      slot: 8
+      show: {fileID: 21300000, guid: 0a16a8a864e496c42a63a3ee7dc62509, type: 3}
+      showPath: Sprites/Inventory/Equipment/Cloth/cloth02/cloth02_show
+      stats:
+      - attributes: 0
+        valueBasic: 294
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 3
+        valueBasic: 280
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: cloth_03_rare_luck:262hp:224_JE5FOC
+      type: 0
+      icon: {fileID: 21300000, guid: b157fea9c04e70446b35e447168d51fd, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Cloth/cloth03/cloth03_icon
+      name: "K\u1EF5 S\u0129 R\u1ED3ng"
+      tier: 2
+      description: "\u0110\xF4i c\xE1nh cu\u1ED3ng long m\xE0u \u0111en d\u0169ng
+        m\xE3nh, tr\xEAn tay l\xE0 quy\u1EC1n tr\u01B0\u1EE3ng t\u01B0\u1EE3ng tr\u01B0ng
+        cho s\u1EE9c m\u1EA1nh v\xF4 song."
+      maxStack: 1
+      slot: 8
+      show: {fileID: 21300000, guid: ff24bff97d4f7eb45a4f35d09a303874, type: 3}
+      showPath: Sprites/Inventory/Equipment/Cloth/cloth03/cloth03_show
+      stats:
+      - attributes: 3
+        valueBasic: 262
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 2
+        valueBasic: 224
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: face_05_rare_luck:270defense:257_VVS6CJ
+      type: 0
+      icon: {fileID: 21300000, guid: 2e450b384ed924440902c030de6b2b38, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Face/face05/face05_icon
+      name: "Th\u1EE7 l\u0129nh b\u1ED9 t\u1ED9c"
+      tier: 2
+      description: "G\u01B0\u01A1ng m\u1EB7t n\xEAn c\xF3 c\u1EE7a ng\u01B0\u1EDDi
+        \u0111\u1EE9ng \u0111\u1EA7u b\u1ED9 t\u1ED9c"
+      maxStack: 1
+      slot: 5
+      show: {fileID: 21300000, guid: 523b978b6501b7b40859b17d622f1111, type: 3}
+      showPath: Sprites/Inventory/Equipment/Face/face05/face05_show
+      stats:
+      - attributes: 3
+        valueBasic: 270
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 1
+        valueBasic: 257
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: face_08_rare_luck:277defense:279_420GQD
+      type: 0
+      icon: {fileID: 21300000, guid: c9376b93e99f5b142851f063c9a342c6, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Face/face08/face08_icon
+      name: "\u0110\u1EAFc \xFD"
+      tier: 2
+      description: "H\u1ED1 h\u1ED1"
+      maxStack: 1
+      slot: 5
+      show: {fileID: 21300000, guid: ac27d113726fa6f4382b16a969026c98, type: 3}
+      showPath: Sprites/Inventory/Equipment/Face/face08/face08_show
+      stats:
+      - attributes: 3
+        valueBasic: 277
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 1
+        valueBasic: 279
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: glass_06_rare_defense:287hp:215_P8WD2K
+      type: 0
+      icon: {fileID: 21300000, guid: 9e4d35470ae9b774e8d17d73a85b3811, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Glass/glass06/glass06_icon
+      name: "M\u1EB7t n\u1EA1 t\xE0 th\u1EA7n"
+      tier: 2
+      description: "Chi\u1EBFn binh B\u1ED9 l\u1EA1c T\xE0 th\u1EA7n th\u01B0\u1EDDng
+        \u0111eo chi\u1EBFc m\u1EB7t n\u1EA1 n\xE0y"
+      maxStack: 1
+      slot: 4
+      show: {fileID: 21300000, guid: 584d7536bf090fc4ebe344a6bc7aba21, type: 3}
+      showPath: Sprites/Inventory/Equipment/Glass/glass06/glass06_show
+      stats:
+      - attributes: 1
+        valueBasic: 287
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 2
+        valueBasic: 215
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: glass_05_rare_luck:227attack:216_Q2NZRF
+      type: 0
+      icon: {fileID: 21300000, guid: cd03a210db770374a93d155184c5a545, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Glass/glass05/glass05_icon
+      name: "K\xEDnh vu\xF4ng"
+      tier: 2
+      description: "Mang l\u1EA1i v\u1EBB \u0111\u1EB9p tri th\u1EE9c."
+      maxStack: 1
+      slot: 4
+      show: {fileID: 21300000, guid: 688a7b14a065a604993a40c404cdf003, type: 3}
+      showPath: Sprites/Inventory/Equipment/Glass/glass05/glass05_show
+      stats:
+      - attributes: 3
+        valueBasic: 227
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 0
+        valueBasic: 216
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: hair_10_rare_hp:249defense:204_36T82B
+      type: 0
+      icon: {fileID: 21300000, guid: 505d91cb2d7ab244997d1348f3cbc634, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Hair/hair10/hair10_icon
+      name: "Thi\u1EBFu gia"
+      tier: 2
+      description: "Ng\u1EA7u l\xF2i kh\xF4ng t\u01B0\u1EDFng"
+      maxStack: 1
+      slot: 3
+      show: {fileID: 21300000, guid: 4448867877e0198499006c69b6cb441a, type: 3}
+      showPath: Sprites/Inventory/Equipment/Hair/hair10/hair10_show
+      stats:
+      - attributes: 2
+        valueBasic: 249
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 1
+        valueBasic: 204
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: hair_02_rare_attack:296attack:235_71GG5F
+      type: 0
+      icon: {fileID: 21300000, guid: 115380655e01f5a409c326d9cb6180bf, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Hair/hair02/hair02_icon
+      name: "\u0110\u1EA7u \u0111inh H\xE0n Qu\u1ED1c"
+      tier: 2
+      description: "V\u1EEBa g\u1ECDn g\xE0ng v\u1EEBa to\xE1t l\xEAn v\u1EBB \u0111\u1EB9p
+        nam t\xEDnh, ch\u1EA5t ch\u01A1i v\xF4 c\xF9ng"
+      maxStack: 1
+      slot: 3
+      show: {fileID: 21300000, guid: 4ac4ae6f763d18740aba82d187eb6ebe, type: 3}
+      showPath: Sprites/Inventory/Equipment/Hair/hair02/hair02_show
+      stats:
+      - attributes: 0
+        valueBasic: 296
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 0
+        valueBasic: 235
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: head_09_rare_hp:299luck:232_A4BCP9
+      type: 0
+      icon: {fileID: 21300000, guid: 4051a0c70a6123d42ae1d8c9dc996705, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Head/head09/head09_icon
+      name: "N\xF3n Goblin"
+      tier: 2
+      description: "Chi\u1EBFn l\u1EE3i ph\u1EA9m t\u1EEB l\u0169 Goblin \u0111\xE1ng
+        gh\xE9t"
+      maxStack: 1
+      slot: 2
+      show: {fileID: 21300000, guid: d83ac87a60deaf941adc7e91f83019ab, type: 3}
+      showPath: Sprites/Inventory/Equipment/Head/head09/head09_show
+      stats:
+      - attributes: 2
+        valueBasic: 299
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 3
+        valueBasic: 232
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: head_05_rare_hp:264hp:237_TKJIS7
+      type: 0
+      icon: {fileID: 21300000, guid: f4b543e51e5f31f40bb9b7ee2427c402, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Head/head05/head05_icon
+      name: "N\xF3n \u0111\u1ED9i tr\u01B0\u1EDFng"
+      tier: 2
+      description: "Ch\u1EC9 huy t\xE0i gi\u1ECFi m\u1EDBi c\xF3 th\u1EC3 s\u1EDF
+        h\u1EEFu"
+      maxStack: 1
+      slot: 2
+      show: {fileID: 21300000, guid: 97ade50eeae1ad9469031fcb27056738, type: 3}
+      showPath: Sprites/Inventory/Equipment/Head/head05/head05_show
+      stats:
+      - attributes: 2
+        valueBasic: 264
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 2
+        valueBasic: 237
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: offhand_02_rare_attack:208attack:295_5LJP3S
+      type: 0
+      icon: {fileID: 21300000, guid: 4ed6a66f8940d594986818deb678ff61, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Offhand/offhand02/offhand02_icon
+      name: "Khi\xEAn Bolobala"
+      tier: 2
+      description: "Khi\xEAn cao c\u1EA5p, s\u1EE9c ph\xF2ng th\u1EE7 tuy\u1EC7t v\u1EDDi."
+      maxStack: 1
+      slot: 1
+      show: {fileID: 21300000, guid: 4ed6a66f8940d594986818deb678ff61, type: 3}
+      showPath: Sprites/Inventory/Equipment/Offhand/offhand02/offhand02_icon
+      stats:
+      - attributes: 0
+        valueBasic: 208
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 0
+        valueBasic: 295
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: ring_02_rare_defense:271attack:220_M3XHE3
+      type: 0
+      icon: {fileID: 21300000, guid: 6630c2f05ad7895478ad322d4f6cb89a, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Ring/ring02/langman_1
+      name: "L\xE3ng m\u1EA1n"
+      tier: 2
+      description: "Chi\u1EBFc nh\u1EABn mang \xFD ngh\u0129a \"l\xE3ng m\u1EA1n\"
+        cho ng\u01B0\u1EDDi mang n\xF3."
+      maxStack: 1
+      slot: 7
+      show: {fileID: 21300000, guid: 6630c2f05ad7895478ad322d4f6cb89a, type: 3}
+      showPath: Sprites/Inventory/Equipment/Ring/ring02/langman_1
+      stats:
+      - attributes: 1
+        valueBasic: 271
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 0
+        valueBasic: 220
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: wing_04_rare_defense:270attack:299_H90F12
+      type: 0
+      icon: {fileID: 21300000, guid: d17ac946f965a5a49bdcaea9d230d3e6, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Wing/wing04/wing04_icon
+      name: "Phong th\u1EA7n"
+      tier: 2
+      description: "C\xE1nh Phong th\u1EA7n mang s\u1EE9c m\u1EA1nh c\u1EE7a gi\xF3."
+      maxStack: 1
+      slot: 9
+      show: {fileID: 21300000, guid: d17ac946f965a5a49bdcaea9d230d3e6, type: 3}
+      showPath: Sprites/Inventory/Equipment/Wing/wing04/wing04_icon
+      stats:
+      - attributes: 1
+        valueBasic: 270
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 0
+        valueBasic: 299
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: wing_06_rare_attack:291attack:244_NUHSVE
+      type: 0
+      icon: {fileID: 21300000, guid: fbfb311bbccb319499547ee3893d021e, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Wing/wing06/wing06_icon
+      name: "H\u1ECFa th\u1EA7n"
+      tier: 2
+      description: "C\xE1nh H\u1ECFa th\u1EA7n mang s\u1EE9c m\u1EA1nh c\u1EE7a l\u1EEDa."
+      maxStack: 1
+      slot: 9
+      show: {fileID: 21300000, guid: fbfb311bbccb319499547ee3893d021e, type: 3}
+      showPath: Sprites/Inventory/Equipment/Wing/wing06/wing06_icon
+      stats:
+      - attributes: 0
+        valueBasic: 291
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 0
+        valueBasic: 244
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: ring_01_rare_hp:286hp:244_PFSP3Z
+      type: 0
+      icon: {fileID: 21300000, guid: dade257d3887dc542b12eff9d4299211, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Ring/ring01/hanhphuc_1
+      name: "H\u1EA1nh ph\xFAc"
+      tier: 2
+      description: "Chi\u1EBFc nh\u1EABn mang \xFD ngh\u0129a \"h\u1EA1nh ph\xFAc\"
+        cho ng\u01B0\u1EDDi mang n\xF3."
+      maxStack: 1
+      slot: 7
+      show: {fileID: 21300000, guid: dade257d3887dc542b12eff9d4299211, type: 3}
+      showPath: Sprites/Inventory/Equipment/Ring/ring01/hanhphuc_1
+      stats:
+      - attributes: 2
+        valueBasic: 286
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      - attributes: 2
+        valueBasic: 244
+        valueBonusStrength: 0
+        valueBasicMin: 201
+        valueBasicMax: 300
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: hair_05_common_luck:23_VXHTYR
+      type: 0
+      icon: {fileID: 21300000, guid: 7da1110f69db6d045b2f14e111427770, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Hair/hair05/hair05_icon
+      name: "Vu\u1ED1t \u0111\u1EE9ng"
+      tier: 0
+      description: "Vu\u1ED1t \u0111\u1EE9ng h\u1EE3p th\u1EDDi trang"
+      maxStack: 1
+      slot: 3
+      show: {fileID: 21300000, guid: 5eb20aa85c730c74bb6e04567282defe, type: 3}
+      showPath: Sprites/Inventory/Equipment/Hair/hair05/hair05_show
+      stats:
+      - attributes: 3
+        valueBasic: 23
+        valueBonusStrength: 0
+        valueBasicMin: 0
+        valueBasicMax: 100
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: wing_04_common_luck:77_YBL7NY
+      type: 0
+      icon: {fileID: 21300000, guid: d17ac946f965a5a49bdcaea9d230d3e6, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Wing/wing04/wing04_icon
+      name: "Phong th\u1EA7n"
+      tier: 0
+      description: "C\xE1nh Phong th\u1EA7n mang s\u1EE9c m\u1EA1nh c\u1EE7a gi\xF3."
+      maxStack: 1
+      slot: 9
+      show: {fileID: 21300000, guid: d17ac946f965a5a49bdcaea9d230d3e6, type: 3}
+      showPath: Sprites/Inventory/Equipment/Wing/wing04/wing04_icon
+      stats:
+      - attributes: 3
+        valueBasic: 77
+        valueBonusStrength: 0
+        valueBasicMin: 0
+        valueBasicMax: 100
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: face_07_common_luck:3_370MCF
+      type: 0
+      icon: {fileID: 21300000, guid: 79df63c999d60db48aa35e80c41479b1, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Face/face07/face07_icon
+      name: "N\xE9n gi\u1EADn"
+      tier: 0
+      description: "S\u1EAFp ph\u1EA3i b\xF9ng n\u1ED5"
+      maxStack: 1
+      slot: 5
+      show: {fileID: 21300000, guid: 03a2fbc24a8593c4bb48b9ef78176d37, type: 3}
+      showPath: Sprites/Inventory/Equipment/Face/face07/face07_show
+      stats:
+      - attributes: 3
+        valueBasic: 3
+        valueBonusStrength: 0
+        valueBasicMin: 0
+        valueBasicMax: 100
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: armlet_04_common_luck:32_NFT2HP
+      type: 0
+      icon: {fileID: 21300000, guid: b9e7efc81b1d2604d94fafabc20d1bdb, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Armlet/armlet04/tinhxao_1
+      name: "Tinh x\u1EA3o"
+      tier: 0
+      description: "M\xF3n \u0111\u1ED3 th\u1EE7 c\xF4ng \u0111\u1EA7y chi ti\u1EBFt
+        v\xE0 mang l\u1EA1i nhi\u1EC1u may m\u1EAFn c\u1EE7a B\u1ED9 l\u1EA1c T\xE0
+        th\u1EA7n"
+      maxStack: 1
+      slot: 6
+      show: {fileID: 21300000, guid: b9e7efc81b1d2604d94fafabc20d1bdb, type: 3}
+      showPath: Sprites/Inventory/Equipment/Armlet/armlet04/tinhxao_1
+      stats:
+      - attributes: 3
+        valueBasic: 32
+        valueBonusStrength: 0
+        valueBasicMin: 0
+        valueBasicMax: 100
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: glass_06_common_hp:27_1TLWHU
+      type: 0
+      icon: {fileID: 21300000, guid: 9e4d35470ae9b774e8d17d73a85b3811, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Glass/glass06/glass06_icon
+      name: "M\u1EB7t n\u1EA1 t\xE0 th\u1EA7n"
+      tier: 0
+      description: "Chi\u1EBFn binh B\u1ED9 l\u1EA1c T\xE0 th\u1EA7n th\u01B0\u1EDDng
+        \u0111eo chi\u1EBFc m\u1EB7t n\u1EA1 n\xE0y"
+      maxStack: 1
+      slot: 4
+      show: {fileID: 21300000, guid: 584d7536bf090fc4ebe344a6bc7aba21, type: 3}
+      showPath: Sprites/Inventory/Equipment/Glass/glass06/glass06_show
+      stats:
+      - attributes: 2
+        valueBasic: 27
+        valueBonusStrength: 0
+        valueBasicMin: 0
+        valueBasicMax: 100
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: ring_03_common_luck:88_O1SHBY
+      type: 0
+      icon: {fileID: 21300000, guid: 4b375a7ae333a764abd77e6c358f8ff6, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Ring/ring03/cobonla_1
+      name: "C\u1ECF b\u1ED1n l\xE1"
+      tier: 0
+      description: "C\u1ECF b\u1ED1n l\xE1 \u0111em l\u1EA1i may m\u1EAFn cho nh\u1EEFng
+        ai t\xECnh c\u1EDD t\xECm th\u1EA5y ch\xFAng"
+      maxStack: 1
+      slot: 7
+      show: {fileID: 21300000, guid: 4b375a7ae333a764abd77e6c358f8ff6, type: 3}
+      showPath: Sprites/Inventory/Equipment/Ring/ring03/cobonla_1
+      stats:
+      - attributes: 3
+        valueBasic: 88
+        valueBonusStrength: 0
+        valueBasicMin: 0
+        valueBasicMax: 100
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: head_03_common_defense:87_2JIWMQ
+      type: 0
+      icon: {fileID: 21300000, guid: fb1207832ae969f44b312d8dbde7f339, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Head/head03/head03_icon
+      name: "N\xF3n h\u1EA3i t\u1EB7c"
+      tier: 0
+      description: "Kh\xF4ng ph\u1EA3i M\u0169 r\u01A1m c\u1EE7a Luffy."
+      maxStack: 1
+      slot: 2
+      show: {fileID: 21300000, guid: 16c933edb6a26924d971549cad5dddc8, type: 3}
+      showPath: Sprites/Inventory/Equipment/Head/head03/head03_show
+      stats:
+      - attributes: 1
+        valueBasic: 87
+        valueBonusStrength: 0
+        valueBasicMin: 0
+        valueBasicMax: 100
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
+    - idItem: cloth_03_common_luck:39_W4F3IV
+      type: 0
+      icon: {fileID: 21300000, guid: b157fea9c04e70446b35e447168d51fd, type: 3}
+      iconPath: Sprites/Inventory/Equipment/Cloth/cloth03/cloth03_icon
+      name: "K\u1EF5 S\u0129 R\u1ED3ng"
+      tier: 0
+      description: "\u0110\xF4i c\xE1nh cu\u1ED3ng long m\xE0u \u0111en d\u0169ng
+        m\xE3nh, tr\xEAn tay l\xE0 quy\u1EC1n tr\u01B0\u1EE3ng t\u01B0\u1EE3ng tr\u01B0ng
+        cho s\u1EE9c m\u1EA1nh v\xF4 song."
+      maxStack: 1
+      slot: 8
+      show: {fileID: 21300000, guid: ff24bff97d4f7eb45a4f35d09a303874, type: 3}
+      showPath: Sprites/Inventory/Equipment/Cloth/cloth03/cloth03_show
+      stats:
+      - attributes: 3
+        valueBasic: 39
+        valueBonusStrength: 0
+        valueBasicMin: 0
+        valueBasicMax: 100
+      canUpgrade: 1
+      itemStrength: 0
+      itemStrengthImg: {fileID: 21300000, guid: 7168f9055db4c5a4485396a59006994a,
+        type: 3}
+      itemStrengthImgPath: Sprites/ui/Homepage/Icon/UpgradeSystem/Upgrade Strength/strength0
+      equipmentSO: {fileID: 0}
+      quantity: 1
   listMaterialSO:
-    materials: []
+    materials:
+    - idItem: gold_01
+      type: 1
+      icon: {fileID: 0}
+      iconPath: Sprites/Inventory/Materials/gold_01
+      name: Xu
+      tier: 4
+      description: "Lo\u1EA1i ti\u1EC1n t\u1EC7 th\xF4ng d\u1EE5ng, c\xF3 th\u1EC3
+        d\xF9ng \u0111\u1EC3 trao \u0111\u1ED5i v\u1EADt ph\u1EA9m trong shop"
+      maxStack: 99999
+      itemUses: 0
+      canCombine: 0
+      quantity: 99999
+    - idItem: gold_01
+      type: 1
+      icon: {fileID: 0}
+      iconPath: Sprites/Inventory/Materials/gold_01
+      name: Xu
+      tier: 4
+      description: "Lo\u1EA1i ti\u1EC1n t\u1EC7 th\xF4ng d\u1EE5ng, c\xF3 th\u1EC3
+        d\xF9ng \u0111\u1EC3 trao \u0111\u1ED5i v\u1EADt ph\u1EA9m trong shop"
+      maxStack: 99999
+      itemUses: 0
+      canCombine: 0
+      quantity: 99999
+    - idItem: medal_01
+      type: 1
+      icon: {fileID: 0}
+      iconPath: Sprites/Inventory/Materials/medal_01
+      name: "Huy Ch\u01B0\u01A1ng"
+      tier: 4
+      description: "C\xF3 th\u1EC3 ki\u1EBFm \u0111\u01B0\u1EE3c th\xF4ng qua c\xE1c
+        ph\xF3 b\u1EA3n \u0111\u1ED9 kh\xF3 cao, d\xF9ng \u0111\u1EC3 \u0111\u1ED5i
+        c\xE1c v\u1EADt ph\u1EA9m hi\u1EBFm"
+      maxStack: 99999
+      itemUses: 0
+      canCombine: 0
+      quantity: 99999
+    - idItem: medal_01
+      type: 1
+      icon: {fileID: 0}
+      iconPath: Sprites/Inventory/Materials/medal_01
+      name: "Huy Ch\u01B0\u01A1ng"
+      tier: 4
+      description: "C\xF3 th\u1EC3 ki\u1EBFm \u0111\u01B0\u1EE3c th\xF4ng qua c\xE1c
+        ph\xF3 b\u1EA3n \u0111\u1ED9 kh\xF3 cao, d\xF9ng \u0111\u1EC3 \u0111\u1ED5i
+        c\xE1c v\u1EADt ph\u1EA9m hi\u1EBFm"
+      maxStack: 99999
+      itemUses: 0
+      canCombine: 0
+      quantity: 99999
+    - idItem: godCharm
+      type: 1
+      icon: {fileID: 21300000, guid: 0487c5308b544e54eb8a6d51c2cb919d, type: 3}
+      iconPath: Sprites/Inventory/Materials/godCharm
+      name: "B\xF9a ma thu\u1EADt"
+      tier: 4
+      description: "Gi\xFAp trang b\u1ECB kh\xF4ng b\u1ECB gi\u1EA3m c\u1EA5p khi
+        c\u01B0\u1EDDng h\xF3a th\u1EA5t b\u1EA1i"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 0
+      quantity: 99
+    - idItem: godCharm
+      type: 1
+      icon: {fileID: 21300000, guid: 0487c5308b544e54eb8a6d51c2cb919d, type: 3}
+      iconPath: Sprites/Inventory/Materials/godCharm
+      name: "B\xF9a ma thu\u1EADt"
+      tier: 4
+      description: "Gi\xFAp trang b\u1ECB kh\xF4ng b\u1ECB gi\u1EA3m c\u1EA5p khi
+        c\u01B0\u1EDDng h\xF3a th\u1EA5t b\u1EA1i"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 0
+      quantity: 99
+    - idItem: strengthStone_05
+      type: 1
+      icon: {fileID: 21300000, guid: debc29bbaa2f8d84fae8b8f920933ae3, type: 3}
+      iconPath: Sprites/Inventory/Materials/strengthStone_05
+      name: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 5"
+      tier: 4
+      description: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+        c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m, t\u1EC9 l\u1EC7
+        th\xE0nh c\xF4ng cao h\u01A1n \u0110\xE1 c\u1EA5p 4!"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 0
+      quantity: 99
+    - idItem: strengthStone_05
+      type: 1
+      icon: {fileID: 21300000, guid: debc29bbaa2f8d84fae8b8f920933ae3, type: 3}
+      iconPath: Sprites/Inventory/Materials/strengthStone_05
+      name: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 5"
+      tier: 4
+      description: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+        c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m, t\u1EC9 l\u1EC7
+        th\xE0nh c\xF4ng cao h\u01A1n \u0110\xE1 c\u1EA5p 4!"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 0
+      quantity: 99
+    - idItem: strengthStone_05
+      type: 1
+      icon: {fileID: 21300000, guid: debc29bbaa2f8d84fae8b8f920933ae3, type: 3}
+      iconPath: Sprites/Inventory/Materials/strengthStone_05
+      name: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 5"
+      tier: 4
+      description: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+        c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m, t\u1EC9 l\u1EC7
+        th\xE0nh c\xF4ng cao h\u01A1n \u0110\xE1 c\u1EA5p 4!"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 0
+      quantity: 99
+    - idItem: strengthStone_04
+      type: 1
+      icon: {fileID: 21300000, guid: 7a73d7cd656afef458e5c8063e7d98cd, type: 3}
+      iconPath: Sprites/Inventory/Materials/strengthStone_04
+      name: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 4"
+      tier: 3
+      description: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+        c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m, t\u1EC9 l\u1EC7
+        th\xE0nh c\xF4ng cao h\u01A1n \u0110\xE1 c\u1EA5p 3!"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 1
+      quantity: 99
+    - idItem: strengthStone_04
+      type: 1
+      icon: {fileID: 21300000, guid: 7a73d7cd656afef458e5c8063e7d98cd, type: 3}
+      iconPath: Sprites/Inventory/Materials/strengthStone_04
+      name: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 4"
+      tier: 3
+      description: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+        c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m, t\u1EC9 l\u1EC7
+        th\xE0nh c\xF4ng cao h\u01A1n \u0110\xE1 c\u1EA5p 3!"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 1
+      quantity: 99
+    - idItem: strengthStone_04
+      type: 1
+      icon: {fileID: 21300000, guid: 7a73d7cd656afef458e5c8063e7d98cd, type: 3}
+      iconPath: Sprites/Inventory/Materials/strengthStone_04
+      name: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 4"
+      tier: 3
+      description: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+        c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m, t\u1EC9 l\u1EC7
+        th\xE0nh c\xF4ng cao h\u01A1n \u0110\xE1 c\u1EA5p 3!"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 1
+      quantity: 99
+    - idItem: strengthStone_03
+      type: 1
+      icon: {fileID: 21300000, guid: 12d873400fed0994e927acea1540e133, type: 3}
+      iconPath: Sprites/Inventory/Materials/strengthStone_03
+      name: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 3"
+      tier: 2
+      description: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+        c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m, t\u1EC9 l\u1EC7
+        th\xE0nh c\xF4ng cao h\u01A1n \u0110\xE1 c\u1EA5p 2!"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 1
+      quantity: 99
+    - idItem: strengthStone_03
+      type: 1
+      icon: {fileID: 21300000, guid: 12d873400fed0994e927acea1540e133, type: 3}
+      iconPath: Sprites/Inventory/Materials/strengthStone_03
+      name: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 3"
+      tier: 2
+      description: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+        c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m, t\u1EC9 l\u1EC7
+        th\xE0nh c\xF4ng cao h\u01A1n \u0110\xE1 c\u1EA5p 2!"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 1
+      quantity: 99
+    - idItem: strengthStone_03
+      type: 1
+      icon: {fileID: 21300000, guid: 12d873400fed0994e927acea1540e133, type: 3}
+      iconPath: Sprites/Inventory/Materials/strengthStone_03
+      name: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 3"
+      tier: 2
+      description: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+        c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m, t\u1EC9 l\u1EC7
+        th\xE0nh c\xF4ng cao h\u01A1n \u0110\xE1 c\u1EA5p 2!"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 1
+      quantity: 99
+    - idItem: strengthStone_02
+      type: 1
+      icon: {fileID: 21300000, guid: f3733db56d7680844a8fb4169f0709f5, type: 3}
+      iconPath: Sprites/Inventory/Materials/strengthStone_02
+      name: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 2"
+      tier: 1
+      description: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+        c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m, t\u1EC9 l\u1EC7
+        th\xE0nh c\xF4ng cao h\u01A1n \u0110\xE1 c\u1EA5p 1!"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 1
+      quantity: 99
+    - idItem: strengthStone_02
+      type: 1
+      icon: {fileID: 21300000, guid: f3733db56d7680844a8fb4169f0709f5, type: 3}
+      iconPath: Sprites/Inventory/Materials/strengthStone_02
+      name: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 2"
+      tier: 1
+      description: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+        c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m, t\u1EC9 l\u1EC7
+        th\xE0nh c\xF4ng cao h\u01A1n \u0110\xE1 c\u1EA5p 1!"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 1
+      quantity: 99
+    - idItem: strengthStone_02
+      type: 1
+      icon: {fileID: 21300000, guid: f3733db56d7680844a8fb4169f0709f5, type: 3}
+      iconPath: Sprites/Inventory/Materials/strengthStone_02
+      name: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 2"
+      tier: 1
+      description: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+        c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m, t\u1EC9 l\u1EC7
+        th\xE0nh c\xF4ng cao h\u01A1n \u0110\xE1 c\u1EA5p 1!"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 1
+      quantity: 99
+    - idItem: strengthStone_01
+      type: 1
+      icon: {fileID: 21300000, guid: 1fbbd0d914bc47c4081637e9858deaf7, type: 3}
+      iconPath: Sprites/Inventory/Materials/strengthStone_01
+      name: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 1"
+      tier: 0
+      description: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+        c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 1
+      quantity: 99
+    - idItem: strengthStone_01
+      type: 1
+      icon: {fileID: 21300000, guid: 1fbbd0d914bc47c4081637e9858deaf7, type: 3}
+      iconPath: Sprites/Inventory/Materials/strengthStone_01
+      name: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 1"
+      tier: 0
+      description: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+        c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 1
+      quantity: 99
+    - idItem: strengthStone_01
+      type: 1
+      icon: {fileID: 21300000, guid: 1fbbd0d914bc47c4081637e9858deaf7, type: 3}
+      iconPath: Sprites/Inventory/Materials/strengthStone_01
+      name: "\u0110\xE1 c\u01B0\u1EDDng h\xF3a 1"
+      tier: 0
+      description: "T\u0103ng s\u1EE9c m\u1EA1nh trang b\u1ECB, ti\u1EBFn h\xE0nh
+        c\u01B0\u1EDDng h\xF3a s\u1EBD ti\xEAu hao v\u1EADt ph\u1EA9m"
+      maxStack: 99
+      itemUses: 1
+      canCombine: 1
+      quantity: 99

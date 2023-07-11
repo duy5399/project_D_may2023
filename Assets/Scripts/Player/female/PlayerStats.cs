@@ -18,30 +18,43 @@ public class PlayerStats : MonoBehaviour
         {
             instance = this;
         }
+        string resourcePath = "ScriptableObjects/Character/PlayerStat";
+        //Debug.Log(resourcePath);
+        playerStat = Resources.Load<StatsSO >(resourcePath);
+        attack = playerStat.attack_;
+        defense = playerStat.defense_;
+        hitPoint = playerStat.hitPoint_;
+        luck = playerStat.luck_;
     }
     #endregion
 
-    public int attack;
-    public int defense;
-    public int hitPoint;
-    public int luck;
+    [SerializeField] private StatsSO playerStat;
+    public StatsSO playerStat_ => playerStat;
 
-    public Text attackTxt; //Bag - PlayerStats - ATK - Stat
-    public Text defenseTxt; //Bag - PlayerStats - DEF - Stat
-    public Text hitPointTxt; //Bag - PlayerStats - HP - Stat
-    public Text luckTxt; //Bag - PlayerStats - LUCK - Stat
+    [SerializeField] private int attack;
+    [SerializeField] private int defense;
+    [SerializeField] private int hitPoint;
+    [SerializeField] private int luck;
 
-    // Start is called before the first frame update
-    void Start()
+    public int attack_ => attack;
+    public int defense_ => defense;
+    public int hitPoint_ => hitPoint;
+    public int luck_ => luck;
+
+    public void SetAttack(int _attack)
     {
-        
+        playerStat.SetAttack(_attack);
     }
-
-    public void UpdatePlayerStats()
+    public void SetDefense(int _defense) 
+    {  
+        playerStat.SetDefense(_defense);
+    }
+    public void SetHitPoint(int _hitPoint) 
+    {  
+        playerStat.SetHitPoint(_hitPoint);
+    }
+    public void SetLuck(int _luck)
     {
-        attackTxt.text = attack.ToString();
-        defenseTxt.text = defense.ToString();
-        hitPointTxt.text = hitPoint.ToString();
-        luckTxt.text = luck.ToString();
+        playerStat.SetLuck(_luck);
     }
 }

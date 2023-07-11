@@ -42,7 +42,7 @@ public class RewardItem : InventorySlotController
                 itemBorder.color = new Color32(226, 80, 65, 255);
                 break;
             default:
-                Debug.Log("Not found rarity tier of item: " + _item.itemName_);
+                //Debug.Log("Not found rarity tier of item: " + _item.itemName_);
                 break;
         }
     }

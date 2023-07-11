@@ -54,15 +54,18 @@ public class GearSlotPreview : MonoBehaviour, IPointerClickHandler
     //reset lại hình ảnh ở slot item và hiển thị hình ảnh xem trước
     public void ResetGearSlotPreview()
     {
-        iconImg.sprite = null;
-        iconImg.enabled = false;
-
-        showPreviewItem.GetComponent<Image>().sprite = defaultDisplayImg;
-        if (equipment.itemSlots_ == ItemSlots.Wing)
+        if(equipment != null)
         {
-            anim.SetInteger("Wing", 0);
-            anim.enabled = false;
+            iconImg.sprite = null;
+            iconImg.enabled = false;
+
+            showPreviewItem.GetComponent<Image>().sprite = defaultDisplayImg;
+            if (equipment.itemSlots_ == ItemSlots.Wing)
+            {
+                anim.SetInteger("Wing", 0);
+                anim.enabled = false;
+            }
+            equipment = null;
         }
-        equipment = null;
     }
 }
